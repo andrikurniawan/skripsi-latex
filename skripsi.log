@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  21 APR 2017 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  2 MAY 2017 12:55
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -453,8 +453,12 @@ Package: import 2009/03/23  v 5.1
 (hype.indonesia.tex) (istilah.tex) (skripsi.aux (sampul.aux) (judul_dalam.aux)
 (orisinal.aux) (pengesahan_sidang.aux) (pengantar.aux)
 (persetujuan_publikasi.aux) (abstrak.aux) (abstract.aux) (bab1-pendahuluan.aux)
-(bab2-tinjauan-pustaka.aux) (bab3-desain.aux) (bab4-implementasi.aux)
-(bab5-hasil.aux) (bab6-penutup.aux) (markLampiran.aux) (lampiran.aux))
+(bab2-tinjauan-pustaka.aux) (bab3-desain.aux
+
+LaTeX Warning: Label `fig:exmasalahparalel' multiply defined.
+
+) (bab4-implementasi.aux) (bab5-hasil.aux) (bab6-penutup.aux) (markLampiran.aux
+) (lampiran.aux))
 \openout1 = `skripsi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -466,8 +470,7 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 33.
 LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 33
 .
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
 LaTeX Font Info:    ... okay on input line 33.
@@ -569,7 +572,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
  (sampul.tex
-<pics/makara.png, id=207, 154.86429pt x 154.34807pt>
+<pics/makara.png, id=199, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
  <use pics/makara.png>
 Package pdftex.def Info: pics/makara.png used on input line 14.
@@ -858,7 +861,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/parallelProblem.png, id=450, 685.56125pt x 373.395pt>
+<pics/parallelProblem.png, id=435, 685.56125pt x 373.395pt>
 File: pics/parallelProblem.png Graphic file (type png)
 
 <use pics/parallelProblem.png>
@@ -884,7 +887,7 @@ Package natbib Warning: Citation `book.buyya' on page 4 undefined on input line
 Package natbib Warning: Citation `book.sterling-jones' on page 4 undefined on i
 nput line 40.
 
-<pics/neumann.pdf, id=457, 10629.51155pt x 9349.42938pt>
+<pics/neumann.pdf, id=442, 10629.51155pt x 9349.42938pt>
 File: pics/neumann.pdf Graphic file (type pdf)
 
 <use pics/neumann.pdf>
@@ -956,70 +959,24 @@ BAB 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
+<pics/skripsiRoadmap.jpg, id=488, 973.6375pt x 616.3025pt>
+File: pics/skripsiRoadmap.jpg Graphic file (type jpg)
 
-Package natbib Warning: Citation `paper.jackson' on page 7 undefined on input l
-ine 12.
-
-<pics/alurkickstart.pdf, id=504, 203.5605pt x 192.72pt>
-File: pics/alurkickstart.pdf Graphic file (type pdf)
-
-<use pics/alurkickstart.pdf>
-Package pdftex.def Info: pics/alurkickstart.pdf used on input line 17.
-(pdftex.def)             Requested size: 318.71477pt x 278.83398pt.
-
-
-Package natbib Warning: Citation `paper.jackson' on page 7 undefined on input l
-ine 22.
-
-
-Package natbib Warning: Citation `paper.jackson' on page 7 undefined on input l
-ine 30.
-
-
-Underfull \hbox (badness 3302) in paragraph at lines 30--31
-\T1/ptm/m/n/12 Untuk con-toh kon-ten Rolls da-pat di-li-hat pada gam-bar []3.2[
-]. Pada con-
- []
-
-
-Underfull \hbox (badness 3471) in paragraph at lines 30--31
-\T1/ptm/m/n/12 toh terse-but, \T1/ptm/m/it/12 pack-age \T1/ptm/m/n/12 yang men-
-gan-dung kon-fi-gu-rasi \T1/ptm/m/it/12 graph \T1/ptm/m/n/12 adalah berkas
- []
-
-<pics/rollexample.pdf, id=506, 388.65039pt x 247.3256pt>
-File: pics/rollexample.pdf Graphic file (type pdf)
-
-<use pics/rollexample.pdf>
-Package pdftex.def Info: pics/rollexample.pdf used on input line 36.
-(pdftex.def)             Requested size: 358.52339pt x 239.01491pt.
+<use pics/skripsiRoadmap.jpg>
+Package pdftex.def Info: pics/skripsiRoadmap.jpg used on input line 14.
+(pdftex.def)             Requested size: 398.3386pt x 252.14023pt.
  [7
 
 
 
- <./pics/alurkickstart.pdf>]
-
-Package natbib Warning: Citation `paper.jackson' on page 8 undefined on input l
-ine 41.
-
-
-Package natbib Warning: Citation `paper.jackson' on page 8 undefined on input l
-ine 44.
-
+ <./pics/skripsiRoadmap.jpg>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pics/rollexample.pdf>])
-
-Package Fancyhdr Warning: \headheight is too small (0.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9]
+[8]
 \openout2 = `bab4-implementasi.aux'.
 
  (bab4-implementasi.tex
@@ -1028,7 +985,7 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[10
+[9
 
 
 
@@ -1039,7 +996,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[10]
 \openout2 = `bab5-hasil.aux'.
 
  (bab5-hasil.tex
@@ -1048,7 +1005,7 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[12
+[11
 
 
 
@@ -1068,7 +1025,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[12]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 132.
 
@@ -1078,7 +1035,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[13] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -1095,14 +1052,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15])
+[14])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[15]
 \openout2 = `bab6-penutup.aux'.
 
  (bab6-penutup.tex
@@ -1111,7 +1068,7 @@ BAB 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) [17
+) [16
 
 
 
@@ -1392,22 +1349,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 (markLampiran.aux) (lampiran.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `skripsi.out' has not changed.
+(rerunfilecheck)             Checksum: 71F2FE2DC78B29D2BA80AD30765A3096;3245.
 
 
-Package rerunfilecheck Warning: File `skripsi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `skripsi.out':
-(rerunfilecheck)             Before: BF805821D2F3BF1D35E40D66356FD504;3390
-(rerunfilecheck)             After:  014108C3118B624AC6418CEE394CA8E7;3382.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 12033 strings out of 493333
- 174297 string characters out of 3139194
- 406802 words of memory out of 3000000
- 14915 multiletter control sequences out of 15000+200000
+ 12021 strings out of 493333
+ 174067 string characters out of 3139194
+ 406634 words of memory out of 3000000
+ 14907 multiletter control sequences out of 15000+200000
  73055 words of font info for 104 fonts, out of 3000000 for 9000
  1239 hyphenation exceptions out of 8191
  44i,12n,56p,437b,1859s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1432,9 +1386,9 @@ am Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on skripsi.pdf (40 pages, 363334 bytes).
+Output written on skripsi.pdf (39 pages, 405983 bytes).
 PDF statistics:
- 814 PDF objects out of 1000 (max. 8388607)
- 225 named destinations out of 1000 (max. 500000)
- 442 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 221 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -26,27 +26,25 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Masuk lagi}{section.2.3}% 26
 \BOOKMARK [0][-]{chapter.3}{3 Desain}{}% 27
 \BOOKMARK [1][-]{section.3.1}{3.1 Desain Sistem}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 XZXX}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Rocks Rolls}{section.3.1}% 30
-\BOOKMARK [1][-]{section.3.2}{3.2 Desain Bussiness Logic}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.3}{3.3 Desain Rules}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 33
-\BOOKMARK [1][-]{section.4.1}{4.1 Instalasi Zotonic}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{4.2 Pembuatan Situs baru dengan Zotonic}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{4.3 Implementasi Pemanggilan Web Service}{chapter.4}% 36
-\BOOKMARK [1][-]{section.4.4}{4.4 Implementasi Rules}{chapter.4}% 37
-\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 38
-\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 40
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 41
-\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 42
-\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 43
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 45
-\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 46
-\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 48
-\BOOKMARK [0][-]{section*.26}{LAMPIRAN}{}% 49
-\BOOKMARK [0][-]{section*.27}{Lampiran 1 : Kode Sumber}{}% 50
-\BOOKMARK [0][-]{section*.30}{Lampiran 2 : Berkas Konfigurasi}{}% 51
-\BOOKMARK [0][-]{section*.32}{Lampiran 8 : UAT dan Kuesioner}{}% 52
+\BOOKMARK [1][-]{section.3.2}{3.2 Desain Bussiness Logic}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.3}{3.3 Desain Rules}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 31
+\BOOKMARK [1][-]{section.4.1}{4.1 Instalasi Zotonic}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.2}{4.2 Pembuatan Situs baru dengan Zotonic}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.3}{4.3 Implementasi Pemanggilan Web Service}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.4}{4.4 Implementasi Rules}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 36
+\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 39
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 40
+\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 43
+\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 44
+\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 46
+\BOOKMARK [0][-]{section*.25}{LAMPIRAN}{}% 47
+\BOOKMARK [0][-]{section*.26}{Lampiran 1 : Kode Sumber}{}% 48
+\BOOKMARK [0][-]{section*.29}{Lampiran 2 : Berkas Konfigurasi}{}% 49
+\BOOKMARK [0][-]{section*.31}{Lampiran 8 : UAT dan Kuesioner}{}% 50
