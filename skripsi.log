@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  2 MAY 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  17 MAY 2017 04:19
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -453,7 +453,7 @@ Package: import 2009/03/23  v 5.1
 (hype.indonesia.tex) (istilah.tex) (skripsi.aux (sampul.aux) (judul_dalam.aux)
 (orisinal.aux) (pengesahan_sidang.aux) (pengantar.aux)
 (persetujuan_publikasi.aux) (abstrak.aux) (abstract.aux) (bab1-pendahuluan.aux)
-(bab2-tinjauan-pustaka.aux) (bab3-desain.aux) (bab4-implementasi.aux)
+(bab2-tinjauan-pustaka.aux) (bab3-rancangan.aux) (bab4-implementasi.aux)
 (bab5-hasil.aux) (bab6-penutup.aux) (markLampiran.aux) (lampiran.aux))
 \openout1 = `skripsi.aux'.
 
@@ -858,7 +858,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/parallelProblem.png, id=435, 685.56125pt x 373.395pt>
+<pics/parallelProblem.png, id=441, 685.56125pt x 373.395pt>
 File: pics/parallelProblem.png Graphic file (type png)
 
 <use pics/parallelProblem.png>
@@ -884,7 +884,7 @@ Package natbib Warning: Citation `book.buyya' on page 4 undefined on input line
 Package natbib Warning: Citation `book.sterling-jones' on page 4 undefined on i
 nput line 40.
 
-<pics/neumann.pdf, id=442, 10629.51155pt x 9349.42938pt>
+<pics/neumann.pdf, id=448, 10629.51155pt x 9349.42938pt>
 File: pics/neumann.pdf Graphic file (type pdf)
 
 <use pics/neumann.pdf>
@@ -948,44 +948,66 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-\openout2 = `bab3-desain.aux'.
+\openout2 = `bab3-rancangan.aux'.
 
- (bab3-desain.tex
+ (bab3-rancangan.tex
 BAB 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/skripsiRoadmap.jpg, id=488, 973.6375pt x 616.3025pt>
-File: pics/skripsiRoadmap.jpg Graphic file (type jpg)
+<pics/skripsiRoadmapNew.jpg, id=494, 1152.305pt x 671.50874pt>
+File: pics/skripsiRoadmapNew.jpg Graphic file (type jpg)
 
-<use pics/skripsiRoadmap.jpg>
-Package pdftex.def Info: pics/skripsiRoadmap.jpg used on input line 14.
-(pdftex.def)             Requested size: 398.3386pt x 252.14023pt.
+<use pics/skripsiRoadmapNew.jpg>
+Package pdftex.def Info: pics/skripsiRoadmapNew.jpg used on input line 15.
+(pdftex.def)             Requested size: 398.3386pt x 232.13185pt.
+ [7
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+
+ <./pics/skripsiRoadmapNew.jpg>]
+<pics/adaptor.jpg, id=500, 733.74126pt x 428.60126pt>
+File: pics/adaptor.jpg Graphic file (type jpg)
+ <use pics/adaptor.jpg>
+Package pdftex.def Info: pics/adaptor.jpg used on input line 35.
+(pdftex.def)             Requested size: 398.3386pt x 232.6838pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 44.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 44.
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 43--56
+[]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--56
 
  []
 
-[7
-
-
-
- <./pics/skripsiRoadmap.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8])
+[9 <./pics/adaptor.jpg>])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
+[10]
 \openout2 = `bab4-implementasi.aux'.
 
  (bab4-implementasi.tex
@@ -994,7 +1016,7 @@ BAB 4.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[10
+[11
 
 
 
@@ -1005,7 +1027,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[12]
 \openout2 = `bab5-hasil.aux'.
 
  (bab5-hasil.tex
@@ -1014,16 +1036,11 @@ BAB 5.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-[12
+[13
 
 
 
 ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 55.
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 55.
-
 Overfull \hbox (17.62482pt too wide) in paragraph at lines 54--89
 []$[]$ 
  []
@@ -1034,7 +1051,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14]
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 132.
 
@@ -1044,7 +1061,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+[15] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -1061,14 +1078,14 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15])
+[16])
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[17]
 \openout2 = `bab6-penutup.aux'.
 
  (bab6-penutup.tex
@@ -1077,7 +1094,7 @@ BAB 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) [17
+) [18
 
 
 
@@ -1354,22 +1371,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 (skripsi.aux (sampul.aux) (judul_dalam.aux) (orisinal.aux)
 (pengesahan_sidang.aux) (pengantar.aux) (persetujuan_publikasi.aux)
 (abstrak.aux) (abstract.aux) (bab1-pendahuluan.aux) (bab2-tinjauan-pustaka.aux)
-(bab3-desain.aux) (bab4-implementasi.aux) (bab5-hasil.aux) (bab6-penutup.aux)
-(markLampiran.aux) (lampiran.aux))
+(bab3-rancangan.aux) (bab4-implementasi.aux) (bab5-hasil.aux) (bab6-penutup.aux
+) (markLampiran.aux) (lampiran.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: 71F2FE2DC78B29D2BA80AD30765A3096;3245.
+(rerunfilecheck)             Checksum: E655C67DEBFB21E6FE9BB078DAA6946C;3271.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 12022 strings out of 493333
- 174074 string characters out of 3139194
- 406678 words of memory out of 3000000
- 14907 multiletter control sequences out of 15000+200000
+ 12041 strings out of 493333
+ 174409 string characters out of 3139194
+ 406980 words of memory out of 3000000
+ 14913 multiletter control sequences out of 15000+200000
  73055 words of font info for 104 fonts, out of 3000000 for 9000
  1239 hyphenation exceptions out of 8191
- 44i,12n,56p,987b,1859s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,56p,1343b,1859s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1391,9 +1408,9 @@ am Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on skripsi.pdf (40 pages, 411059 bytes).
+Output written on skripsi.pdf (41 pages, 481549 bytes).
 PDF statistics:
- 771 PDF objects out of 1000 (max. 8388607)
- 222 named destinations out of 1000 (max. 500000)
- 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 795 PDF objects out of 1000 (max. 8388607)
+ 234 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,28 +27,28 @@
 \contentsline {subsection}{\numberline {2.2.2}Next Subsection \textit {Section in Eng}}{5}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}\textit {Keatas lagi}}{5}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}\textit {Masuk lagi}}{6}{subsection.2.3.1}
-\contentsline {chapter}{\numberline {3}\uppercase {Desain}}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Desain Sistem}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Desain \textit {Bussiness Logic}}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Desain \textit {Rules}}{8}{section.3.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Instalasi Zotonic}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}Pembuatan Situs baru dengan Zotonic}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Implementasi Pemanggilan \textit {Web Service}}{11}{section.4.3}
-\contentsline {section}{\numberline {4.4}Implementasi \textit {Rules}}{11}{section.4.4}
-\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{12}{chapter.5}
-\contentsline {section}{\numberline {5.1}Implementasi \textit {Cluster}}{12}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Instalasi \textit {Frontend}}{12}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Konfigurasi}{14}{subsection.5.1.2}
-\contentsline {paragraph}{}{14}{section*.22}
-\contentsline {subsubsection}{\numberline {5.1.2.1}semakin ke dalam}{15}{subsubsection.5.1.2.1}
-\contentsline {section}{\numberline {5.2}Pengujian}{15}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Kasus Uji}{15}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Kasus Uji}{16}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{17}{section.6.2}
-\contentsline {chapter}{LAMPIRAN}{1}{section*.25}
-\contentsline {chapter}{Lampiran 1 : Kode Sumber}{2}{section*.26}
-\contentsline {chapter}{Lampiran 2 : Berkas Konfigurasi}{2}{section*.29}
-\contentsline {chapter}{Lampiran 8 : UAT dan Kuesioner}{3}{section*.31}
+\contentsline {chapter}{\numberline {3}\uppercase {Rancangan}}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rancangan Integrasi Ontologi dan \textit {Web Service}}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Desain \textit {Adaptor}}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Desain \textit {Rules}}{10}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Instalasi Zotonic}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pembuatan Situs baru dengan Zotonic}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Implementasi Pemanggilan \textit {Web Service}}{12}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementasi \textit {Rules}}{12}{section.4.4}
+\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Implementasi \textit {Cluster}}{13}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Instalasi \textit {Frontend}}{13}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Konfigurasi}{15}{subsection.5.1.2}
+\contentsline {paragraph}{}{15}{section*.23}
+\contentsline {subsubsection}{\numberline {5.1.2.1}semakin ke dalam}{16}{subsubsection.5.1.2.1}
+\contentsline {section}{\numberline {5.2}Pengujian}{16}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Kasus Uji}{16}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Kasus Uji}{17}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{18}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{18}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{18}{section.6.2}
+\contentsline {chapter}{LAMPIRAN}{1}{section*.26}
+\contentsline {chapter}{Lampiran 1 : Kode Sumber}{2}{section*.27}
+\contentsline {chapter}{Lampiran 2 : Berkas Konfigurasi}{2}{section*.30}
+\contentsline {chapter}{Lampiran 8 : UAT dan Kuesioner}{3}{section*.32}
