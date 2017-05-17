@@ -1,8 +1,12 @@
 \contentsline {lstlisting}{\numberline {3.1}Contoh tabel \textit {rules}}{9}{lstlisting.3.1}
-\contentsline {lstlisting}{\numberline {5.1}Keluaran output}{14}{lstlisting.5.1}
-\contentsline {lstlisting}{\numberline {5.2}Keluaran mentah untuk detail \textit {job}}{16}{lstlisting.5.2}
-\contentsline {lstlisting}{\numberline {5.3}Potongan skrip submisi \textit {job} melalui torqace}{16}{lstlisting.5.3}
-\contentsline {lstlisting}{\numberline {5.4}Potongan {\ttfamily Makefile} \textit {project}}{17}{lstlisting.5.4}
+\contentsline {lstlisting}{\numberline {4.1}Struktur tabel \textit {rules}}{10}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.2}Fungsi yang harus diekspor untuk model}{10}{lstlisting.4.2}
+\contentsline {lstlisting}{\numberline {4.3}Implementasi fungsi m find value}{11}{lstlisting.4.3}
+\contentsline {lstlisting}{\numberline {4.4}Implementasi fungsi m to list}{11}{lstlisting.4.4}
+\contentsline {lstlisting}{\numberline {4.5}Implementasi fungsi m value}{11}{lstlisting.4.5}
+\contentsline {lstlisting}{\numberline {5.1}Keluaran output}{15}{lstlisting.5.1}
+\contentsline {lstlisting}{\numberline {5.2}Keluaran mentah untuk detail \textit {job}}{17}{lstlisting.5.2}
+\contentsline {lstlisting}{\numberline {5.3}Potongan skrip submisi \textit {job} melalui torqace}{17}{lstlisting.5.3}
+\contentsline {lstlisting}{\numberline {5.4}Potongan {\ttfamily Makefile} \textit {project}}{18}{lstlisting.5.4}
 \contentsline {lstlisting}{\numberline {1}Skrip menambahkan pengguna baru}{2}{lstlisting.0.1}
-\contentsline {lstlisting}{\numberline {2}\textit {Cronjob} menambahkan pengguna baru}{2}{lstlisting.0.2}
-\contentsline {lstlisting}{\numberline {3}Berkas {\ttfamily compute.xml}}{3}{lstlisting.0.3}
+\contentsline {lstlisting}{\numberline {2}Berkas {\ttfamily compute.xml}}{5}{lstlisting.0.2}
