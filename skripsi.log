@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  17 MAY 2017 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  17 MAY 2017 17:22
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1020,23 +1020,18 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 19--28
 []$[]$ 
  []
 
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 31--59
-[]$[]$ 
- []
-
 [10
 
 
 
 ]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 62--68
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 33--61
 []$[]$ 
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 69--78
-[]$[]$
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 66--72
+[]$[]$ 
  []
 
 
@@ -1046,6 +1041,10 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 73--82
+[]$[]$
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
@@ -1438,16 +1437,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
 (rerunfilecheck)             Checksum: 916828537F31E8FEE7A9B18A942FBC1B;3223.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
  12404 strings out of 493333
  179020 string characters out of 3139194
- 493168 words of memory out of 3000000
+ 493167 words of memory out of 3000000
  15109 multiletter control sequences out of 15000+200000
  73801 words of font info for 106 fonts, out of 3000000 for 9000
  1239 hyphenation exceptions out of 8191
@@ -1473,9 +1468,9 @@ am Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.
 pfb>
-Output written on skripsi.pdf (44 pages, 517249 bytes).
+Output written on skripsi.pdf (44 pages, 520365 bytes).
 PDF statistics:
- 1009 PDF objects out of 1200 (max. 8388607)
+ 1010 PDF objects out of 1200 (max. 8388607)
  400 named destinations out of 1000 (max. 500000)
  418 words of extra memory for PDF output out of 10000 (max. 10000000)
 

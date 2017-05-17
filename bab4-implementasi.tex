@@ -26,7 +26,9 @@ Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:str
 \end{lstlisting}
 \end{minipage}
 
-Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan.
+Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan. Sesuai dengan kebutuhannya agar \textit{adaptor} dapat dipanggil melalui \textit{template engine}, maka perlu didefinisikan terlebih dahulu bagaimana nantinya \textit{adaptor} dipanggil. Pada penelitian ini, penulis mendefinisikan untuk pemanggilan \textit{adaptor} pada \textit{template engine} dilakukan dengan membuat perintah \co{m.abs.namaFungsi[\{query param=value\}]}
+
+Setelah didefinisikan format pemanggilan \textit{adaptor} pada \textit{template engine}, maka akan diimplementasikan pencocokan pola pada proses pemanggilan \textit{adaptor} dengan menggunakan fungsi m\_find\_value. Berikut adalah implementasi dari fungsi m\_find\_value
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Implementasi fungsi m find value},label={lst:mfindvalue}]
@@ -56,6 +58,8 @@ m_find_value(_, _, _Context) ->
     undefined. 
 \end{lstlisting}
 \end{minipage}
+
+Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan.
 
 Ketika model abs dijalankan pada sisi \textit{template engine}, model abs akan melakukan pencocokan \textit{pola} terhadap pemanggilan model abs pada \textit{template engine}. Untuk melakukan pencocokan pola ini, penulis memanfaatkan fungsi model find value yang telah disediakan oleh zotonic.
 
