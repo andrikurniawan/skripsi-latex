@@ -2,9 +2,9 @@
 \contentsline {chapter}{LEMBAR PERNYATAAN ORISINALITAS}{ii}{section*.4}
 \contentsline {chapter}{LEMBAR PENGESAHAN}{iii}{section*.5}
 \contentsline {chapter}{\uppercase {Kata Pengantar}}{iv}{section*.6}
-\contentsline {chapter}{LEMBAR PERSETUJUAN PUBLIKASI ILMIAH}{v}{section*.7}
-\contentsline {chapter}{ABSTRAK}{vi}{section*.8}
-\contentsline {chapter}{Daftar Isi}{viii}{section*.8}
+\contentsline {chapter}{LEMBAR PERSETUJUAN PUBLIKASI ILMIAH}{vi}{section*.7}
+\contentsline {chapter}{ABSTRAK}{vii}{section*.8}
+\contentsline {chapter}{Daftar Isi}{ix}{section*.8}
 \contentsline {chapter}{Daftar Gambar}{x}{section*.8}
 \contentsline {chapter}{Daftar Tabel}{xi}{section*.8}
 \contentsline {chapter}{Daftar Kode}{xii}{section*.8}

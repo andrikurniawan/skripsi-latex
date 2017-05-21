@@ -14,7 +14,7 @@ Sebelum melakukan implementasi \textit{adaptor}, perlu dibuat terlebih dahulu ta
 \end{lstlisting}
 \end{minipage}
 
-Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:strukturtablerules}, tabel rules tersebut disimpan ke dalam sebuah file yang bernama rules.txt dan ditaruh pada \textit{root} dari zotonic. Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada zotonic dengan nama model abs. Untuk membuat sebuah model pada zotonic, zotonic mengharuskan setiap model untuk mengekspor beberapa fungsi yang dimiliki oleh zotonic yaitu fungsi model find value, model to list, dan model value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
+Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:strukturtablerules}, tabel rules tersebut disimpan ke dalam sebuah file yang bernama rules.txt dan ditaruh pada \textit{root} dari zotonic. Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada zotonic dengan nama model abs. Untuk membuat sebuah model pada zotonic, zotonic mengharuskan setiap model untuk mengekspor beberapa fungsi yang dimiliki oleh zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Fungsi yang harus diekspor untuk model},label={lst:librarymodel}]
@@ -31,7 +31,7 @@ Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebu
 Setelah didefinisikan format pemanggilan \textit{adaptor} pada \textit{template engine}, maka akan diimplementasikan pencocokan pola pada proses pemanggilan \textit{adaptor} dengan menggunakan fungsi m\_find\_value. Berikut adalah implementasi dari fungsi m\_find\_value
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m find value},label={lst:mfindvalue}]
+\begin{lstlisting}[caption={Implementasi fungsi m\_find\_value},label={lst:mfindvalue}]
 % this method to handle call api from template
 -spec m_find_value(Key, Source, Context) -> #m{} | undefined | any() when
     Key:: integer() | atom() | string(),
@@ -64,14 +64,14 @@ Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_f
 Ketika model abs dijalankan pada sisi \textit{template engine}, model abs akan melakukan pencocokan \textit{pola} terhadap pemanggilan model abs pada \textit{template engine}. Untuk melakukan pencocokan pola ini, penulis memanfaatkan fungsi model find value yang telah disediakan oleh zotonic.
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m to list},label={lst:mtolist}]
+\begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
 m_to_list(_, _Context) ->
 [].
 \end{lstlisting}
 \end{minipage}
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m value},label={lst:mvalue}]
+\begin{lstlisting}[caption={Implementasi fungsi m\_value},label={lst:mvalue}]
 m_value(_, _Context) ->
 undefined.
 \end{lstlisting}
