@@ -1,6 +1,9 @@
 %-----------------------------------------------------------------------------%
 \chapter{\babEmpat}
 %-----------------------------------------------------------------------------%
+
+Pada bab ini dijelaskan setiap hal yang dilakukan oleh penulis untuk melakukan implementasi terhadap rancangan yang telah dibuat pada bab sebelumnya. Penulis melakukan implementasi \textit{adaptor} yang akan dipanggil melalui \textit{template engine} dan juga melalui model lainnya. Selain itu, penulis juga melakukan \textit{refactoring business logic} dengan memanfaatkan \textit{adaptor} yang sudah diimplementasikan.
+
 %-----------------------------------------------------------------------------%
 \section{Implementasi \textit{Adaptor}}
 %-----------------------------------------------------------------------------%
@@ -14,7 +17,7 @@ Sebelum melakukan implementasi \textit{adaptor}, perlu dibuat terlebih dahulu ta
 \end{lstlisting}
 \end{minipage}
 
-Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:strukturtablerules}, tabel rules tersebut disimpan ke dalam sebuah file yang bernama rules.txt dan ditaruh pada \textit{root} dari zotonic. Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada zotonic dengan nama model abs. Untuk membuat sebuah model pada zotonic, zotonic mengharuskan setiap model untuk mengekspor beberapa fungsi yang dimiliki oleh zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
+Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:strukturtablerules}, tabel rules tersebut disimpan ke dalam sebuah file yang bernama rules.txt dan ditaruh pada \textit{root} dari zotonic. Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada zotonic dengan nama m\_abs pada folder \co{root/src/models}. Untuk membuat sebuah model pada zotonic, zotonic mengharuskan setiap model untuk mengekspor beberapa fungsi yang dimiliki oleh zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Fungsi yang harus diekspor untuk model},label={lst:librarymodel}]
@@ -27,6 +30,8 @@ Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:str
 \end{minipage}
 
 Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan. Sesuai dengan kebutuhannya agar \textit{adaptor} dapat dipanggil melalui \textit{template engine}, maka perlu didefinisikan terlebih dahulu bagaimana nantinya \textit{adaptor} dipanggil. Pada penelitian ini, penulis mendefinisikan untuk pemanggilan \textit{adaptor} pada \textit{template engine} dilakukan dengan membuat perintah \co{m.abs.namaFungsi[\{query param=value\}]}
+
+\subsection{Pemanggilan \textit{Adaptor} Melalui \textit{Template Engine}}
 
 Setelah didefinisikan format pemanggilan \textit{adaptor} pada \textit{template engine}, maka akan diimplementasikan pencocokan pola pada proses pemanggilan \textit{adaptor} dengan menggunakan fungsi m\_find\_value. Berikut adalah implementasi dari fungsi m\_find\_value
 
@@ -59,9 +64,57 @@ m_find_value(_, _, _Context) ->
 \end{lstlisting}
 \end{minipage}
 
-Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan.
+Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan. Seperti yang sudah didefinisikan bahwa pemanggilan \textit{adaptor} melalui \textit{template engine} dengan cara \co{m.abs.namaFungsi[\{query param=value\}]}, maka ketika dijalankan m\_abs akan menjalankan \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} dimana namaFungsi yang didapatkan dari hasil pemanggilan pada \textit{template engine} akan menjalankan fungsi \co{m\_find\_value(Type, \#m\{value=undefined\})} untuk yang akan mengembalikan sebuah \textit{maps} yang akan diterima kembali oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} yang menyimpan \textit{maps} hasil kembalian tersebut ke dalam variabel Q. Lalu parameter yang terdapat pada \textit{template engine} akan disimpan oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} ke dalam variabel Query.
 
-Ketika model abs dijalankan pada sisi \textit{template engine}, model abs akan melakukan pencocokan \textit{pola} terhadap pemanggilan model abs pada \textit{template engine}. Untuk melakukan pencocokan pola ini, penulis memanfaatkan fungsi model find value yang telah disediakan oleh zotonic.
+Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanjutnya akan mengambil \textit{key} yang akan dijalankan pada tabel \textit{rules}. Langkah pertama, akan diekstrak \textit{key} yang ingin dijalankan dari Q dengan cara \textit{pattern matching}. Setelah mendapatkan \textit{key} yang diinginkan, \textit{key} tersebut akan dijadikan sebagai input untuk pemanggilan fungsi lookup\_rules yang akan mengembalikan \textit{endpoint} yang akan dipanggil oleh m\_abs serta jumlah parameter dari fungsi yang akan dijalankan. Fungsi lookup\_rules sendiri merupakan fungsi yang membaca berkas rules.txt dan mengembalikan \textit{list} yang berisikan \textit{endpoint} dan jumlah parameter dari \textit{key} yang diberikan sebagai \textit{input}. Adapun implementasi dari fungsi lookup\_rules sebagai berikut
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Implementasi fungsi lookup\_rules},label={lst:lookuprules}]
+lookup_rules(Key) ->
+	File = ?RULES,
+	case read_file(File) of
+		{error, Error} ->
+			[{error, Error}];
+		[] ->
+			[{error, "File empty"}];
+		Json ->
+			{DecodeJson} = jiffy:decode(Json),
+			proplists:get_value(atom_to_binary(Key, latin1), DecodeJson)
+end.
+
+read_file(File) ->
+	case file:read_file(File) of
+		{ok, Data} ->
+			Data;
+		eof ->
+			[];
+		Error ->
+			{error, Error}
+end.
+\end{lstlisting}
+\end{minipage}
+
+Pada kode \ref{lst:lookuprules}, dapat dilihat bahwa fungsi lookup\_rules akan menjalankan fungsi read\_file yang membaca seluruh isi dari file yang telah didefinisikan sebagai tabel \textit{rules}. Perlu didefinisikan juga dimana lokasi dari tabel \textit{rules} yang akan dibaca sebagai variabel final dengan nama variabel \textit{RULES} pada m\_abs seperti kode \ref{lst:pathrules}
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={lokasi dari \textit{file} rules.txt},label={lst:pathrules}]
+-define(RULES, "./rules.txt").
+\end{lstlisting}
+\end{minipage}
+
+Setelah mendapatkan \textit{endpoint} serta jumlah parameter dari hasil pemanggilan fungsi lookup\_rules yang berbentuk \textit{list}, \textit{list} tersebut akan diekstrak menjadi variabel Url yang menyimpan informasi \textit{endpoint} dan variabel Param yang menyimpan informasi jumlah parameter dari fungsi tersebut. Setelah mendapatkan informasi jumlah parameter, selanjutnya fungsi m\_abs akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Query yang menyimpan informasi mengenai \textit{list} dari parameter yang diberikan pada \textit{template engine}. Implementasi dari fungsi validate\_params dapat dilihat sebagai berikut
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Implementasi fungsi validate\_params},label={lst:validateparams}]
+validate_params(Param, Query) ->
+	case length(Query) == Param of
+		false ->
+			false;
+		true ->
+			true
+end.
+\end{lstlisting}
+\end{minipage}
+
+Pada kode \ref{lst:validateparams}, fungsi validate\_params akan mengembalikan boolean hasil pengecekan jumlah parameter yang didapatkan dari tabel \textit{rules} dan jumlah parameter yang terdapat pada \textit{list} dari \textit{Query}. Kembalikan \textit{true} jika jumlah keduanya sama, dan kembalikan \textit{false} jika jumlahnya tidak sama.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
@@ -76,6 +129,9 @@ m_value(_, _Context) ->
 undefined.
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Pemanggilan \textit{Adaptor} Melalui Model Lain}
+
 Seperti pada gambar, tabel juga dapat diberi label dan caption. 
 Caption pada tabel terletak pada bagian atas tabel. 
 Contoh tabel sederhana dapat dilihat pada \tab~\ref{tab:tab1}.
@@ -162,22 +218,3 @@ Contoh-contoh ini bersumber dari
 Berkas ini berisi seluruh berkas Latex yang dibaca, jadi bisa dikatakan sebagai 
 berkas utama. Dari berkas ini kita dapat mengatur bab apa saja yang ingin 
 kita tampilkan dalam dokumen.
-
-
-%-----------------------------------------------------------------------------%
-\section{Implementasi Pemanggilan \f{Web Service}}
-%-----------------------------------------------------------------------------%
-Berkas ini berguna untuk mempermudah pembuatan beberapa template standar. 
-Anda diminta untuk menuliskan judul laporan, nama, npm, dan hal-hal lain yang 
-dibutuhkan untuk pembuatan template. 
-
-
-%-----------------------------------------------------------------------------%
-\section{Implementasi \f{Rules}}
-%-----------------------------------------------------------------------------%
-Berkas istilah digunakan untuk mencatat istilah-istilah yang digunakan. 
-Fungsinya hanya untuk memudahkan penulisan.
-Pada beberapa kasus, ada kata-kata yang harus selalu muncul dengan tercetak 
-miring atau tercetak tebal. 
-Dengan menjadikan kata-kata tersebut sebagai sebuah perintah \latex~tentu akan 
-mempercepat dan mempermudah pengerjaan laporan. 

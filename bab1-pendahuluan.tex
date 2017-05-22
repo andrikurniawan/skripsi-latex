@@ -7,48 +7,62 @@
 \section{Latar Belakang}
 %-----------------------------------------------------------------------------%
 
-Menurut \citeauthor{book.buyya} terdapat 3 buah contoh untuk membuat enumerate pada latex \citep{book.buyya}: 
-\begin{enumerate}
-\item Makan
-\item Minum
-\end{enumerate}\paragraph{}
+Pada zaman serba teknologi saat ini, kebutuhan akan penggunaan web sebagai sarana berbagi informasi sangat tinggi. Namun, tidak ada sumber daya manusia yang memiliki latar belakang teknis dan merasa sulit untuk membuat sebuah web menjadi sebuah permasalahan yang dihadapi oleh beberapa organisasi di Indonesia terutama organisasi yang non-profit. Selain itu, banyaknya informasi yang terdapat pada web saat ini tidak memiliki hubungan informasi yang terstruktur dan hanya didesain untuk manusia saja sehingga program komputer tidak dapat mengolah informasi tersebut (Berners-Lee, Hendler, dan Lassila, 2001, p. 1). 
+Sehingga pada tahun 2001 dicetuskan ide untuk membuat web semantik oleh Berners-Lee dkk, dimana web semantik akan membuat sebuah struktur untuk konten web sehingga informasi yang terdapat pada web lebih berarti karena dapat diolah oleh program komputer (Berners-Lee, Hendler, dan Lassila, 2001, p. 1). Namun, perkembangan web semantik sendiri tidak seperti yang diharapkan karena mengalami permasalahan. Menurut Rob McCool, Format yang kompleks dan pengguna harus mengorbankan kemudahan ekspresivitas dan membayar biaya yang besar untuk translasi dan perawatan, web semantik tidak akan pernah diadopsi public secara luas (Schoop, de Moor, dan Dietz, 2006).
 
-Menurut \cite{ppt.ecmwf}, pemodelan yang sama apabila dijalankan dengan komputer \f{Dual Core} maka akan membutuhkan waktu 1 tahun dengan asumsi memori yang dibutuhkan cukup \citep{ppt.ecmwf}.
+Untuk mengatasi permasalahan tersebut yang dihadapi oleh web semantik, diciptakan web pragmatis. Tujuan utama dari web pragmatis adalah untuk meningkatkan kolaborasi manusia lebih efektif dengan teknologi yang tepat, seperti sistem untuk negosiasi ontologi, untuk interaksi bisnis berbasis ontologi, dan untuk membangun ontologi pragmatis pada praktik masyarakat (Schoop, de Moor, dan Dietz, 2006). Sehingga web pragmatis dapat melengkapi web semantik untuk berkolaborasi dan meningkatkan kualitas pada level masyarakat. Salah satu perkembangan web semantik pragmatis adalah Zotonic, yaitu sebuah framework sekaligus Content Management System (CMS) yang dibangun di atas bahasa pemrograman erlang dimana zotonic telah mengadopsi konsep web semantik. Kehadiran Zotonic sendiri diharapkan dapat meningkatkan pemanfaatan web semantik dalam proses pembuatan web sehingga infomasi yang berada pada web yang dibuat dapat langsung diolah oleh komputer. Tetapi, pengembang perlu mendefinisikan semantik yang akan mereka buat terlebih dahulu sebelum mereka mengembangkannya dalam Zotonic untuk menciptakan sebuah konsistensi. Namun hal ini tentu saja menghambat proses pengembangan karena pengembang membutuhkan waktu yang lebih lama untuk proses translasi dari semantik ke Zotonic.
+
+Untuk membantu para pengembang dalam mentranslasikan semantik ke dalam Zotonic, pada tahun 2016 terdapat sebuah penelitian terkait pembentukan otomatis aplikasi web dengan masukan berupa ontologi, yaitu penelitian terkait pemetaan ontologi yang dihasilkan semantik ke dalam struktur Zotonic (Pangukir el al., 2016). Namun, pada penelitian tersebut pembentukan bussiness logic dari web yang dibentuk masih secara manual. Hal ini karena pada ontologi tidak terdapat bussiness logic. Bussiness logic tersebut dapat diperoleh melalui translasi feature model dari rancangan web tersebut.
+
+Oleh karena itu, untuk menerapkan paradigma Software Product Line (SPL) dimana variasi dan kesamaan akan disusun secara modular dan reusability, diperlukan sebuah program yang akan melakukan pemetaan secara otomatis terhadap bussiness logic dari feature model yang telah dirancang ke dalam Zotonic. Sehingga diharapkan kedepannya, proses pembentukan web berbasis semantik dapat lebih mudah dan cepat agar meningkatkan jumlah web yang berbasis semantik.
 
 %-----------------------------------------------------------------------------%
 \section{Perumusan Masalah}
 %-----------------------------------------------------------------------------%
-Pada bagian ini akan dijelaskan mengenai definisi permasalahan yang dihadapi dan ingin diselesaikan serta asumsi dan batasan yang digunakan dalam menyelesaikannya.
+Berdasarkan latar belakang tersebut, penelitian ini akan mencoba untuk menjawab beberapa pertanyaan penelitian, yaitu
+\begin{enumerate}
+\item Bagaimana proses pemetaan dari ontologi kepada \textit{web service}?
+\item Apakah dapat dikembangkan sebuah program \textit{adaptor} yang akan melakukan pemetaan dari zotonic kepada \textit{web service} secara otomatis?
+\end{enumerate}
+%-----------------------------------------------------------------------------%
+\section{Tujuan Penelitian}
+%-----------------------------------------------------------------------------%
+Tujuan dari penelitian ini adalah untuk mengembangkan sebuah program yang dapat menghubungkan antara \textit{web services} dan Zotonic sehingga proses pembuatan \textit{site} pada Zotonic dapat memiliki tingkat adaptasi yang baik terhadap perubahan yang terjadi. Harapannya melalui program yang dibuat, pengembang dapat tetap fokus untuk \textit{maintain} data dan mengembangkan aplikasi, karena data sudah terjadi melalui ontologi.
 
-%-----------------------------------------------------------------------------%
-\section{Tujuan dan Manfaat Penelitian}
-%-----------------------------------------------------------------------------%
-Dibawah ini adalah contoh itemize : 
-\begin{itemize}
-\item Terimplementasinya .
-\item Menyelesaikan masalah .
-\end{itemize}
-\paragraph{}
-
-%-----------------------------------------------------------------------------%
-\section{Tahapan Penelitian}
-%-----------------------------------------------------------------------------%
-\todo{Tuliskan tujuan penelitian.}
 %-----------------------------------------------------------------------------%
 \section{Ruang Lingkup Penelitian}
 %-----------------------------------------------------------------------------%
+
+Ruang lingkup penilitian ini antara lain:
+\begin{enumerate}
+\item Analisis pemetaan adaptor untuk menghubungkan antara ontologi dan \textit{web service}
+\item Perancangan sistem yang dapat menghubungkan antara ontologi dan \textit{web service} melalui zotonic.
+\item \textit{Refactoring} pembuatan \textit{business logic} yang sudah ada dengan memanfaatkan sistem yang dibuat
+\end{enumerate}
 
 %-----------------------------------------------------------------------------%
 \section{Sistematika Penulisan}
 %-----------------------------------------------------------------------------%
 Sistematika penulisan laporan adalah sebagai berikut:
 \begin{itemize}
-	\item Bab 1 \babSatu \\
-	\item Bab 2 \babDua \\
-	\item Bab 3 \babTiga \\
-	\item Bab 4 \babEmpat \\
-	\item Bab 5 \babLima \\
-	\item Bab 6 \babEnam \\
+	\item Bab 1 \babSatu
+	
+	Bab 1 berisi tentang informasi terkait penelitian yang dilakukan oleh penulis, dimana bab ini terdiri atas 5 subbab, yaitu latar belakang yang akan membahas kenapa dilakukan penelitian ini, perumusan masalah yang akan membahas masalah yang akan diteliti oleh penulis, tujuan penelitian yang akan menjelaskan kegunaan dari penelitian ini, ruang lingkup penelitian yang akan membahas mengenai batasan dari peneletian yang dilakukan serta sistematika penulisan.\\
+	\item Bab 2 \babDua
+	
+	Bab 2 berisi mengenai teori-teori yang digunakan\\
+	\item Bab 3 \babTiga 
+	
+	Bab 3 berisi penjelasan mengenai rancangan dari sistem yang akan diimplementasikan, dimana bab ini terdiri atas 2 subbab, yaitu rancangan integrasi ontologi dan web service yang akan membahas secara garis besar bagaimana program ini akan berjalan secara keseluruhan serta rancangan \textit{adaptor} yang akan membahas bagaimana \textit{adaptor} yang dibuat nantinya akan bekerja.\\
+	
+	\item Bab 4 \babEmpat
+	
+	Bab 4 berisi penjelasan mengenai impelementasi yang dilakukan oleh penulis untuk membuat \textit{adaptor}. \\
+	
+	\item Bab 5 \babLima
+	
+	Bab 5 berisi hasil eksperimen yang telah dilakukan oleh penulis. \\
+	\item Bab 6 \babEnam
+	
+	Bab 6 berisi kesimpulan yang didapat dari penelitian serta saran yang diajukan untuk penelitian berikutnya.
 \end{itemize}
-
-\todo{Tambahkan penjelasan singkat mengenai isi masing-masing bab.}

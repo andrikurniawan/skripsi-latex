@@ -11,39 +11,38 @@
 \BOOKMARK [0][-]{chapter.1}{1 Pendahuluan}{}% 11
 \BOOKMARK [1][-]{section.1.1}{1.1 Latar Belakang}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.2}{1.2 Perumusan Masalah}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.3}{1.3 Tujuan dan Manfaat Penelitian}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.4}{1.4 Tahapan Penelitian}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.5}{1.5 Ruang Lingkup Penelitian}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.6}{1.6 Sistematika Penulisan}{chapter.1}% 17
-\BOOKMARK [0][-]{chapter.2}{2 Tinjauan Pustaka}{}% 18
-\BOOKMARK [1][-]{section.2.1}{2.1 X si sesuatu}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Pengertian X}{section.2.1}% 20
-\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Klasifikasi X}{section.2.1}% 21
-\BOOKMARK [1][-]{section.2.2}{2.2 Section in Eng}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Pengertian Section in Eng}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Next Subsection Section in Eng}{section.2.2}% 24
-\BOOKMARK [1][-]{section.2.3}{2.3 Keatas lagi}{chapter.2}% 25
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Masuk lagi}{section.2.3}% 26
-\BOOKMARK [0][-]{chapter.3}{3 Rancangan}{}% 27
-\BOOKMARK [1][-]{section.3.1}{3.1 Rancangan Integrasi Ontologi dan Web Service}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.2}{3.2 Desain Adaptor}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 30
-\BOOKMARK [1][-]{section.4.1}{4.1 Implementasi Adaptor}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Refactoring Business Logic}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{4.3 Implementasi Pemanggilan Web Service}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.4}{4.4 Implementasi Rules}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 35
-\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 38
-\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 39
-\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 40
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 42
-\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 43
-\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 45
-\BOOKMARK [0][-]{section*.26}{LAMPIRAN}{}% 46
-\BOOKMARK [0][-]{section*.27}{Lampiran 1 : Kode Sumber Model ABS}{}% 47
-\BOOKMARK [0][-]{section*.29}{Lampiran 2 : Kode Sumber rules}{}% 48
-\BOOKMARK [0][-]{section*.31}{Lampiran 8 : UAT dan Kuesioner}{}% 49
+\BOOKMARK [1][-]{section.1.3}{1.3 Tujuan Penelitian}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.4}{1.4 Ruang Lingkup Penelitian}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.5}{1.5 Sistematika Penulisan}{chapter.1}% 16
+\BOOKMARK [0][-]{chapter.2}{2 Tinjauan Pustaka}{}% 17
+\BOOKMARK [1][-]{section.2.1}{2.1 X si sesuatu}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Pengertian X}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Klasifikasi X}{section.2.1}% 20
+\BOOKMARK [1][-]{section.2.2}{2.2 Section in Eng}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Pengertian Section in Eng}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Next Subsection Section in Eng}{section.2.2}% 23
+\BOOKMARK [1][-]{section.2.3}{2.3 Keatas lagi}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Masuk lagi}{section.2.3}% 25
+\BOOKMARK [0][-]{chapter.3}{3 Rancangan}{}% 26
+\BOOKMARK [1][-]{section.3.1}{3.1 Rancangan Integrasi Ontologi dan Web Service}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{3.2 Desain Adaptor}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 29
+\BOOKMARK [1][-]{section.4.1}{4.1 Implementasi Adaptor}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Pemanggilan Adaptor Melalui Template Engine}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Pemanggilan Adaptor Melalui Model Lain}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Refactoring Business Logic}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 34
+\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 37
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 38
+\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 41
+\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 42
+\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 44
+\BOOKMARK [0][-]{section*.24}{LAMPIRAN}{}% 45
+\BOOKMARK [0][-]{section*.25}{Lampiran 1 : Kode Sumber Model ABS}{}% 46
+\BOOKMARK [0][-]{section*.27}{Lampiran 2 : Kode Sumber rules}{}% 47
+\BOOKMARK [0][-]{section*.29}{Lampiran 8 : UAT dan Kuesioner}{}% 48
