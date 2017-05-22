@@ -15,35 +15,43 @@
 \contentsline {section}{\numberline {1.4}Ruang Lingkup Penelitian}{3}{section.1.4}
 \contentsline {section}{\numberline {1.5}Sistematika Penulisan}{3}{section.1.5}
 \contentsline {chapter}{\numberline {2}\uppercase {Tinjauan Pustaka}}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}X si sesuatu}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Pengertian X}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Klasifikasi X}{6}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.1}Ontologi}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Zotonic}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}\textit {Template Engine}}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}\textit {Web Services}}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}\textit {Software Product Line}}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}X si sesuatu}{5}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Pengertian X}{5}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Klasifikasi X}{6}{subsection.2.6.2}
 \contentsline {paragraph}{}{7}{section*.11}
-\contentsline {section}{\numberline {2.2}\textit {Section in Eng}}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Pengertian \textit {Section in Eng}}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Next Subsection \textit {Section in Eng}}{7}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}\textit {Keatas lagi}}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}\textit {Masuk lagi}}{8}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.7}\textit {Section in Eng}}{7}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Pengertian \textit {Section in Eng}}{7}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Next Subsection \textit {Section in Eng}}{7}{subsection.2.7.2}
+\contentsline {section}{\numberline {2.8}\textit {Keatas lagi}}{7}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}\textit {Masuk lagi}}{8}{subsection.2.8.1}
 \contentsline {chapter}{\numberline {3}\uppercase {Rancangan}}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rancangan Integrasi Ontologi dan \textit {Web Service}}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Desain \textit {Adaptor}}{10}{section.3.2}
 \contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{12}{chapter.4}
 \contentsline {section}{\numberline {4.1}Implementasi \textit {Adaptor}}{12}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Pemanggilan \textit {Adaptor} Melalui \textit {Template Engine}}{13}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model Lain}{16}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Implementasi \textit {Refactoring Business Logic}}{17}{section.4.2}
-\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{18}{chapter.5}
-\contentsline {section}{\numberline {5.1}Implementasi \textit {Cluster}}{18}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Instalasi \textit {Frontend}}{18}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Konfigurasi}{20}{subsection.5.1.2}
-\contentsline {paragraph}{}{20}{section*.21}
-\contentsline {subsubsection}{\numberline {5.1.2.1}semakin ke dalam}{21}{subsubsection.5.1.2.1}
-\contentsline {section}{\numberline {5.2}Pengujian}{21}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Kasus Uji}{21}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Kasus Uji}{22}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{23}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{23}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{23}{section.6.2}
+\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Implementasi Fungsi lookup\_rules}{16}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Implementasi Fungsi validate\_params}{18}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Implementasi Fungsi fetch\_data}{18}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Implementasi \textit {Refactoring Business Logic}}{20}{section.4.2}
+\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Implementasi \textit {Cluster}}{21}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Instalasi \textit {Frontend}}{21}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Konfigurasi}{23}{subsection.5.1.2}
+\contentsline {paragraph}{}{23}{section*.21}
+\contentsline {subsubsection}{\numberline {5.1.2.1}semakin ke dalam}{24}{subsubsection.5.1.2.1}
+\contentsline {section}{\numberline {5.2}Pengujian}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Kasus Uji}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Kasus Uji}{25}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{26}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{26}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{26}{section.6.2}
 \contentsline {chapter}{LAMPIRAN}{1}{section*.24}
 \contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.25}
 \contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.27}

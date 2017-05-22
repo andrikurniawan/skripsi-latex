@@ -27,9 +27,25 @@ Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:str
 	m_value/2,
 ]).
 \end{lstlisting}
-\end{minipage}
+\end{minipage}\\\\
 
-Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan. Sesuai dengan kebutuhannya agar \textit{adaptor} dapat dipanggil melalui \textit{template engine}, maka perlu didefinisikan terlebih dahulu bagaimana nantinya \textit{adaptor} dipanggil. Pada penelitian ini, penulis mendefinisikan untuk pemanggilan \textit{adaptor} pada \textit{template engine} dilakukan dengan membuat perintah \co{m.abs.namaFungsi[\{query param=value\}]}
+Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan. Sesuai dengan kebutuhannya agar \textit{adaptor} dapat dipanggil melalui \textit{template engine}, maka perlu didefinisikan terlebih dahulu bagaimana nantinya \textit{adaptor} dipanggil. Pada penelitian ini, penulis mendefinisikan untuk pemanggilan \textit{adaptor} pada \textit{template engine} dilakukan dengan membuat perintah \co{m.abs.namaFungsi[\{query param=value\}]}. Implementasi dari fungsi m\_find\_value yang digunakan untuk melakukan pencocokan pola akan dijelaskan pada bagian berikutnya. Untuk fungsi m\_to\_list karena pada kasus ini tidak digunakan jadi cukup diimplementasikan seperti kode \ref{lst:mtolist} berikut
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
+m_to_list(_, _Context) ->
+[].
+\end{lstlisting}
+\end{minipage}\\
+
+Sama seperti fungsi m\_to\_list, fungsi m\_value juga tidak dibutuhkan pada implementasi \textit{adaptor} sehingga dapat diimplementasikan seperti kode \ref{lst:mvalue} berikut
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Implementasi fungsi m\_value},label={lst:mvalue}]
+m_value(_, _Context) ->
+undefined.
+\end{lstlisting}
+\end{minipage}
 
 \subsection{Pemanggilan \textit{Adaptor} Melalui \textit{Template Engine}}
 
@@ -62,11 +78,52 @@ m_find_value({query, Query}, #m{value=Q} = _, _Context) when is_list(Q) ->
 m_find_value(_, _, _Context) ->
     undefined. 
 \end{lstlisting}
+\end{minipage}\\
+
+Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi tersebut. \textit{Specifications} yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan \cite{article.rebecca}. Seperti yang sudah didefinisikan bahwa pemanggilan \textit{adaptor} melalui \textit{template engine} dengan cara \co{m.abs.namaFungsi[\{query param=value\}]}, maka ketika dijalankan m\_abs akan menjalankan \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} dimana namaFungsi yang didapatkan dari hasil pemanggilan pada \textit{template engine} akan menjalankan fungsi \co{m\_find\_value(Type, \#m\{value=undefined\})} untuk yang akan mengembalikan sebuah \textit{maps} yang akan diterima kembali oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} yang menyimpan \textit{maps} hasil kembalian tersebut ke dalam variabel Q. Lalu parameter yang terdapat pada \textit{template engine} akan disimpan oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} ke dalam variabel Query.
+
+Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanjutnya akan mengambil \textit{key} yang akan dijalankan pada tabel \textit{rules}. Langkah pertama, akan diekstrak \textit{key} yang ingin dijalankan dari Q dengan cara \textit{pattern matching}. Setelah mendapatkan \textit{key} yang diinginkan, \textit{key} tersebut akan dijadikan sebagai input untuk pemanggilan fungsi lookup\_rules yang akan mengembalikan \textit{endpoint} yang akan dipanggil oleh m\_abs serta jumlah parameter dari fungsi yang akan dijalankan. Setelah mendapatkan \textit{endpoint} serta jumlah parameter dari hasil pemanggilan fungsi lookup\_rules yang berbentuk \textit{list}, \textit{list} tersebut akan diekstrak menjadi variabel Url yang menyimpan informasi \textit{endpoint} dan variabel Param yang menyimpan informasi jumlah parameter dari fungsi tersebut. Selanjutnya fungsi m\_abs akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Query yang menyimpan informasi mengenai \textit{list} dari parameter yang diberikan pada \textit{template engine}.
+
+Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi m\_find\_value akan mengembalikan \textit{error} jika hasil dari pemanggilan fungsi validate\_params bernilai false. Sebaliknya, jika hasil dari pemanggilan fungsi validate\_params bernilai true maka fungsi m\_find\_value akan memanggil fungsi fetch\_data dengan parameter berupa variabel Url dan juga Parameter \textit{Query} yang sudah dijadikan dalam bentuk \textit{json} menggunakan \co{jiffy:encode/1}. Hasil dari pemanggilan fungsi fetch\_data akan mengembalikan sebuah \textit{json} yang berisikan data yang ingin ditampilkan. Sesuai dengan rancangan \textit{web service} yang sudah dijelaskan pada bab sebelumnya, data yang ingin ditampilkan terdapat pada parameter "data" pada \textit{json} sehingga kita perlu mengambil nilai dari parameter "data" tersebut dengan cara \co{proplists:get\_value(<<"data">>, DecodeJson)} dimana \co{DecodeJson} merupakan \textit{json} hasil dari fetch\_data.
+
+\subsection{Pemanggilan \textit{Adaptor} Melalui Model}
+
+Selain dipanggil melalui \textit{template engine}, ada kebutuhan untuk memanggil \textit{adaptor} dari model lain seperti pemanggilannya pada model m\_rsc agar dapat mengirim data dari zotonic kepada \textit{web service} melalui \textit{adaptor}. Untuk itu, perlu diimplementasi sebuah fungsi baru dengan nama call\_api\_controller pada \textit{adaptor} yang dapat diakses secara langsung oleh model lain seperti berikut
+
+\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Implementasi fungsi untuk pemanggilan \textit{adaptor} dari model},label={lst:adaptormodel}]
+call_api_controller(Key, Data) ->
+	[Url, Param] = lookup_rules(Key),
+	case validate_params(Param, Data) of
+		false ->
+			[{error, "Num of Params not same"}];
+		true ->
+			lager:info("key ~p", [Data]),
+			lager:info("key ~s", [jiffy:encode({Data})]),
+			{DecodeJson} = fetch_data(binary_to_list(Url), jiffy:encode({Data})),
+			lager:info("[ABS] result ~p", [DecodeJson]),
+			case proplists:get_value(<<"status">>, DecodeJson) of
+				200 ->
+					DataResult = proplists:get_value(<<"data">>, DecodeJson),
+					lager:info("[ABS] status 200 ~p", [DataResult]);
+				201 ->
+					Message = proplists:get_value(<<"message">>, DecodeJson),
+					lager:info("[ABS] status 201 ~p", [binary_to_list(Message)]);
+				400 ->
+					Message = proplists:get_value(<<"message">>, DecodeJson),
+					lager:error("[ABS] status 400 ~p", [Message]);
+				_Other -> 
+					lager:error("[ABS] status undefined ~p", [_Other])
+			end  
+	end.
+\end{lstlisting}
 \end{minipage}
 
-Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan. Seperti yang sudah didefinisikan bahwa pemanggilan \textit{adaptor} melalui \textit{template engine} dengan cara \co{m.abs.namaFungsi[\{query param=value\}]}, maka ketika dijalankan m\_abs akan menjalankan \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} dimana namaFungsi yang didapatkan dari hasil pemanggilan pada \textit{template engine} akan menjalankan fungsi \co{m\_find\_value(Type, \#m\{value=undefined\})} untuk yang akan mengembalikan sebuah \textit{maps} yang akan diterima kembali oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} yang menyimpan \textit{maps} hasil kembalian tersebut ke dalam variabel Q. Lalu parameter yang terdapat pada \textit{template engine} akan disimpan oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} ke dalam variabel Query.
+Pada kode \ref{lst:adaptormodel}, fungsi call\_api\_controller menerima dua parameter yaitu \textit{Key} dan Data. \textit{Key} merupakan nama fungsi yang ingin dipanggil oleh \textit{web service}, dan Data merupakan data yang akan dikirim ke \textit{web service}.
 
-Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanjutnya akan mengambil \textit{key} yang akan dijalankan pada tabel \textit{rules}. Langkah pertama, akan diekstrak \textit{key} yang ingin dijalankan dari Q dengan cara \textit{pattern matching}. Setelah mendapatkan \textit{key} yang diinginkan, \textit{key} tersebut akan dijadikan sebagai input untuk pemanggilan fungsi lookup\_rules yang akan mengembalikan \textit{endpoint} yang akan dipanggil oleh m\_abs serta jumlah parameter dari fungsi yang akan dijalankan. Fungsi lookup\_rules sendiri merupakan fungsi yang membaca berkas rules.txt dan mengembalikan \textit{list} yang berisikan \textit{endpoint} dan jumlah parameter dari \textit{key} yang diberikan sebagai \textit{input}. Adapun implementasi dari fungsi lookup\_rules sebagai berikut
+\subsection{Implementasi Fungsi lookup\_rules}
+
+Fungsi lookup\_rules merupakan fungsi yang membaca berkas rules.txt dan mengembalikan \textit{list} yang berisikan \textit{endpoint} dan jumlah parameter dari \textit{key} yang diberikan sebagai \textit{input}. Adapun implementasi dari fungsi lookup\_rules sebagai berikut
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Implementasi fungsi lookup\_rules},label={lst:lookuprules}]
@@ -101,7 +158,9 @@ Pada kode \ref{lst:lookuprules}, dapat dilihat bahwa fungsi lookup\_rules akan m
 \end{lstlisting}
 \end{minipage}
 
-Setelah mendapatkan \textit{endpoint} serta jumlah parameter dari hasil pemanggilan fungsi lookup\_rules yang berbentuk \textit{list}, \textit{list} tersebut akan diekstrak menjadi variabel Url yang menyimpan informasi \textit{endpoint} dan variabel Param yang menyimpan informasi jumlah parameter dari fungsi tersebut. Setelah mendapatkan informasi jumlah parameter, selanjutnya fungsi m\_abs akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Query yang menyimpan informasi mengenai \textit{list} dari parameter yang diberikan pada \textit{template engine}. Implementasi dari fungsi validate\_params dapat dilihat sebagai berikut
+\subsection{Implementasi Fungsi validate\_params}
+
+Implementasi dari fungsi validate\_params dapat dilihat sebagai berikut
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Implementasi fungsi validate\_params},label={lst:validateparams}]
 validate_params(Param, Query) ->
@@ -116,21 +175,28 @@ end.
 
 Pada kode \ref{lst:validateparams}, fungsi validate\_params akan mengembalikan boolean hasil pengecekan jumlah parameter yang didapatkan dari tabel \textit{rules} dan jumlah parameter yang terdapat pada \textit{list} dari \textit{Query}. Kembalikan \textit{true} jika jumlah keduanya sama, dan kembalikan \textit{false} jika jumlahnya tidak sama.
 
-\begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
-m_to_list(_, _Context) ->
-[].
-\end{lstlisting}
-\end{minipage}
+\subsection{Implementasi Fungsi fetch\_data}
+
+Adapun implementasi dari fungsi fetch\_data sebagai berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m\_value},label={lst:mvalue}]
-m_value(_, _Context) ->
-undefined.
+\begin{lstlisting}[caption={Implementasi fungsi fetch\_data},label={lst:fetchdata}]
+-spec fetch_data(Url, Query) -> list() when
+	Url:: list(),
+    Query:: list().
+fetch_data(_,[]) ->
+    [{error, "Params missing"}];
+fetch_data("",_) ->
+	[{error, "Url missing"}];
+fetch_data(Url, Query) ->
+	    case post_page_body(Url, Query) of
+	        {error, Error} ->
+	            [{error, Error}];
+	        Json ->     
+	            jiffy:decode(Json)
+end.
 \end{lstlisting}
 \end{minipage}
-
-\subsection{Pemanggilan \textit{Adaptor} Melalui Model Lain}
 
 Seperti pada gambar, tabel juga dapat diberi label dan caption. 
 Caption pada tabel terletak pada bagian atas tabel. 
