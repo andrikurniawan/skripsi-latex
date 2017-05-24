@@ -1,138 +1,65 @@
 %-----------------------------------------------------------------------------%
 \chapter{\babDua}
 %-----------------------------------------------------------------------------%
-Bab ini berisi .... Pada sub-bab \ref{cha:kompar} akan dijelaskan dasar-dasar ...
+Bab ini berisi tentang tinjauan pustaka yang terkait dengan penelitian. Bab ini akan menjelaskan mengenai ontologi, zotonic, dan \textit{software product line}.
 %-----------------------------------------------------------------------------%
 \section{Ontologi}
 %-----------------------------------------------------------------------------%
+	
+Ontologi merupakan bagian yang paling mendasar dari web semantik. Ontologi
+adalah sebuah deskripsi formal yang eksplisit tentang kelas (domain atau disebut juga sebagai \textit{concepts}), relasi, dan \textit{property} dari setiap domain, yang biasanya telah terdefinis secara baik \citep{hopkins_powell_2015}. Menurut \cite{ontologydevelopment}, pengembangan ontologi perlu dilakukan karena beberapa alasan berikut ini.
+
+\begin{enumerate}
+\item Berbagi pemahaman umum terkait struktur dari informasi diantara manusia ataupun \textit{software agents}.
+\item Menggunakan kembali pengetahuan dari kelas.
+\item Membuat asumsi terkait kelas tersampaikan secara eksplisit.
+\item Memisahkan pengetahuan tentang kelas dari pengetahuan secara operasional.
+\item Menganalisa pengetahuan tentang kelas.
+\end{enumerate}
+
+Berbagi pemahaman umum terkait struktur dari informasi merupakan satu dari beberapa tujuan utama pada pengembangan ontologi \citep{paper.gruber}. Dengan adanya pemahaman terkait struktur dari informasi yang diperoleh, sebuah \textit{software agents} dapat mengekstrak dan mengumpulkan informasi yang diperoleh dari berbagai layanan yang berbeda namun menggunakan dasar ontologi yang sama. Selain dapat memperoleh informasi, dengan menggunakan struktur ontologi yang cenderung sama maka sebuah ontologi dapat digunakan kembali untuk kasus yang cenderung sama atau mirip sehingga dapat melakukan penghematan dana maupun waktu.
+
+Ontologi terdiri dari beberapa komponen yaitu kelas, atribut, relasi. Ketika membuat ontologi, kelas merupakan komponen yang harus dibuat pertama kali karena kelas merupakan komponen utama dari ontologi. Kelas atau disebut juga domain, merupakan kumpulan data pada ontologi yang memiliki sebuah nama yang deskriptif untuk menggambarkan data tersebut. Salah satu contoh dari kelas adalah sebagai berikut
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\textwidth]
+	{pics/domain.jpg}
+	\caption{Contoh Kelas pada Ontologi}
+	\label{fig:class}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:class}, Program dan \textit{Donation} merupakan salah satu contoh dari kelas (disebut sebagai \textit{thing} pada \textit{software} protege). Program merupakan kumpulan data mengenai kegiatan yang dilakukan sedangkan \textit{Donation} merupakan kumpulan data mengenai donasi terhadap suatu program. Kelas Program dan \textit{Donation} membutuhkan atribut yang akan menjelaskan tentang kelas tersebut sehingga perlu didefinisikan apa yang menjadi atribut dari kelas tersebut. Pada penelitian ini, penulis menggunakan ontologi yang sudah ada yaitu ontologi \textit{charity organization} dimana kelas Program memiliki atribut name dan total sedangkan kelas \textit{Donation} memiliki atribut \textit{amount}. Pada gambar \pic~\ref{fig:class}, belum terdapat keterhubungan diantara kelas Program dan \textit{Donation} sehingga perlu membuat komponen terakhir yaitu relasi. Setiap relasi harus dapat menggambarkan keterhubungan dari kelas yang ada. Pada ontologi \textit{charity organization} yang digunakan, kelas Program dan \textit{Donation} dihubungkan menggunakan relasi \textit{Channeled through} seperti gambar berikut
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]
+	{pics/relationClass.jpg}
+	\caption{Contoh Relasi pada Ontologi}
+	\label{fig:relationClass}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada gambar \pic~\ref{fig:relationClass}, dapat dilihat bahwa kelas \textit{Donation} dan kelas Program dihubungkan oleh relasi \textit{Channeled through} yang berarti suatu donasi dapat disalurkan kepada suatu program. Relasi antar keduanya digambarkan sebagai sebuah edge pada graf ontologi. 
+
+Selain memiliki tiga komponen yang telah disebutkan diatas, pada ontologi juga terdapat struktur hierarki yang dapat dimiliki oleh suatu kelas. Struktur hierariki ini menggambarkan tingkatan dari suatu kelas. Kelas yang memiliki tingkatan lebih tinggi biasanya merupakan kelas yang bersifat lebih umum dari kelas-kelas yang memiliki tingkatan lebih rendah dari dirinya. Sebagai contoh, kelas Hewan memiliki tingkatan yang lebih daripada kelas Mamalia dan juga kelas Reptil karena mamalia dan reptil merupakan bagian dari hewan. Hal ini dapat dilihat pada \pic~\ref{fig:subClass} dimana kelas \textit{EventualProgram} memiliki tingkatan yang lebih rendah dari kelas Program atau disebut dengan \textit{subclass}. Untuk kelas yang memiliki tingkatan yang lebih rendah dari kelas diatasnya, kelas tersebut akan mewarisi semua atribut atau properti yang terdapat pada kelas yang lebih tinggi dari dirinya. Sebagai contoh, kelas Program memiliki atribut \textit{name} dan total sehingga kelas \textit{ContinuousProgram, EventualProgram serta PeriodicProgram} akan memiliki atribut \textit{name} dan total juga.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/subClass.jpg}
+	\caption{Contoh Struktur Hierarki}
+	\label{fig:subClass}
+\end{figure}
+\vspace{-0.3cm}
+
+Agar ontologi dapat dipahami oleh komputer, ontologi tersebut harus direpresentasikan dalam bentuk yang dapat dibaca oleh komputer salah satunya adalah OWL. \textit{Ontoloy Web Language} (OWL) merupakan versi RDFS yang memiliki kosa kata dan \textit{rules} yang lebih ketat sehingga OWL lebih mudah dipahami oleh komputer karena dapat lebih menggambarkan ontologi yang dibuat \citep{owl.overview}. Pada penelitian ini, digunakan setidaknya tiga elemen dari OWL yaitu \textit{class, datatype property} serta \textit{object property}. \textit{Class} akan menggambarkan kelas dari ontologi, \textit{datatype property} akan menggambarkan atribut dari kelas, serta \textit{object property} akan menggambarkan relasi antar suatu kelas dengan kelas lainnya.
 %-----------------------------------------------------------------------------%
 \section{Zotonic}
 %-----------------------------------------------------------------------------%
-%-----------------------------------------------------------------------------%
-\section{\textit{Template Engine}}
-%-----------------------------------------------------------------------------%
-%-----------------------------------------------------------------------------%
-\section{\textit{Web Services}}
-%-----------------------------------------------------------------------------%
+	Zotonic merupakan web yang bersifat \textit{open source}, \textit{real-time web framework}, dan sekaligus sebagai \textit{Content Management System} (CMS) yang dibangun menggunakan bahasa pemrograman erlang \citep{zotonic.overview}. Selain merupakan sebuah CMS dan \textit{framework}, Zotonic juga merupakan sebuah web server yang dapat menjalankan web langsung tanpa bantuan web server seperti Apache dan Nginx.
 %-----------------------------------------------------------------------------%
 \section{\textit{Software Product Line}}
 %-----------------------------------------------------------------------------%
-%-----------------------------------------------------------------------------%
-\section{X si sesuatu}\label{cha:kompar}
-%-----------------------------------------------------------------------------%
-Dokumen \latex~sangat mudah, seperti halnya membuat dokumen teks biasa. Ada beberapa perintah yang diawali dengan tanda '\bslash'. Seperti perintah \bslash\bslash~yang digunakan untuk memberi baris baru. 
-Perintah tersebut juga sama dengan perintah \bslash newline. Pada bagian ini akan sedikit dijelaskan cara manipulasi teks dan perintah-perintah \latex~yang mungkin akan sering digunakan. 
-Jika ingin belajar hal-hal dasar mengenai \latex, silahkan kunjungi: 
-\begin{itemize}
-	\item \url{http://frodo.elon.edu/tutorial/tutorial/}, atau
-	\item \url{http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/}
-\end{itemize}
-%-----------------------------------------------------------------------------%
-\subsection{Pengertian X}
-%-----------------------------------------------------------------------------%
-Setiap gambar dapat diberikan caption dan diberikan label. Label dapat digunakan untuk menunjuk gambar tertentu. Jika posisi gambar berubah, maka nomor gambar juga akan diubah secara 
-otomatis. Begitu juga dengan seluruh referensi yang menunjuk pada gambar tersebut. 
-
-Contoh sederhana adalah \pic~\ref{fig:exmasalahparalel}. Silahkan lihat code \latex~dengan nama bab2-landasan-teori.tex untuk melihat kode lengkapnya. Harap diingat bahwa caption untuk gambar selalu terletak dibawah gambar. 
-
-Dibawah adda figure, jangn lupa dimention dengan \ref{fig:exmasalahparalel}. 
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\textwidth]
-		{pics/parallelProblem.png}
-	\caption{Contoh masalah yang dikerjakan secara paralel}
-	\label{fig:exmasalahparalel}
-\end{figure}
-\vspace{-0.8cm}
-\begin{center}
-{\small Sumber gambar: \citep{net.oxford}}
-\end{center}
-
-%-----------------------------------------------------------------------------%
-\subsection{Klasifikasi X}
-%-----------------------------------------------------------------------------%
-Figure dalam enum dan dua sitasi sekaligus \citep{book.buyya,book.sterling-jones} :  
-\begin{enumerate}
-\item \bi{Bold Italic} \\
-Penjelasan....... Untuk gambarannya dapat dilihat di Gambar \ref{fig:neumann}.
-
-\begin{figure}
-	\centering
-	\includegraphics[height=0.65\textwidth,width=0.6\textwidth]
-		{pics/neumann.pdf}
-	\caption{Arsitektur klasik \f{von Neumann}}
-	\label{fig:neumann}
-\end{figure}
-\vspace{-1.2cm}
-\begin{center}
-{\small Sumber gambar terinspirasi dari: \citep{buku.pressman}}
-\end{center} 
-
-\item \bi{Sesuatu banget} \\
-Penjelasan.......
-\end{enumerate}
-\paragraph{}
-%-----------------------------------------------------------------------------%
-\section{\f{Section in Eng}}
-%-----------------------------------------------------------------------------%
-Hal pertama yang mungkin ditanyakan adalah bagaimana membuat huruf tercetak tebal, miring, atau memiliki garis bawah. 
-Pada Texmaker, Anda bisa melakukan hal ini seperti halnya saat mengubah dokumen dengan LO Writer. 
-Namun jika tetap masih tertarik dengan cara lain, ini dia: 
-
-\begin{itemize}
-	\item \bo{Bold} \\
-		Gunakan perintah \bslash textbf$\lbrace\rbrace$ atau 
-		\bslash bo$\lbrace\rbrace$. 
-	\item \f{Italic} \\
-		Gunakan perintah \bslash textit$\lbrace\rbrace$ atau 
-		\bslash f$\lbrace\rbrace$. 
-	\item \underline{Underline} \\
-		Gunakan perintah \bslash underline$\lbrace\rbrace$.
-	\item $\overline{Overline}$ \\
-		Gunakan perintah \bslash overline. 
-	\item $^{superscript}$ \\
-		Gunakan perintah \bslash $\lbrace\rbrace$. 
-	\item $_{subscript}$ \\
-		Gunakan perintah \bslash \_$\lbrace\rbrace$. 
-\end{itemize}
-
-Perintah \bslash f dan \bslash bo hanya dapat digunakan jika package 
-uithesis digunakan. 
-%-----------------------------------------------------------------------------%
-\subsection{Pengertian \f{Section in Eng}}
-%-----------------------------------------------------------------------------%
-
-%-----------------------------------------------------------------------------%
-\subsection{Next Subsection \f{Section in Eng}}
-%-----------------------------------------------------------------------------%
-
-%-----------------------------------------------------------------------------%
-\section{\f{Keatas lagi}}
-%-----------------------------------------------------------------------------%
-Contoh cite yang ga ada \cite{gaib}. Cite author \citeauthor{article.rebecca},cite tahun \citeyear{article.treese}, cite mention \cite{adin.experiment}, dan cite di akhir kalimat \citep{techreport.nist}.
-%-----------------------------------------------------------------------------%
-\subsection{\f{Masuk lagi}}
-%-----------------------------------------------------------------------------%
-Footnote example nih : MPICH \footnote{\url{http://www.mpich.org/}}, LAM/MPI \footnote{\url{http://www.lam-mpi.org/}}, dan OpenMPI \footnote{\url{www.open-mpi.org}} \citep{article.mcguire}. MPI-3 sedang dalam tahap perencanaan \footnote{\url{http://meetings.mpi-forum.org/MPI_3.0_main_page.php}}. Fungsi-fungsi tersebut berada di tabel \ref{tab:mpifund}. (Contoh tabel).
-
-\begin{table}
-	\centering
-	\caption{Fungsi fundamental MPI}
-	\label{tab:mpifund}
-	\begin{tabular}{|c|c|c|}
-	\hline
-	\rowcolor{headertbl}	
-	\hline No. & Nama Fungsi & Penjelasan \\ 
-	\hline 1 & MPI\_Init & Memulai kode MPI \\ 
-	\hline 2 & MPI\_Finalize & Mengakhiri kode MPI \\ 
-	\hline 3 & MPI\_Comm\_size & Menentukan jumlah proses \\ 
-	\hline 4 & MPI\_Comm\_rank & Menentukan label proses \\ 
-	\hline 5 & MPI\_Send & Mengirim pesan \\ 
-	\hline 6 & MPI\_Recv & Menerima pesan \\ 
-	\hline
-	\end{tabular}
-\end{table}
-\begin{center}
-{\small Sumber tabel: taro sitasi disini, if i were u}
-\end{center}
+	\todo{Jelasin SPL itu apa.}

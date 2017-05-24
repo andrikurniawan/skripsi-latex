@@ -154,7 +154,7 @@ end.
 \chapter*{Lampiran 2 : Kode Sumber rules}
 %-----------------------------------------------------------------------------%
 \section*{rules.txt}
-\begin{lstlisting}[caption={Berkas \co{compute.xml}},label={lst:excomp},language=XML]
+\begin{lstlisting}[caption={Berkas \co{compute.xml}},label={lst:excomp}]
 {
 	"createProgram": ["http://54.169.128.6:8080/abs/program/create", 2],
 	"createDonation": ["http://54.169.128.6:8080/abs/donation/create", 4],
@@ -167,74 +167,504 @@ end.
 \end{lstlisting}
 
 %-----------------------------------------------------------------------------%
-\addChapter{Lampiran 8 : UAT dan Kuesioner}
+\addChapter{Lampiran 3 : Kode Sumber \textit{Web Service}}
+\chapter*{Lampiran 3 : Kode Sumber \textit{Web Service}}
 %-----------------------------------------------------------------------------%
-\begin{landscape}
-\chapter*{Lampiran 8 : UAT dan Kuesioner}
-\begin{longtable}{|c|p{7cm}|p{2.5cm}|p{3.5cm}|p{3.3cm}|p{1.8cm}|}
-\caption{Tabel UAT dan Kuesioner} \label{tab:uattbl}\\
-\hline
-No. & \multicolumn{1}{c|}{Langkah Penggunaan} & Fitur Berjalan & Tingkat Kemudahan (1-5) & Tingkat Kepuasan (1-5) & Saran / Komentar \\ 
-\cline{3-5} & & Berhasil /Tidak & 1:Sangat sulit ; \hspace{100pt} 5:sangat mudah & 1 : Sangat kecewa ; 5 : sangat puas &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Login} \\ \hline
-1.1 & Pengguna berada pada halaman depan torqace &  &  &  &  \\ \hline
-1.2 & Pengguna memasukkan username dan password pada field yang telah disediakan.Kemudian menekan tombol 'login' &  &  &  &  \\ \hline
-1.3 & Apabila Sukses, maka pengguna masuk ke dalam sistem dan dihadapkan pada menu utama &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Register} \\ \hline
-2.1 & Pengguna berada pada halaman registrasi pengguna torqace &  &  &  &  \\ \hline
-2.2 & Pengguna memasukkan username,password, dan email pada field yang telah disediakan. Kemudian menekan tombol 'submit' &  &  &  &  \\ \hline
-2.3 & Sistem akan mengonfirmasi masukan, dan akan mengirimkan email untuk memberitahu pengguna apabila proses pendaftaran telah selesai &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Logout} \\ \hline
-3.1 & Pengguna memilih menu untuk melakukan logout &  &  &  &  \\ \hline
-3.2 & Sistem akan mengeluarkan pengguna, dan pengguna tidak dapat menggunakan fitur-fitur utama aplikasi &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Upload Job Sederhana} \\ \hline
-4.1 & Pengguna memilih menu upload file/project pada menu utama &  &  &  &  \\ \hline
-4.2 & Pengguna memilih pilihan 'single file' pada tipe project &  &  &  &  \\ \hline
-4.3 & Pengguna memilih berkas yang akan diunggah, mengisi label, dan menentukan apakah akan menimpa project sebelumnya dengan nama yang sama atau tidak &  &  &  &  \\ \hline
-4.4 & Pengguna menekan tombol 'submit' dan mengonfirmasi  &  &  &  &  \\ \hline
-4.5 & Sistem akan menampilkan informasi terkait berkas yang diupload &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Upload Job Compressed} \\ \hline
-5.1 & Pengguna memilih menu upload file/project pada menu utama &  &  &  &  \\ \hline
-5.2 & Pengguna memilih pilihan 'compressed files' pada tipe project &  &  &  &  \\ \hline
-5.3 & Pengguna memilih arsip yang akan diunggah, mengisi label, menentukan akan melakukan make atau tidak dan menentukan apakah akan menimpa project sebelumnya dengan nama yang sama atau tidak &  &  &  &  \\ \hline
-5.4 & Pengguna menekan tombol 'submit' dan mengonfirmasi  &  &  &  &  \\ \hline
-5.5 & Sistem akan menampilkan informasi terkait berkas yang diupload dan diekstrak. Keluaran make juga akan ditampilkan bila dipilih &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Upload Array Job} \\ \hline
-6.1 & Pengguna memilih menu upload file/project pada menu utama &  &  &  &  \\ \hline
-6.2 & Pengguna memilih pilihan 'array' pada tipe project &  &  &  &  \\ \hline
-6.3 & Pengguna memilih arsip-arsip yang akan diunggah, mengisi label, menentukan akan melakukan make atau tidak dan menentukan apakah akan menimpa project sebelumnya dengan nama yang sama atau tidak &  &  &  &  \\ \hline
-6.4 & Pengguna menekan tombol 'submit' dan mengonfirmasi  &  &  &  &  \\ \hline
-6.5 & Sistem akan menampilkan informasi terkait berkas yang diupload dan diekstrak. Keluaran make juga akan ditampilkan bila dipilih &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Melihat antrian pada queue} \\ \hline
-7.1 & Pengguna memilih menu  queue status pada menu utama &  &  &  &  \\ \hline
-7.2 & Pengguna berada pada halaman yang berisi informasi queue &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Melihat detil antrian} \\ \hline
-8.1 & Dari halaman status queue, pengguna memilih job tertentu &  &  &  &  \\ \hline
-8.2 & Informasi mengenai detil job tersebut ditampilkan dalam bentuk tabel &  &  &  &  \\ \hline
-8.2.1 & Apabila job tersebut bukan milik pengguna, maka sistem akan melarang pengguna melihat informasi detil suatu job &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Membuat script job} \\ \hline
-9.1 & Pengguna memilih untuk melakukan 'generate script' baik dari laporan upload berkas, atau dari penjelajahan direktori &  &  &  &  \\ \hline
-9.2 & Pengguna mengisi nama job, parameter job, dan script yang akan dijalankan.  &  &  &  &  \\ \hline
-9.3 & Pengguna mengonfirmasi konfirmasi submit job &  &  &  &  \\ \hline
-9.4 & Pengguna dapat melihat informasi script secara keseluruhan dan pesan apakah terjadi kegagalan atau tidak, serta id job yang diberikan &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Load spesifikasi job lain} \\ \hline
-10.1 & Pengguna berada pada halaman untuk membuat script &  &  &  &  \\ \hline
-10.2 & Pengguna memilih 'Load a Previous Job' &  &  &  &  \\ \hline
-10.3 & Pengguna memilih job mana yang akan dimuat dan menekan tombol 'Load' &  &  &  &  \\ \hline
-10.4 & Pengguna kembali ke halaman pembuatan script dengan spesifikasi job sebelumnya &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Menjelajah Direktori} \\ \hline
-11.1 & Pengguna memilih menu  'View File/Project'  pada menu utama &  &  &  &  \\ \hline
-11.2 & Pengguna dapat melakukan navigasi untuk masuk ke dalam direktori tertentu, atau kembali ke direktori diatasnya, dan dapat melihat terdapat berkas apa saja dalam direktori &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Menghapus Berkas/Direktori} \\ \hline
-12.1 & Pengguna berada pada halaman penjelajahan direktori &  &  &  &  \\ \hline
-12.2 & Pengguna memilih pilihan untuk menghapus berkas/direktori di samping item yang akan dihapus &  &  &  &  \\ \hline
-12.3 & Pengguna mengonfirmasi konfirmasi penghapusan &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Mengunduh Berkas/Direktori} \\ \hline
-13.1 & Pengguna berada pada halaman penjelajahan direktori &  &  &  &  \\ \hline
-13.2 & Pengguna memilih pilihan untuk mengunduh berkas/direktori di samping item yang akan dihapus &  &  &  &  \\ \hline
-\multicolumn{ 6}{|>{\columncolor{headertbl}}c|}{Use Case : Melihat Berkas} \\ \hline
-14.1 & Pengguna berada pada halaman penjelajahan direktori &  &  &  &  \\ \hline
-14.2 & Pengguna memilih berkas yang berupa berkas teks &  &  &  &  \\ \hline
-14.3 & Sistem akan menampilkan konten dari berkas tersebut &  &  &  &  \\ \hline
-\end{longtable}
-\end{landscape}
+\section*{DonationController.java}
+\begin{lstlisting}[caption={Berkas DonationController.java},label={lst:DonationController},language=Java]
+package com.skripsi.Controller;
+
+import com.skripsi.Domain.DonationEntity;
+import com.skripsi.Domain.Wrapper;
+import com.skripsi.Service.DonationService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+
+@RestController
+@RequestMapping("/donation")
+public class DonationController {
+
+	@Autowired
+	private DonationService donationService;
+	
+	@RequestMapping(path = "/create", method = RequestMethod.POST)
+	public Wrapper create(@RequestBody DonationEntity donationEntity){
+		DonationEntity donation = new DonationEntity();
+		donation.setId(donationEntity.getId());
+		donation.setName(donationEntity.getName());
+		donation.setAmount(donationEntity.getAmount());
+		donation.setpId(donationEntity.getpId());
+		DonationEntity hasil = donationService.save(donation);
+		
+		if(hasil == null){
+			return new Wrapper(400, "Gagal menyimpan donasi baru", null);
+		}
+		return new Wrapper(201, "Donasi berhasil disimpan", donation);
+	}
+	
+	@RequestMapping(path = "/update", method = RequestMethod.POST)
+	public Wrapper update(@RequestBody DonationEntity donationEntity) {
+		DonationEntity donation = donationService.findById(donationEntity.getId());
+		donation.setName(donationEntity.getName());
+		donation.setAmount(donationEntity.getAmount());
+		donation.setpId(donationEntity.getpId());
+		DonationEntity hasil = donationService.save(donationEntity);
+		
+		if(hasil == null){
+			return new Wrapper(400, "Gagal memperbaharui donasi", null);
+		}
+		return new Wrapper(201, "Donasi berhasil diperbaharui", donation);
+	}
+	
+	@RequestMapping(path = "/delete", method = RequestMethod.POST)
+	public Wrapper delete(@RequestBody DonationEntity donationEntity){
+		int result = donationService.delete(donationEntity.getId());
+		if (result == 0){
+			return new Wrapper(400, "Gagal menghapus program", null);
+		}
+		return new Wrapper(201, "Berhasil menghapus program", result);
+	}
+}
+
+
+\end{lstlisting}
+
+\newpage
+\section*{ProgramController.java}
+\begin{lstlisting}[caption={Berkas ProgramController.java},label={lst:ProgramController},language=Java]
+package com.skripsi.Controller;
+
+import com.skripsi.Domain.ProgramEntity;
+import com.skripsi.Domain.Wrapper;
+import com.skripsi.Service.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+
+@RestController
+@RequestMapping("/program")
+public class ProgramController {
+
+	@Autowired
+	private ProgramService programService;
+	
+	@Autowired
+	private DonationService donationService;
+
+	@RequestMapping(path = "/create", method = RequestMethod.POST)
+	public Wrapper create(@RequestBody ProgramEntity programEntity){
+		ProgramEntity program = new ProgramEntity();
+		program.setId(programEntity.getId());
+		program.setName(programEntity.getName());
+		ProgramEntity hasil = programService.save(program);
+		
+		if(hasil == null){
+			return new Wrapper(400, "Gagal menyimpan program baru", null);
+		}
+		return new Wrapper(201, "Program berhasil disimpan", program);
+	}
+
+	@RequestMapping(path = "/update", method = RequestMethod.POST)
+	public Wrapper update(@RequestBody ProgramEntity programEntity){
+		ProgramEntity program = programService.findById(programEntity.getId());
+		program.setName(programEntity.getName());
+		ProgramEntity hasil = programService.save(program);
+		
+		if(hasil == null){
+			return new Wrapper(400, "Gagal memperbaharui program", null);
+		}
+		return new Wrapper(201, "Program berhasil diperbaharui", program);
+	}
+
+	@RequestMapping(path = "/delete", method = RequestMethod.POST)
+	public Wrapper delete(@RequestBody ProgramEntity programEntity){
+		int result = programService.delete(programEntity.getId());
+		if (result == 0){
+			return new Wrapper(400, "Gagal menghapus program", null);
+		}
+		return new Wrapper(201, "Berhasil menghapus program", result);
+	}
+
+	@RequestMapping(path = "/total-donation", method = RequestMethod.POST)
+	public Wrapper totalDonation(@RequestBody ProgramEntity programEntity){
+		int total = donationService.getTotalDonationOfProgram(programEntity.getId());
+		if(total < 1){
+			return new Wrapper(400, "Tidak ada donasi untuk program ini", 0);
+		}
+		return new Wrapper(200, "Berhasil", total);
+	}
+	
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{DonationEntity.java}
+\begin{lstlisting}[caption={Berkas DonationEntity.java},label={lst:DonationEntity},language=Java]
+package com.skripsi.Domain;
+
+import javax.persistence.*;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+@Entity
+@Table(name = "donation", schema = "abs_program")
+public class DonationEntity {
+	private int id;
+	private String name;
+	private int amount;
+	private int pId;
+	
+	@Id
+	@Column(name = "id")
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	@Basic
+	@Column(name = "name")
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Basic
+	@Column(name = "amount")
+	public int getAmount() {
+		return amount;
+	}
+	
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	
+	@Basic
+	@Column(name = "p_id")
+	public int getpId() {
+		return pId;
+	}
+	
+	public void setpId(int pId) {
+		this.pId = pId;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		
+		DonationEntity that = (DonationEntity) o;
+		
+		if (id != that.id) return false;
+		if (amount != that.amount) return false;
+		if (pId != that.pId) return false;
+		if (name != null ? !name.equals(that.name) : that.name != null) return false;
+		
+		return true;
+	}
+	
+	@Override
+	public int hashCode() {
+		int result = id;
+		result = 31 * result + (name != null ? name.hashCode() : 0);
+		result = 31 * result + amount;
+		result = 31 * result + pId;
+		return result;
+	}
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{ProgramEntity.java}
+\begin{lstlisting}[caption={Berkas ProgramEntity.java},label={lst:ProgramEntity},language=Java]
+package com.skripsi.Domain;
+
+import javax.persistence.*;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+@Entity
+@Table(name = "program", schema = "abs_program", catalog = "")
+	public class ProgramEntity {
+	private int id;
+	private String name;
+	
+	@Id
+	@Column(name = "id")
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	@Basic
+	@Column(name = "name")
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		
+		ProgramEntity that = (ProgramEntity) o;
+		
+		if (id != that.id) return false;
+		if (name != null ? !name.equals(that.name) : that.name != null) return false;
+		
+		return true;
+	}
+	
+	@Override
+	public int hashCode() {
+		int result = id;
+		result = 31 * result + (name != null ? name.hashCode() : 0);
+		return result;
+	}
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{Wrapper.java}
+\begin{lstlisting}[caption={Berkas Wrapper.java},label={lst:Wrapper},language=Java]
+package com.skripsi.Domain;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+public class Wrapper <E> {
+	private int status;
+	private String message;
+	private E data;
+	
+	/**
+	* Returns the status of this wrapper.
+	* @return the {@code status} property
+	*/
+	public int getStatus() {
+		return status;
+	}
+	
+	/**
+	* Sets the status of this wrapper with the specified {@code status}.
+	* @param status the {@code status} for this wrapper
+	*/
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	
+	/**
+	* Returns the message of this wrapper.
+	* @return the {@code message} property
+	*/
+	public String getMessage() {
+		return message;
+	}
+	
+	/**
+	* Sets the message of this wrapper with the specified {@code message}.
+	* @param message the {@code message} for this wrapper
+	*/
+	public void setMessage(String message) { this.message = message; }
+	
+	/**
+	* Returns the aata of this wrapper.
+	* @return the {@code data} property
+	*/
+	public E getData() { return data; }
+	
+	/**
+	* Sets the data of this wrapper with the specified {@code data}.
+	* @param data the {@code data} for this wrapper
+	*/
+	public void setData(E data) { this.data = data; }
+	
+	/**
+	* Constructs a new Wrapper with the specified status, message, and data.
+	* @param status the status for this wrapper
+	* @param message the message for this wrapper
+	* @param data the data for this wrapper
+	*/
+	public Wrapper(int status, String message, E data) {
+	
+		this.status = status;
+		this.message = message;
+		this.data = data;
+	}
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{DonationRepository.java}
+\begin{lstlisting}[caption={Berkas DonationRepository.java},label={lst:DonationRepository},language=Java]
+package com.skripsi.Repository;
+
+import com.skripsi.Domain.DonationEntity;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import javax.transaction.Transactional;
+import java.util.List;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+@Repository
+public interface DonationRepository extends CrudRepository<DonationEntity, Integer> {
+	DonationEntity findById(int id);
+	List<DonationEntity> findBypId(int p_id);
+	
+	@Transactional
+	Integer deleteById(int id);
+	
+	@Query(value = "Select sum(amount) from donation where p_id = :p_id",
+	nativeQuery = true)
+	Integer getTotalDonationOfProgram(@Param("p_id") int p_id);
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{ProgramRepository.java}
+\begin{lstlisting}[caption={Berkas ProgramRepository.java},label={lst:ProgramRepository},language=Java]
+package com.skripsi.Repository;
+
+import com.skripsi.Domain.ProgramEntity;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import javax.transaction.Transactional;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+@Repository
+public interface ProgramRepository extends CrudRepository<ProgramEntity, Integer> {
+	ProgramEntity findById(int id);
+	@Transactional
+	Integer deleteById(int id);
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{DonationService.java}
+\begin{lstlisting}[caption={Berkas DonationService.java},label={lst:DonationService},language=Java]
+package com.skripsi.Service;
+
+import com.skripsi.Domain.DonationEntity;
+import com.skripsi.Repository.DonationRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+
+@Service
+public class DonationService {
+	@Autowired
+	private DonationRepository donationRepository;
+	
+	public DonationEntity findById(int id){
+		return donationRepository.findById(id);
+	}
+	
+	public int getTotalDonationOfProgram(int p_id){
+		if (donationRepository.getTotalDonationOfProgram(p_id) == null)
+			return 0;
+		else
+			return donationRepository.getTotalDonationOfProgram(p_id);
+	}
+	
+	public List<DonationEntity> findByIdProgram(int p_id){
+		return donationRepository.findBypId(p_id);
+	}
+	
+	public DonationEntity save(DonationEntity donation){
+		return donationRepository.save(donation);
+	}
+	
+	public int delete(int id){
+		return donationRepository.deleteById(id);
+	}
+}
+
+\end{lstlisting}
+
+\newpage
+\section*{ProgramService.java}
+\begin{lstlisting}[caption={Berkas ProgramService.java},label={lst:ProgramService},language=Java]
+package com.skripsi.Service;
+
+import com.skripsi.Domain.ProgramEntity;
+import com.skripsi.Repository.ProgramRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+/**
+* Created by Andri Kurniawan <andrikurniawan.id@gmail.com>
+* on 5/13/2017.
+*/
+
+@Service
+public class ProgramService {
+	@Autowired
+	private ProgramRepository programRepository;
+	
+	public ProgramEntity findById(int id){
+		return programRepository.findById(id);
+	}
+	
+	public ProgramEntity save(ProgramEntity program){
+		return programRepository.save(program);
+	}
+	
+	public int delete(int id){
+		return programRepository.deleteById(id);
+	}
+}
+
+\end{lstlisting}

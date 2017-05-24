@@ -82,7 +82,7 @@ m_find_value(_, _, _Context) ->
 
 Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi tersebut. \textit{Specifications} yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan \cite{article.rebecca}. Seperti yang sudah didefinisikan bahwa pemanggilan \textit{adaptor} melalui \textit{template engine} dengan cara \co{m.abs.namaFungsi[\{query param=value\}]}, maka ketika dijalankan m\_abs akan menjalankan \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} dimana namaFungsi yang didapatkan dari hasil pemanggilan pada \textit{template engine} akan menjalankan fungsi \co{m\_find\_value(Type, \#m\{value=undefined\})} untuk yang akan mengembalikan sebuah \textit{maps} yang akan diterima kembali oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} yang menyimpan \textit{maps} hasil kembalian tersebut ke dalam variabel Q. Lalu parameter yang terdapat pada \textit{template engine} akan disimpan oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} ke dalam variabel Query.
 
-Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanjutnya akan mengambil \textit{key} yang akan dijalankan pada tabel \textit{rules}. Langkah pertama, akan diekstrak \textit{key} yang ingin dijalankan dari Q dengan cara \textit{pattern matching}. Setelah mendapatkan \textit{key} yang diinginkan, \textit{key} tersebut akan dijadikan sebagai input untuk pemanggilan fungsi lookup\_rules yang akan mengembalikan \textit{endpoint} yang akan dipanggil oleh m\_abs serta jumlah parameter dari fungsi yang akan dijalankan. Setelah mendapatkan \textit{endpoint} serta jumlah parameter dari hasil pemanggilan fungsi lookup\_rules yang berbentuk \textit{list}, \textit{list} tersebut akan diekstrak menjadi variabel Url yang menyimpan informasi \textit{endpoint} dan variabel Param yang menyimpan informasi jumlah parameter dari fungsi tersebut. Selanjutnya fungsi m\_abs akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Query yang menyimpan informasi mengenai \textit{list} dari parameter yang diberikan pada \textit{template engine}.
+Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanjutnya akan mengambil \textit{key} yang akan dijalankan pada tabel \textit{rules}. Langkah pertama, akan diekstrak \textit{key} yang ingin dijalankan dari Q dengan cara \textit{pattern matching}. Setelah mendapatkan \textit{key} yang diinginkan, \textit{key} tersebut akan dijadikan sebagai input untuk pemanggilan fungsi lookup\_rules yang akan mengembalikan \textit{endpoint} yang akan dipanggil oleh m\_abs serta jumlah parameter dari fungsi yang akan dijalankan. Setelah mendapatkan \textit{endpoint} serta jumlah parameter dari hasil pemanggilan fungsi lookup\_rules yang berbentuk \textit{list}, \textit{list} tersebut akan diekstrak menjadi variabel Url yang menyimpan informasi \textit{endpoint} dan variabel Param yang menyimpan informasi jumlah parameter dari fungsi tersebut. Selanjutnya fungsi m\_find\_value akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Query yang menyimpan informasi mengenai \textit{list} dari parameter yang diberikan pada \textit{template engine}.
 
 Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi m\_find\_value akan mengembalikan \textit{error} jika hasil dari pemanggilan fungsi validate\_params bernilai false. Sebaliknya, jika hasil dari pemanggilan fungsi validate\_params bernilai true maka fungsi m\_find\_value akan memanggil fungsi fetch\_data dengan parameter berupa variabel Url dan juga Parameter \textit{Query} yang sudah dijadikan dalam bentuk \textit{json} menggunakan \co{jiffy:encode/1}. Hasil dari pemanggilan fungsi fetch\_data akan mengembalikan sebuah \textit{json} yang berisikan data yang ingin ditampilkan. Sesuai dengan rancangan \textit{web service} yang sudah dijelaskan pada bab sebelumnya, data yang ingin ditampilkan terdapat pada parameter "data" pada \textit{json} sehingga kita perlu mengambil nilai dari parameter "data" tersebut dengan cara \co{proplists:get\_value(<<"data">>, DecodeJson)} dimana \co{DecodeJson} merupakan \textit{json} hasil dari fetch\_data.
 
@@ -119,9 +119,27 @@ call_api_controller(Key, Data) ->
 \end{lstlisting}
 \end{minipage}
 
-Pada kode \ref{lst:adaptormodel}, fungsi call\_api\_controller menerima dua parameter yaitu \textit{Key} dan Data. \textit{Key} merupakan nama fungsi yang ingin dipanggil oleh \textit{web service}, dan Data merupakan data yang akan dikirim ke \textit{web service}.
+Pada kode \ref{lst:adaptormodel}, fungsi call\_api\_controller menerima dua parameter yaitu \textit{Key} dan Data. \textit{Key} merupakan nama fungsi yang ingin dipanggil oleh \textit{web service}, dan Data merupakan data yang akan dikirim ke \textit{web service}. Parameter \textit{Key} yang didapatkan oleh fungsi call\_api\_controller akan digunakan untuk memanggil fungsi lookup\_rules yang akan mengembalikan sebuah \textit{list} yang berisi \textit{endpoint} serta jumlah parameter dari fungsi yang akan dijalankan. \textit{List} tersebut akan diekstrak dimana \textit{endpoint} disimpan ke dalam variabel Url dan jumlah parameter disimpan ke dalam variabel Param. Setelah melakukan ekstraksi, fungsi call\_api\_controller akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Data yang menyimpan informasi mengenai \textit{list} dari parameter yang ingin dikirim ke \textit{web services}.
 
-\subsection{Implementasi Fungsi lookup\_rules}
+Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi call\_api\_controller akan mengembalikan \textit{error} jika hasil dari pemanggilan fungsi validate\_params bernilai \textit{false}. Sebaliknya, jika hasil dari pemanggilan fungsi validate\_params bernilai \textit{true} maka call\_api\_controller akan memanggil fungsi fetch\_data dengan parameter berupa variabel Url dan juga parameter data yang sudah dijadikan dalam bentuk \textit{json} menggunakan \textit{library} \co{jiffy:encode/1}. Hasil dari pemanggilan fungsi fetch\_data akan mengembalikan sebuah \textit{json} yang berisikan data yang ingin diperoleh. Setelah mendapatkan \textit{json} dari pemanggilan fungsi fetch\_data, dilakukan ekstraksi terhadap parameter "status" dari \textit{json} tersebut. Tujuan dari proses ekstraksi tersebut agar diketahui data yang ingin diambil adalah parameter \textit{"message"} atau parameter "data" dari \textit{json} tersebut. Berikut merupakan tabel \textit{mapping} yang digunakan setelah mendapatkan parameter "status" dari \textit{json}
+
+\begin{table}
+	\centering
+	\caption{Tabel \textit{Mapping}}
+	\label{tab:statuscode}
+	\begin{tabular}{| c | l | c |}
+		\hline
+		Status & Keterangan & Data yang diambil \\ 
+		\hline
+		200 & Mengambil informasi & Data \\
+		201 & Mengeksekusi perintah (\textit{insert, update, delete}) & Message \\
+		400 & \textit{Error} dari API & Message \\
+		Other & \textit{error} & Message \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{Implementasi Fungsi \textit{lookup\_rules}}
 
 Fungsi lookup\_rules merupakan fungsi yang membaca berkas rules.txt dan mengembalikan \textit{list} yang berisikan \textit{endpoint} dan jumlah parameter dari \textit{key} yang diberikan sebagai \textit{input}. Adapun implementasi dari fungsi lookup\_rules sebagai berikut
 
@@ -158,7 +176,7 @@ Pada kode \ref{lst:lookuprules}, dapat dilihat bahwa fungsi lookup\_rules akan m
 \end{lstlisting}
 \end{minipage}
 
-\subsection{Implementasi Fungsi validate\_params}
+\subsection{Implementasi Fungsi \textit{validate\_params}}
 
 Implementasi dari fungsi validate\_params dapat dilihat sebagai berikut
 \begin{minipage}{\linewidth}
@@ -175,7 +193,7 @@ end.
 
 Pada kode \ref{lst:validateparams}, fungsi validate\_params akan mengembalikan boolean hasil pengecekan jumlah parameter yang didapatkan dari tabel \textit{rules} dan jumlah parameter yang terdapat pada \textit{list} dari \textit{Query}. Kembalikan \textit{true} jika jumlah keduanya sama, dan kembalikan \textit{false} jika jumlahnya tidak sama.
 
-\subsection{Implementasi Fungsi fetch\_data}
+\subsection{Implementasi Fungsi \textit{fetch\_data}}
 
 Adapun implementasi dari fungsi fetch\_data sebagai berikut
 
@@ -198,89 +216,8 @@ end.
 \end{lstlisting}
 \end{minipage}
 
-Seperti pada gambar, tabel juga dapat diberi label dan caption. 
-Caption pada tabel terletak pada bagian atas tabel. 
-Contoh tabel sederhana dapat dilihat pada \tab~\ref{tab:tab1}.
-
-\begin{table}
-	\centering
-	\caption{Contoh Tabel}
-	\label{tab:tab1}
-	\begin{tabular}{| l | c r |}
-		\hline
-		& kol 1 & kol 2 \\ 
-		\hline
-		baris 1 & 1 & 2 \\
-		baris 2 & 3 & 4 \\
-		baris 3 & 5 & 6 \\
-		jumlah  & 9 & 12 \\
-		\hline
-	\end{tabular}
-\end{table}
-
-Ada jenis tabel lain yang dapat dibuat dengan \latex~berikut 
-beberapa diantaranya. 
-Contoh-contoh ini bersumber dari 
-\url{http://en.wikibooks.org/wiki/LaTeX/Tables}
-
-\begin{table}
-	\centering
-	\caption{An Example of Rows Spanning Multiple Columns}
-	\label{row.spanning}
-	\begin{tabular}{|l|l|*{6}{c|}}
-  		\hline % create horizontal line
-  		No & Name & \multicolumn{3}{|c|}{Week 1} & \multicolumn{3}{|c|}{Week 2} \\
-  		\cline{3-8} % create line from 3rd column till 8th column
-  		& & A & B & C & A & B & C\\
-  		\hline
-  		1 & Lala & 1 & 2 & 3 & 4 & 5 & 6\\
-  		2 & Lili & 1 & 2 & 3 & 4 & 5 & 6\\
-  		3 & Lulu & 1 & 2 & 3 & 4 & 5 & 6\\
-  		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}
-	\centering
-	\caption{An Example of Columns Spanning Multiple Rows}
-	\label{column.spanning}
-	\begin{tabular}{|l|c|l|}
-		\hline
-		Percobaan & Iterasi & Waktu \\
-		\hline
-		Pertama & 1 & 0.1 sec \\ \hline
-		\multirow{2}{*}{Kedua} & 1 & 0.1 sec \\
- 		& 3 & 0.15 sec \\ 
- 		\hline
-		\multirow{3}{*}{Ketiga} & 1 & 0.09 sec \\
- 		& 2 & 0.16 sec \\
- 		& 3 & 0.21 sec \\ 
- 		\hline
-	\end{tabular}
-\end{table}
-
-\begin{table}
-	\centering
-	\caption{An Example of Spanning in Both Directions Simultaneously}
-	\label{mix.spanning}
-	\begin{tabular}{cc|c|c|c|c|}
-		\cline{3-6}
-		& & \multicolumn{4}{|c|}{Title} \\ \cline{3-6}
-		& & A & B & C & D \\ \hline
-		\multicolumn{1}{|c|}{\multirow{2}{*}{Type}} &
-		\multicolumn{1}{|c|}{X} & 1 & 2 & 3 & 4\\ \cline{2-6}
-		\multicolumn{1}{|c|}{}                        &
-		\multicolumn{1}{|c|}{Y} & 0.5 & 1.0 & 1.5 & 2.0\\ \cline{1-6}
-		\multicolumn{1}{|c|}{\multirow{2}{*}{Resource}} &
-		\multicolumn{1}{|c|}{I} & 10 & 20 & 30 & 40\\ \cline{2-6}
-		\multicolumn{1}{|c|}{}                        &
-		\multicolumn{1}{|c|}{J} & 5 & 10 & 15 & 20\\ \cline{1-6}
-	\end{tabular}
-\end{table}
-
 %-----------------------------------------------------------------------------%
 \section{Implementasi \textit{Refactoring Business Logic}}
 %-----------------------------------------------------------------------------%
-Berkas ini berisi seluruh berkas Latex yang dibaca, jadi bisa dikatakan sebagai 
-berkas utama. Dari berkas ini kita dapat mengatur bab apa saja yang ingin 
-kita tampilkan dalam dokumen.
+
+	\todo{Jelasin apa yang dilakukan pada Refactoring.}

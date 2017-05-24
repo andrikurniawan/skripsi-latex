@@ -1,0 +1,39 @@
+\begin{thebibliography}{}
+
+\bibitem[Gruber, 1993]{paper.gruber}
+Gruber, T.~R. (1993).
+\newblock Toward principles for the design of ontologies used for knowledge
+  sharing.
+\newblock pages 907--928. International Journal Human-Computer Studies.
+
+\bibitem[Hopkins dan Powell, 2015]{hopkins_powell_2015}
+Hopkins, M. dan Powell, J. (2015).
+\newblock {\em A Librarians Guide to Graphs, Data and the Semantic Web}.
+\newblock Elsevier Science.
+
+\bibitem[Neal, 2010]{article.rebecca}
+Neal, R. (2010).
+\newblock Cloud computing brings savings in energy, maintenance costs.
+\newblock
+  \url{http://www.federaltimes.com/article/20100323/IT03/3230304/Cloud-computing-brings-savings-energy-maintenance-costs}.
+\newblock [Diakses 1 April 2013].
+
+\bibitem[Noy dan McGuinness, 2001]{ontologydevelopment}
+Noy, N.~F. dan McGuinness, D.~L. (2001).
+\newblock Ontology development 101: A guide to creating your first ontology.
+\newblock Technical report, Stanford Medical Informatics.
+
+\bibitem[OWL-Working-Group, 2004]{owl.overview}
+OWL-Working-Group (2004).
+\newblock Owl web ontology language overview.
+\newblock \url{https://www.w3.org/TR/2004/REC-owl-features-20040210/}.
+\newblock [Diakses 24 Mei 2017].
+
+\bibitem[Zotonic, nd]{zotonic.overview}
+Zotonic (n.d.).
+\newblock Introduction - developer guide.
+\newblock
+  \url{http://docs.zotonic.com/en/latest/developer-guide/introduction.html}.
+\newblock [Diakses 24 Mei 2017].
+
+\end{thebibliography}

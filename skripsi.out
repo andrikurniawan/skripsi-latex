@@ -17,40 +17,32 @@
 \BOOKMARK [0][-]{chapter.2}{2 Tinjauan Pustaka}{}% 17
 \BOOKMARK [1][-]{section.2.1}{2.1 Ontologi}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.2}{2.2 Zotonic}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.3}{2.3 Template Engine}{chapter.2}% 20
-\BOOKMARK [1][-]{section.2.4}{2.4 Web Services}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.5}{2.5 Software Product Line}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.6}{2.6 X si sesuatu}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Pengertian X}{section.2.6}% 24
-\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Klasifikasi X}{section.2.6}% 25
-\BOOKMARK [1][-]{section.2.7}{2.7 Section in Eng}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 Pengertian Section in Eng}{section.2.7}% 27
-\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 Next Subsection Section in Eng}{section.2.7}% 28
-\BOOKMARK [1][-]{section.2.8}{2.8 Keatas lagi}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.8.1}{2.8.1 Masuk lagi}{section.2.8}% 30
-\BOOKMARK [0][-]{chapter.3}{3 Rancangan}{}% 31
-\BOOKMARK [1][-]{section.3.1}{3.1 Rancangan Integrasi Ontologi dan Web Service}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.2}{3.2 Desain Adaptor}{chapter.3}% 33
-\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 34
-\BOOKMARK [1][-]{section.4.1}{4.1 Implementasi Adaptor}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Pemanggilan Adaptor Melalui Template Engine}{section.4.1}% 36
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Pemanggilan Adaptor Melalui Model}{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Implementasi Fungsi lookup\137rules}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Implementasi Fungsi validate\137params}{section.4.1}% 39
-\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 Implementasi Fungsi fetch\137data}{section.4.1}% 40
-\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Refactoring Business Logic}{chapter.4}% 41
-\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 42
-\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 43
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 44
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 45
-\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 46
-\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 48
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 49
-\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 50
-\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 52
-\BOOKMARK [0][-]{section*.24}{LAMPIRAN}{}% 53
-\BOOKMARK [0][-]{section*.25}{Lampiran 1 : Kode Sumber Model ABS}{}% 54
-\BOOKMARK [0][-]{section*.27}{Lampiran 2 : Kode Sumber rules}{}% 55
-\BOOKMARK [0][-]{section*.29}{Lampiran 8 : UAT dan Kuesioner}{}% 56
+\BOOKMARK [1][-]{section.2.3}{2.3 Software Product Line}{chapter.2}% 20
+\BOOKMARK [0][-]{chapter.3}{3 Rancangan}{}% 21
+\BOOKMARK [1][-]{section.3.1}{3.1 Rancangan Integrasi Ontologi dan Web Service}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{3.2 Rancangan Web Service}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{3.3 Rancangan Adaptor}{chapter.3}% 24
+\BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 25
+\BOOKMARK [1][-]{section.4.1}{4.1 Implementasi Adaptor}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Pemanggilan Adaptor Melalui Template Engine}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Pemanggilan Adaptor Melalui Model}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Implementasi Fungsi lookup\137rules}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Implementasi Fungsi validate\137params}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 Implementasi Fungsi fetch\137data}{section.4.1}% 31
+\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Refactoring Business Logic}{chapter.4}% 32
+\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 33
+\BOOKMARK [1][-]{section.5.1}{5.1 Implementasi Cluster}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Instalasi Frontend}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Konfigurasi}{section.5.1}% 36
+\BOOKMARK [3][-]{subsubsection.5.1.2.1}{5.1.2.1 semakin ke dalam}{subsection.5.1.2}% 37
+\BOOKMARK [1][-]{section.5.2}{5.2 Pengujian}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Kasus Uji}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Kasus Uji}{section.5.2}% 40
+\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 41
+\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 43
+\BOOKMARK [0][-]{section.6.2}{Daftar Referensi}{}% 44
+\BOOKMARK [0][-]{section*.20}{LAMPIRAN}{}% 45
+\BOOKMARK [0][-]{section*.21}{Lampiran 1 : Kode Sumber Model ABS}{}% 46
+\BOOKMARK [0][-]{section*.23}{Lampiran 2 : Kode Sumber rules}{}% 47
+\BOOKMARK [0][-]{section*.25}{Lampiran 3 : Kode Sumber Web Service}{}% 48
