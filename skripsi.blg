@@ -17,5 +17,13 @@ The style file: apalikerd.bst
 A level-1 auxiliary file: markLampiran.aux
 A level-1 auxiliary file: lampiran.aux
 Database file #1: bib.bib
+Warning--entry type for "zotonic.speed" isn't style-file defined
+--line 156 of file bib.bib
+Warning--entry type for "zotonic.model" isn't style-file defined
+--line 164 of file bib.bib
+Warning--entry type for "zotonic.mvc" isn't style-file defined
+--line 172 of file bib.bib
+Warning--entry type for "awwwards.css" isn't style-file defined
+--line 180 of file bib.bib
 Warning--empty booktitle in paper.gruber
-(There was 1 warning)
+(There were 5 warnings)

@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[Awwwards, 2017]{awwwards.css}
+Awwwards (2017).
+\newblock What are frameworks? 22 best responsive css frameworks for web
+  design.
+\newblock
+  \url{https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html}.
+\newblock [Diakses pada 28 Mei 2017].
+
 \bibitem[Gruber, 1993]{paper.gruber}
 Gruber, T.~R. (1993).
 \newblock Toward principles for the design of ontologies used for knowledge
@@ -29,11 +37,29 @@ OWL-Working-Group (2004).
 \newblock \url{https://www.w3.org/TR/2004/REC-owl-features-20040210/}.
 \newblock [Diakses 24 Mei 2017].
 
-\bibitem[Zotonic, nd]{zotonic.overview}
-Zotonic (n.d.).
+\bibitem[Zotonic, nda]{zotonic.overview}
+Zotonic (n.d.a).
 \newblock Introduction - developer guide.
 \newblock
   \url{http://docs.zotonic.com/en/latest/developer-guide/introduction.html}.
 \newblock [Diakses 24 Mei 2017].
+
+\bibitem[Zotonic, ndb]{zotonic.mvc}
+Zotonic (n.d.b).
+\newblock Mvc.
+\newblock \url{http://zotonic.com/page/621/mvc}.
+\newblock [Diakses pada 28 Mei 2017].
+
+\bibitem[Zotonic, ndc]{zotonic.speed}
+Zotonic (n.d.c).
+\newblock Speed.
+\newblock \url{http://zotonic.com/page/614/speed}.
+\newblock [Diakses pada 28 Mei 2017].
+
+\bibitem[Zotonic, ndd]{zotonic.model}
+Zotonic (n.d.d).
+\newblock The zotonic data model.
+\newblock \url{http://docs.zotonic.com/en/latest/user-guide/data-model.html}.
+\newblock [Diakses pada 28 Mei 2017].
 
 \end{thebibliography}
