@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  29 MAY 2017 01:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  29 MAY 2017 02:30
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -1208,15 +1208,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--19
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-) [23
+[23
 
 
 
-]
+])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
 \openout2 = `bab6-penutup.aux'.
 
  (bab6-penutup.tex
@@ -1225,7 +1232,7 @@ BAB 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) [24
+) [25
 
 
 
@@ -1258,7 +1265,7 @@ Underfull \hbox (badness 3260) in paragraph at lines 23--28
  20100323 / IT03 / 3230304 /
  []
 
-) [25
+) [26
 
 
 ]
@@ -1525,8 +1532,8 @@ Package rerunfilecheck Info: File `skripsi.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 12719 strings out of 493333
- 184488 string characters out of 3139194
+ 12720 strings out of 493333
+ 184495 string characters out of 3139194
  490579 words of memory out of 3000000
  14974 multiletter control sequences out of 15000+200000
  55348 words of font info for 78 fonts, out of 3000000 for 9000
@@ -1541,9 +1548,9 @@ gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on skripsi.pdf (59 pages, 706752 bytes).
+Output written on skripsi.pdf (60 pages, 708355 bytes).
 PDF statistics:
- 1603 PDF objects out of 1728 (max. 8388607)
- 859 named destinations out of 1000 (max. 500000)
+ 1607 PDF objects out of 1728 (max. 8388607)
+ 860 named destinations out of 1000 (max. 500000)
  388 words of extra memory for PDF output out of 10000 (max. 10000000)
 

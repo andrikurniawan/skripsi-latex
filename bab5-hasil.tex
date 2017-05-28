@@ -6,19 +6,56 @@
 \section{Perubahan pada Struktur Zotonic}
 %-----------------------------------------------------------------------------%
 
-Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa file baru yang ditambahkan ke dalam struktur zotonic. Berikut adalah struktur dari zotonic setelah penambahan file baru\\
-	Zotonic/ \\
-		bin/ \\
-		deps/ \\
-		doc/ \\
-		ebin/ \\
-		include/ \\
-		modules/ \\
-		priv/ \\
-		src/ \\
+Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa file baru yang ditambahkan ke dalam struktur zotonic. Berikut adalah struktur dari zotonic yang telah dapat membuat struktur zotonic dari ontologi sebelum penambahan file baru untuk menjalankan fungsi integrasi ontologi dan \textit{web service}\\
+	\begin{tabbing}
+		\qquad Zotonic/ \\
+		\qquad \qquad .rebar/ \\
+		\qquad \qquad bin/ \\
+		\qquad \qquad deps/ \\
+		\qquad \qquad doc/ \\
+		\qquad \qquad docker/ \\
+		\qquad \qquad ebin/ \\
+		\qquad \qquad include/ \\
+		\qquad \qquad modules/ \\
+		\qquad \qquad priv/ \\
+		\qquad \qquad src/ \\
+		\qquad \qquad user/ \\
+		\qquad \qquad .dockerignore \\
+		\qquad \qquad .editorconfig \\
+		\qquad \qquad .travis.yml \\
+		\qquad \qquad AUTHORS \\
+		\qquad \qquad CONTRIBUTING.md \\
+		\qquad \qquad CONTRIBUTORS \\
+		\qquad \qquad Dockerfile \\
+		\qquad \qquad Dockerfile.dev \\
+		\qquad \qquad Dockerfile.heavy \\
+		\qquad \qquad GNUmakefile \\
+		\qquad \qquad LICENS E\\
+		\qquad \qquad Makefile \\
+		\qquad \qquad Readme.md \\
+		\qquad \qquad TRANSLATORS \\
+		\qquad \qquad USE\_REBAR\_LOCKED \\
+		\qquad \qquad build.cmd \\
+		\qquad \qquad charity\_org\_rdf.owl \\
+		\qquad \qquad classAndObjectPropertyMapper.sh \\
+		\qquad \qquad docker-compose.yml \\
+		\qquad \qquad prepare-release.sh \\
+		\qquad \qquad rebar \\
+		\qquad \qquad rebar.config\\
+		\qquad \qquad rebar.config.lock\\
+		\qquad \qquad rebar.config.lock.script\\
+		\qquad \qquad rebar.config.script\\
+		\qquad \qquad recentsite.txt\\
+		\qquad \qquad start.cmd\\
+		\qquad \qquad start.sh\\
+		\qquad \qquad zotonic.pid\\
+		\qquad \qquad zotonic\_install
+	\end{tabbing}
+	
+	Setelah implementasi, perlu ditambahkan file rules.txt pada folder Zotonic dimana file ini merupakan tabel \textit{rules} yang akan digunakan untuk \textit{mapping web service} seperti yang dijelaskan pada bab sebelumnya. Selain itu, perlu ditambahkan juga modul m\_abs.erl pada folder \textit{models} yang terdapat pada folder \textit{src} dari folder zotonic. modul ini yang nantinya akan berfungsi sebagai \textit{adaptor} untuk menghubungkan antara ontologi dan \textit{web services} seperti penjelasan pada bab sebelumnya.
 		
 %-----------------------------------------------------------------------------%
-\section{Perubahan Setelah \textit{Create Site Script} Dijalankan} %lebih ke gimana cara ujinya
+\section{Perubahan Setelah \textit{Create Site Script} Dijalankan}
 %-----------------------------------------------------------------------------%
 
 %-----------------------------------------------------------------------------%
