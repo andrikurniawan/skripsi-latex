@@ -20,25 +20,25 @@
 \contentsline {section}{\numberline {2.3}\textit {Software Product Line}}{10}{section.2.3}
 \contentsline {chapter}{\numberline {3}\uppercase {Rancangan}}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rancangan Integrasi Ontologi dan \textit {Web Service}}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Rancangan \textit {Web Service}}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Rancangan \textit {Adaptor}}{13}{section.3.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Implementasi \textit {Adaptor}}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Pemanggilan \textit {Adaptor} Melalui \textit {Template Engine}}{16}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model}{18}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Implementasi Fungsi \textit {lookup\_rules}}{20}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Implementasi Fungsi \textit {validate\_params}}{22}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Implementasi Fungsi \textit {fetch\_data}}{22}{subsection.4.1.5}
-\contentsline {section}{\numberline {4.2}Implementasi \textit {Refactoring Business Logic}}{22}{section.4.2}
-\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{23}{chapter.5}
-\contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{24}{section.5.2}
-\contentsline {section}{\numberline {5.3}Implementasi Studi Kasus BSMI}{24}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{25}{section.6.2}
-\contentsline {chapter}{Daftar Referensi}{26}{section.6.2}
-\contentsline {chapter}{LAMPIRAN}{1}{section*.16}
-\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.17}
-\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.19}
-\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.21}
+\contentsline {section}{\numberline {3.2}Rancangan \textit {Web Service}}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}Rancangan \textit {Adaptor}}{15}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Implementasi \textit {Adaptor}}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Pemanggilan \textit {Adaptor} Melalui \textit {Template Engine}}{18}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model}{20}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Implementasi Fungsi \textit {lookup\_rules}}{22}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Implementasi Fungsi \textit {validate\_params}}{24}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Implementasi Fungsi \textit {fetch\_data}}{24}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Implementasi \textit {Refactoring Business Logic}}{24}{section.4.2}
+\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Implementasi Studi Kasus BSMI}{28}{section.5.3}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{29}{section.6.2}
+\contentsline {chapter}{Daftar Referensi}{30}{section.6.2}
+\contentsline {chapter}{LAMPIRAN}{1}{section*.20}
+\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.21}
+\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.23}
+\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.25}
