@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  29 MAY 2017 06:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.20)  29 MAY 2017 16:40
 entering extended mode
 **./skripsi.tex
 (skripsi.tex
@@ -572,7 +572,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
  (sampul.tex
-<pics/makara.png, id=174, 154.86429pt x 154.34807pt>
+<pics/makara.png, id=178, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
  <use pics/makara.png>
 Package pdftex.def Info: pics/makara.png used on input line 14.
@@ -888,7 +888,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/domain.jpg, id=477, 245.41687pt x 121.95563pt>
+<pics/domain.jpg, id=483, 245.41687pt x 121.95563pt>
 File: pics/domain.jpg Graphic file (type jpg)
  <use pics/domain.jpg>
 Package pdftex.def Info: pics/domain.jpg used on input line 27.
@@ -898,7 +898,7 @@ Package pdftex.def Info: pics/domain.jpg used on input line 27.
 
 
 
-] <pics/relationClass.jpg, id=493, 412.54124pt x 160.34906pt>
+] <pics/relationClass.jpg, id=499, 412.54124pt x 160.34906pt>
 File: pics/relationClass.jpg Graphic file (type jpg)
 
 <use pics/relationClass.jpg>
@@ -912,11 +912,22 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./pics/domain.jpg> <./pics/relationClass.jpg>]
-<pics/subClass.jpg, id=500, 621.82312pt x 301.8778pt>
+<pics/subClass.jpg, id=506, 621.82312pt x 301.8778pt>
 File: pics/subClass.jpg Graphic file (type jpg)
  <use pics/subClass.jpg>
 Package pdftex.def Info: pics/subClass.jpg used on input line 51.
 (pdftex.def)             Requested size: 398.3386pt x 193.38077pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 59.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -931,11 +942,11 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <pics/dataModel.png, id=526, 356.33125pt x 419.5675pt>
+[8] <pics/dataModel.png, id=532, 356.33125pt x 419.5675pt>
 File: pics/dataModel.png Graphic file (type png)
 
 <use pics/dataModel.png>
-Package pdftex.def Info: pics/dataModel.png used on input line 77.
+Package pdftex.def Info: pics/dataModel.png used on input line 79.
 (pdftex.def)             Requested size: 239.00558pt x 281.41606pt.
 
 
@@ -944,16 +955,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9]
-LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 88.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 90--102
+[9])
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--102
+Underfull \hbox (badness 10000) in paragraph at lines 92--102
 
  []
 
@@ -972,18 +980,18 @@ BAB 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/skripsiRoadmapNew.jpg, id=540, 1184.425pt x 688.5725pt>
+<pics/skripsiRoadmapNew.jpg, id=546, 1326.9575pt x 679.53876pt>
 File: pics/skripsiRoadmapNew.jpg Graphic file (type jpg)
 
 <use pics/skripsiRoadmapNew.jpg>
 Package pdftex.def Info: pics/skripsiRoadmapNew.jpg used on input line 15.
-(pdftex.def)             Requested size: 398.3386pt x 231.57942pt.
+(pdftex.def)             Requested size: 398.3386pt x 203.98763pt.
  [11
 
 
 
  <./pics/skripsiRoadmapNew.jpg>]
-<pics/partABSRoadmap.jpg, id=548, 257.46187pt x 415.5525pt>
+<pics/partABSRoadmap.jpg, id=554, 257.46187pt x 415.5525pt>
 File: pics/partABSRoadmap.jpg Graphic file (type jpg)
 
 <use pics/partABSRoadmap.jpg>
@@ -997,7 +1005,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./pics/partABSRoadmap.jpg>]
-<pics/partZotonicRoadmap.jpg, id=554, 521.69907pt x 459.96844pt>
+<pics/partZotonicRoadmap.jpg, id=560, 521.69907pt x 459.96844pt>
 File: pics/partZotonicRoadmap.jpg Graphic file (type jpg)
 
 <use pics/partZotonicRoadmap.jpg>
@@ -1030,7 +1038,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] <pics/adaptor.jpg, id=573, 733.74126pt x 427.5975pt>
+[14] <pics/adaptor.jpg, id=579, 733.74126pt x 427.5975pt>
 File: pics/adaptor.jpg Graphic file (type jpg)
 
 <use pics/adaptor.jpg>
@@ -1069,22 +1077,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 12--19
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 13--20
 []$[]$ 
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 22--31
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 23--32
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
+Underfull \hbox (badness 10000) in paragraph at lines 23--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--31
+Underfull \hbox (badness 10000) in paragraph at lines 23--32
 
  []
 
@@ -1093,27 +1101,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--31
 
 
 ]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 34--40
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 35--41
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--40
+Underfull \hbox (badness 10000) in paragraph at lines 35--41
 
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 43--49
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 44--50
 []$[]$ 
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 54--82
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 55--83
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--82
+Underfull \hbox (badness 10000) in paragraph at lines 55--83
 
  []
 
@@ -1124,32 +1132,32 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18]
-Underfull \hbox (badness 1259) in paragraph at lines 83--84
+Underfull \hbox (badness 1259) in paragraph at lines 84--85
 \T1/ptm/m/n/12 adalah mem-buat se-buah \T1/ptm/m/it/12 spec-i-fi-ca-tions \T1/p
 tm/m/n/12 un-tuk fungsi terse-but. \T1/ptm/m/it/12 Spec-i-fi-ca-tions
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 83--84
+Underfull \hbox (badness 1635) in paragraph at lines 84--85
 \T1/ptm/m/it/12 i-fi-ca-tions \T1/ptm/m/n/12 yang telah di-de-fi-ni-si-kan []Ne
 al[] ([]2010[]). Seperti yang su-dah di-de-
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 83--84
+Underfull \hbox (badness 1783) in paragraph at lines 84--85
 \T1/ptm/m/n/12 fi-ni-si-kan bahwa pe-mang-gi-lan \T1/ptm/m/it/12 adap-tor \T1/p
 tm/m/n/12 melalui \T1/ptm/m/it/12 tem-plate en-gine \T1/ptm/m/n/12 de-ngan cara
 
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 83--84
+Underfull \hbox (badness 1888) in paragraph at lines 84--85
 \T1/pcr/m/n/12 m.abs.namaFungsi[{query param=value}]\T1/ptm/m/n/12 , maka ketik
 a di-jalankan m_abs
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 83--84
+Underfull \hbox (badness 1331) in paragraph at lines 84--85
 \T1/ptm/m/n/12 akan mengem-ba-likan se-buah \T1/ptm/m/it/12 maps \T1/ptm/m/n/12
  yang akan di-ter-ima kem-bali oleh fungsi
  []
@@ -1161,7 +1169,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 93--121
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 94--122
 []$[]$ 
  []
 
@@ -1179,13 +1187,13 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21]
-Underfull \hbox (badness 1939) in paragraph at lines 144--145
+Underfull \hbox (badness 1939) in paragraph at lines 149--150
 \T1/ptm/m/n/12 Fungsi lookup_rules meru-pakan fungsi yang mem-baca berkas rules
 .txt dan
  []
 
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 146--171
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 151--176
 []$[]$ 
  []
 
@@ -1196,7 +1204,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 181--193
+Underfull \hbox (badness 10000) in paragraph at lines 186--198
 \T1/ptm/m/n/12 Implementasi dari fungsi val-i-date_params da-pat di-li-hat se-b
 a-gai berikut
  []
@@ -1208,7 +1216,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 200--218
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 205--223
 []$[]$ 
  []
 
@@ -1219,41 +1227,41 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 225--250
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 230--255
 []$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--250
+Underfull \hbox (badness 10000) in paragraph at lines 230--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--262
 []\T1/ptm/m/n/12 Pada kode []4.11[], da-pat di-li-hat bagaimana proses pen-jum-
 la-han un-
  []
 
 
-Underfull \hbox (badness 5331) in paragraph at lines 251--257
+Underfull \hbox (badness 5331) in paragraph at lines 256--262
 \T1/ptm/m/n/12 tuk fungsi to-tal di-lakukan se-cara \T1/ptm/m/it/12 javascript\
 T1/ptm/m/n/12 . Sete-lah di-lakukan \T1/ptm/m/it/12 refac-
  []
 
 
-Underfull \hbox (badness 6078) in paragraph at lines 251--257
+Underfull \hbox (badness 6078) in paragraph at lines 256--262
 \T1/ptm/m/it/12 tor-ing \T1/ptm/m/n/12 de-ngan cara me-man-faatkan im-ple-men-t
 asi dari pe-mang-gi-lan \T1/ptm/m/it/12 adap-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--262
 \T1/ptm/m/it/12 tor \T1/ptm/m/n/12 dari \T1/ptm/m/it/12 tem-plate\T1/ptm/m/n/12
  , maka kode []4.11[] akan di-ganti men-jadi kode []4.12[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 256--262
 
  []
 
@@ -1601,7 +1609,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: F49450DC669D59BF334349A1DAFB9D25;2961.
+(rerunfilecheck)             Checksum: E52B2DEA60E90121DB32FB5D4624E73E;3063.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1609,10 +1617,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 12817 strings out of 493333
- 185902 string characters out of 3139194
- 491089 words of memory out of 3000000
- 15031 multiletter control sequences out of 15000+200000
+ 12819 strings out of 493333
+ 185926 string characters out of 3139194
+ 491094 words of memory out of 3000000
+ 15032 multiletter control sequences out of 15000+200000
  55348 words of font info for 78 fonts, out of 3000000 for 9000
  1239 hyphenation exceptions out of 8191
  44i,12n,51p,1361b,1884s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1625,9 +1633,9 @@ gram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on skripsi.pdf (64 pages, 814720 bytes).
+Output written on skripsi.pdf (64 pages, 827616 bytes).
 PDF statistics:
- 1692 PDF objects out of 1728 (max. 8388607)
- 898 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1698 PDF objects out of 1728 (max. 8388607)
+ 899 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

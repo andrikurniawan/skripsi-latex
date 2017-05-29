@@ -5,46 +5,47 @@
 Pada bab ini dijelaskan setiap hal yang dilakukan oleh penulis untuk melakukan implementasi terhadap rancangan yang telah dibuat pada bab sebelumnya. Penulis melakukan implementasi \textit{adaptor} yang akan dipanggil melalui \textit{template engine} dan juga melalui model lainnya. Selain itu, penulis juga melakukan \textit{refactoring business logic} dengan memanfaatkan \textit{adaptor} yang sudah diimplementasikan.
 
 %-----------------------------------------------------------------------------%
-\section{Implementasi \textit{Adaptor}}
+\section{Interface \textit{Adaptor}}
 %-----------------------------------------------------------------------------%
+
 Sebelum melakukan implementasi \textit{adaptor}, perlu dibuat terlebih dahulu tabel \textit{rules} yang akan dibaca oleh \textit{adaptor}. Namun, karena belum adanya mekanisme pemetaan secara langsung dari \textit{rules} yang dimiliki oleh ontologi ke dalam tabel \textit{rules} maka penulis membuat tabel \textit{rules} secara manual. Tabel \textit{rules} tersebut berbentuk \textit{json} dimana strukturnya sebagai berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Struktur tabel \textit{rules}},label={lst:strukturtablerules}]
-{
+	\begin{lstlisting}[caption={Struktur tabel \textit{rules}},label={lst:strukturtablerules}]
+	{
 	nama fungsi : [endpoint, jumlah parameter]
-}
-\end{lstlisting}
+	}
+	\end{lstlisting}
 \end{minipage}
 
 Setelah tabel rules selesai dibuat sesuai dengan struktur pada kode \ref{lst:strukturtablerules}, tabel rules tersebut disimpan ke dalam sebuah file yang bernama rules.txt dan ditaruh pada \textit{root} dari zotonic. Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada zotonic dengan nama m\_abs pada folder \co{root/src/models}. Untuk membuat sebuah model pada zotonic, zotonic mengharuskan setiap model untuk mengekspor beberapa fungsi yang dimiliki oleh zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Fungsi yang harus diekspor untuk model},label={lst:librarymodel}]
--export([
+	\begin{lstlisting}[caption={Fungsi yang harus diekspor untuk model},label={lst:librarymodel}]
+	-export([
 	m_find_value/3,
 	m_to_list/2,
 	m_value/2,
-]).
-\end{lstlisting}
+	]).
+	\end{lstlisting}
 \end{minipage}\\\\
 
 Seperti yang dapat dilihat pada kode \ref{lst:librarymodel}, agar fungsi tersebut dapat dijalankan pada \textit{template engine}, tentu harus diimplementasi sesuai dengan kebutuhan. Sesuai dengan kebutuhannya agar \textit{adaptor} dapat dipanggil melalui \textit{template engine}, maka perlu didefinisikan terlebih dahulu bagaimana nantinya \textit{adaptor} dipanggil. Pada penelitian ini, penulis mendefinisikan untuk pemanggilan \textit{adaptor} pada \textit{template engine} dilakukan dengan membuat perintah \co{m.abs.namaFungsi[\{query param=value\}]}. Implementasi dari fungsi m\_find\_value yang digunakan untuk melakukan pencocokan pola akan dijelaskan pada bagian berikutnya. Untuk fungsi m\_to\_list karena pada kasus ini tidak digunakan jadi cukup diimplementasikan seperti kode \ref{lst:mtolist} berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
-m_to_list(_, _Context) ->
-[].
-\end{lstlisting}
+	\begin{lstlisting}[caption={Implementasi fungsi m\_to\_list},label={lst:mtolist}]
+	m_to_list(_, _Context) ->
+	[].
+	\end{lstlisting}
 \end{minipage}\\
 
 Sama seperti fungsi m\_to\_list, fungsi m\_value juga tidak dibutuhkan pada implementasi \textit{adaptor} sehingga dapat diimplementasikan seperti kode \ref{lst:mvalue} berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m\_value},label={lst:mvalue}]
-m_value(_, _Context) ->
-undefined.
-\end{lstlisting}
+	\begin{lstlisting}[caption={Implementasi fungsi m\_value},label={lst:mvalue}]
+	m_value(_, _Context) ->
+	undefined.
+	\end{lstlisting}
 \end{minipage}
 
 \subsection{Pemanggilan \textit{Adaptor} Melalui \textit{Template Engine}}
@@ -52,32 +53,32 @@ undefined.
 Setelah didefinisikan format pemanggilan \textit{adaptor} pada \textit{template engine}, maka akan diimplementasikan pencocokan pola pada proses pemanggilan \textit{adaptor} dengan menggunakan fungsi m\_find\_value. Berikut adalah implementasi dari fungsi m\_find\_value
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi m\_find\_value},label={lst:mfindvalue}]
-% this method to handle call api from template
--spec m_find_value(Key, Source, Context) -> #m{} | undefined | any() when
-    Key:: integer() | atom() | string(),
-    Source:: #m{},
-    Context:: #context{}.
-
-m_find_value(Type, #m{value=undefined} = M, _Context) ->
-    M#m{value=[Type]};
-
-m_find_value({query, Query}, #m{value=Q} = _, _Context) when is_list(Q) ->
+	\begin{lstlisting}[caption={Implementasi fungsi m\_find\_value},label={lst:mfindvalue}]
+	% this method to handle call api from template
+	-spec m_find_value(Key, Source, Context) -> #m{} | undefined | any() when
+	Key:: integer() | atom() | string(),
+	Source:: #m{},
+	Context:: #context{}.
+	
+	m_find_value(Type, #m{value=undefined} = M, _Context) ->
+	M#m{value=[Type]};
+	
+	m_find_value({query, Query}, #m{value=Q} = _, _Context) when is_list(Q) ->
 	[Key] = Q,
 	[Url, Param] = lookup_rules(Key),
 	case validate_params(Param, Query) of
-		false ->
-			[{error, "Num of Params not same"}];
-		true ->
-			{DecodeJson} = fetch_data(binary_to_list(Url), jiffy:encode({Query})),
-			lager:info("ABS result : ~p", [DecodeJson]),
-			proplists:get_value(<<"data">>, DecodeJson)
+	false ->
+	[{error, "Num of Params not same"}];
+	true ->
+	{DecodeJson} = fetch_data(binary_to_list(Url), jiffy:encode({Query})),
+	lager:info("ABS result : ~p", [DecodeJson]),
+	proplists:get_value(<<"data">>, DecodeJson)
 	end;
-
-% Other values won't be processed
-m_find_value(_, _, _Context) ->
-    undefined. 
-\end{lstlisting}
+	
+	% Other values won't be processed
+	m_find_value(_, _, _Context) ->
+	undefined. 
+	\end{lstlisting}
 \end{minipage}\\
 
 Pada kode \ref{lst:mfindvalue}, tahap awal untuk mengimplementasikan fungsi m\_find\_value adalah membuat sebuah \textit{specifications} untuk fungsi tersebut. \textit{Specifications} yang merupakan ketentuan yang harus dipenuhi mengenai \textit{input} yang akan diterima oleh fungsi tersebut dan \textit{output} yang akan dihasilkan oleh fungsi tersebut sehingga fungsi akan dijalankan jika dan hanya jika memenuhi dari \textit{specifications} yang telah didefinisikan \cite{article.rebecca}. Seperti yang sudah didefinisikan bahwa pemanggilan \textit{adaptor} melalui \textit{template engine} dengan cara \co{m.abs.namaFungsi[\{query param=value\}]}, maka ketika dijalankan m\_abs akan menjalankan \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} dimana namaFungsi yang didapatkan dari hasil pemanggilan pada \textit{template engine} akan menjalankan fungsi \co{m\_find\_value(Type, \#m\{value=undefined\})} untuk yang akan mengembalikan sebuah \textit{maps} yang akan diterima kembali oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} yang menyimpan \textit{maps} hasil kembalian tersebut ke dalam variabel Q. Lalu parameter yang terdapat pada \textit{template engine} akan disimpan oleh fungsi \co{m\_find\_value(\{query, Query\}, \#m\{value=Q\})} ke dalam variabel Query.
@@ -91,32 +92,32 @@ Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi 
 Selain dipanggil melalui \textit{template engine}, ada kebutuhan untuk memanggil \textit{adaptor} dari model lain seperti pemanggilannya pada model m\_rsc agar dapat mengirim data dari zotonic kepada \textit{web service} melalui \textit{adaptor}. Untuk itu, perlu diimplementasi sebuah fungsi baru dengan nama call\_api\_controller pada \textit{adaptor} yang dapat diakses secara langsung oleh model lain seperti berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi untuk pemanggilan \textit{adaptor} dari model},label={lst:adaptormodel}]
-call_api_controller(Key, Data) ->
+	\begin{lstlisting}[caption={Implementasi fungsi untuk pemanggilan \textit{adaptor} dari model},label={lst:adaptormodel}]
+	call_api_controller(Key, Data) ->
 	[Url, Param] = lookup_rules(Key),
 	case validate_params(Param, Data) of
-		false ->
-			[{error, "Num of Params not same"}];
-		true ->
-			lager:info("key ~p", [Data]),
-			lager:info("key ~s", [jiffy:encode({Data})]),
-			{DecodeJson} = fetch_data(binary_to_list(Url), jiffy:encode({Data})),
-			lager:info("[ABS] result ~p", [DecodeJson]),
-			case proplists:get_value(<<"status">>, DecodeJson) of
-				200 ->
-					DataResult = proplists:get_value(<<"data">>, DecodeJson),
-					lager:info("[ABS] status 200 ~p", [DataResult]);
-				201 ->
-					Message = proplists:get_value(<<"message">>, DecodeJson),
-					lager:info("[ABS] status 201 ~p", [binary_to_list(Message)]);
-				400 ->
-					Message = proplists:get_value(<<"message">>, DecodeJson),
-					lager:error("[ABS] status 400 ~p", [Message]);
-				_Other -> 
-					lager:error("[ABS] status undefined ~p", [_Other])
-			end  
+	false ->
+	[{error, "Num of Params not same"}];
+	true ->
+	lager:info("key ~p", [Data]),
+	lager:info("key ~s", [jiffy:encode({Data})]),
+	{DecodeJson} = fetch_data(binary_to_list(Url), jiffy:encode({Data})),
+	lager:info("[ABS] result ~p", [DecodeJson]),
+	case proplists:get_value(<<"status">>, DecodeJson) of
+	200 ->
+	DataResult = proplists:get_value(<<"data">>, DecodeJson),
+	lager:info("[ABS] status 200 ~p", [DataResult]);
+	201 ->
+	Message = proplists:get_value(<<"message">>, DecodeJson),
+	lager:info("[ABS] status 201 ~p", [binary_to_list(Message)]);
+	400 ->
+	Message = proplists:get_value(<<"message">>, DecodeJson),
+	lager:error("[ABS] status 400 ~p", [Message]);
+	_Other -> 
+	lager:error("[ABS] status undefined ~p", [_Other])
+	end  
 	end.
-\end{lstlisting}
+	\end{lstlisting}
 \end{minipage}
 
 Pada kode \ref{lst:adaptormodel}, fungsi call\_api\_controller menerima dua parameter yaitu \textit{Key} dan Data. \textit{Key} merupakan nama fungsi yang ingin dipanggil oleh \textit{web service}, dan Data merupakan data yang akan dikirim ke \textit{web service}. Parameter \textit{Key} yang didapatkan oleh fungsi call\_api\_controller akan digunakan untuk memanggil fungsi lookup\_rules yang akan mengembalikan sebuah \textit{list} yang berisi \textit{endpoint} serta jumlah parameter dari fungsi yang akan dijalankan. \textit{List} tersebut akan diekstrak dimana \textit{endpoint} disimpan ke dalam variabel Url dan jumlah parameter disimpan ke dalam variabel Param. Setelah melakukan ekstraksi, fungsi call\_api\_controller akan memanggil fungsi validate\_params dengan parameter Param yang menyimpan informasi jumlah parameter dan variabel Data yang menyimpan informasi mengenai \textit{list} dari parameter yang ingin dikirim ke \textit{web services}.
@@ -138,6 +139,10 @@ Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi 
 		\hline
 	\end{tabular}
 \end{table}
+
+%-----------------------------------------------------------------------------%
+\section{Implementasi \textit{Adaptor}}
+%-----------------------------------------------------------------------------%
 
 \subsection{Implementasi Fungsi \textit{lookup\_rules}}
 
@@ -217,7 +222,7 @@ end.
 \end{minipage}
 
 %-----------------------------------------------------------------------------%
-\section{Implementasi \textit{Refactoring Business Logic}}
+\section{Penggunaan \textit{Adaptor} pada \textit{Business Logic}}
 %-----------------------------------------------------------------------------%
 
 	Pada penelitian sebelumnya, proses pembuatan \textit{business logic} dilakukan secara langsung pada \textit{script} datatypePropertyMapper.sh menggunakan \textit{javascript}. Tetapi \textit{business logic} antara satu situs dengan situs lainnya dapat berbeda sehingga dibutuhkan sebuah mekanisme agar \textit{business logic} dapat lebih dinamis berdasarkan ontologi yang digunakan. Untuk mengatasi hal tersebut, maka modul m\_abs yang telah diimplementasi akan digunakan untuk membuat \textit{business logic} agar bersifat dinamis. \textit{Script} datatypePropertyMapper.sh akan menghasilkan \textit{template} untuk admin dan juga \textit{template} untuk halaman pengguna sehingga untuk menambahkan \textit{business logic} yang bersifat dinamis dapat dimanfaatkan implementasi dari pemanggilan \textit{adaptor} dari \textit{template} yang sudah dijelaskan pada bagian sebelumnya. Berikut ini merupakan \textit{business logic} untuk menghitung total sebelum dilakukan \textit{refactoring}.

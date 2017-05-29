@@ -16,29 +16,30 @@
 \BOOKMARK [1][-]{section.1.5}{1.5 Sistematika Penulisan}{chapter.1}% 16
 \BOOKMARK [0][-]{chapter.2}{2 Tinjauan Pustaka}{}% 17
 \BOOKMARK [1][-]{section.2.1}{2.1 Ontologi}{chapter.2}% 18
-\BOOKMARK [1][-]{section.2.2}{2.2 Zotonic}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{2.2 Web Framework Berbasis Semantic: Zotonic}{chapter.2}% 19
 \BOOKMARK [1][-]{section.2.3}{2.3 Software Product Line}{chapter.2}% 20
 \BOOKMARK [0][-]{chapter.3}{3 Rancangan}{}% 21
 \BOOKMARK [1][-]{section.3.1}{3.1 Rancangan Integrasi Ontologi dan Web Service}{chapter.3}% 22
 \BOOKMARK [1][-]{section.3.2}{3.2 Rancangan Web Service}{chapter.3}% 23
 \BOOKMARK [1][-]{section.3.3}{3.3 Rancangan Adaptor}{chapter.3}% 24
 \BOOKMARK [0][-]{chapter.4}{4 Implementasi}{}% 25
-\BOOKMARK [1][-]{section.4.1}{4.1 Implementasi Adaptor}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.1}{4.1 Interface Adaptor}{chapter.4}% 26
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Pemanggilan Adaptor Melalui Template Engine}{section.4.1}% 27
 \BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Pemanggilan Adaptor Melalui Model}{section.4.1}% 28
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Implementasi Fungsi lookup\137rules}{section.4.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Implementasi Fungsi validate\137params}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.5}{4.1.5 Implementasi Fungsi fetch\137data}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Refactoring Business Logic}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 33
-\BOOKMARK [1][-]{section.5.1}{5.1 Perubahan pada Struktur Zotonic}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{5.2 Perubahan Setelah Create Site Script Dijalankan}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.3}{5.3 Implementasi Studi Kasus BSMI}{chapter.5}% 36
-\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 37
-\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 38
-\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 39
-\BOOKMARK [0][-]{section.6.2}{Daftar Referensi}{}% 40
-\BOOKMARK [0][-]{section*.20}{LAMPIRAN}{}% 41
-\BOOKMARK [0][-]{section*.21}{Lampiran 1 : Kode Sumber Model ABS}{}% 42
-\BOOKMARK [0][-]{section*.23}{Lampiran 2 : Kode Sumber rules}{}% 43
-\BOOKMARK [0][-]{section*.25}{Lampiran 3 : Kode Sumber Web Service}{}% 44
+\BOOKMARK [1][-]{section.4.2}{4.2 Implementasi Adaptor}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Implementasi Fungsi lookup\137rules}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Implementasi Fungsi validate\137params}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Implementasi Fungsi fetch\137data}{section.4.2}% 32
+\BOOKMARK [1][-]{section.4.3}{4.3 Penggunaan Adaptor pada Business Logic}{chapter.4}% 33
+\BOOKMARK [0][-]{chapter.5}{5 Hasil}{}% 34
+\BOOKMARK [1][-]{section.5.1}{5.1 Perubahan pada Struktur Zotonic}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.2}{5.2 Perubahan Setelah Create Site Script Dijalankan}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.3}{5.3 Contoh Penerapan pada Web BSMI}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{6 Penutup}{}% 38
+\BOOKMARK [1][-]{section.6.1}{6.1 Kesimpulan}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{6.2 Saran}{chapter.6}% 40
+\BOOKMARK [0][-]{section.6.2}{Daftar Referensi}{}% 41
+\BOOKMARK [0][-]{section*.20}{LAMPIRAN}{}% 42
+\BOOKMARK [0][-]{section*.21}{Lampiran 1 : Kode Sumber Model ABS}{}% 43
+\BOOKMARK [0][-]{section*.23}{Lampiran 2 : Kode Sumber rules}{}% 44
+\BOOKMARK [0][-]{section*.25}{Lampiran 3 : Kode Sumber Web Service}{}% 45
