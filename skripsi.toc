@@ -34,11 +34,11 @@
 \contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{27}{chapter.5}
 \contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{28}{section.5.2}
-\contentsline {section}{\numberline {5.3}Contoh Penerapan pada Web BSMI}{28}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{29}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{29}{section.6.2}
-\contentsline {chapter}{Daftar Referensi}{30}{section.6.2}
+\contentsline {section}{\numberline {5.3}Contoh Penerapan pada Web BSMI}{30}{section.5.3}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{31}{section.6.2}
+\contentsline {chapter}{Daftar Referensi}{32}{section.6.2}
 \contentsline {chapter}{LAMPIRAN}{1}{section*.20}
 \contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.21}
 \contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.23}

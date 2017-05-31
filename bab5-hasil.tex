@@ -58,6 +58,69 @@ Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa fi
 \section{Perubahan Setelah \textit{Create Site Script} Dijalankan}
 %-----------------------------------------------------------------------------%
 
+Setelah menjalankan proses \textit{build script}, maka \textit{site} dapat dibuat dengan menjalankan proses \textit{create site script}. Langkah untuk menjalankan \textit{create site script} sebagai berikut
+
+\begin{enumerate}
+	\item Jalankan zotonic dengan perintah seperti kode \ref{lst:debug} untuk menjalankan zotonic dalam mode debug atau \ref{lst:startzotonic} untuk menjalankan zotonic tanpa debug.
+	
+	\begin{minipage}{\linewidth}
+		\begin{lstlisting}[caption={Perintah untuk menjalankan Zotonic pada mode debug},label={lst:debug}]
+		$ bin/zotonic debug
+		\end{lstlisting}
+	\end{minipage}
+
+	\begin{minipage}{\linewidth}
+		\begin{lstlisting}[caption={Perintah untuk menjalankan Zotonic tanpa mode debug},label={lst:startzotonic}]
+		$ bin/zotonic start
+		\end{lstlisting}
+	\end{minipage}
+
+	\item Persiapkan database pgsql untuk \textit{site} yang akan dibuat dengan membuat \textit{user} baru bernama zotonic dengan \textit{password} zotonic pada pgsql. Lalu beri akses kepada \textit{user} tersebut untuk dapat membuat database baru.
+	
+	\item Setelah mempersiapkan database, selanjutnya edit file \co{/etc/hosts} dengan menambahkan namasite.dev yang diarahkan menuju local host seperti pada kode \ref{lst:etchosts}. namasite merupakan nama dari \textit{site} yang ingin dibuat. Dalam penelitian ini, penulis membuat site bsmi sehingga namasite akan diubah menjadi bsmi
+	\begin{minipage}{\linewidth}
+		\begin{lstlisting}[caption={Configurasi file /etc/hosts},label={lst:etchosts}]
+		127.0.0.1   namasite.dev
+		\end{lstlisting}
+	\end{minipage}
+
+	\item Selanjutnya dapat menjalankan perintah seperti kode \ref{lst:createsite}, untuk membuat \textit{site} baru pada Zotonic dengan \textit{template} blog
+	\begin{minipage}{\linewidth}
+		\begin{lstlisting}[caption={Perintah untuk membuat \textit{site} baru pada Zotonic},label={lst:createsite}]
+		$ bin/zotonic addsite -s blog namasite
+		\end{lstlisting}
+	\end{minipage}
+
+	\item Setelah proses \textit{create site} selesai, berhentikan Zotonic dengan menekan \co{Ctrl + C} dua kali jika menggunakan mode debug, atau menggunakan perintah seperti kode \ref{lst:stopzotonic} jika menjalankan zotonic tanpa mode debug
+	\begin{minipage}{\linewidth}
+		\begin{lstlisting}[caption={Perintah untuk memberhentikan zotonic},label={lst:stopzotonic}]
+		$ bin/zotonic stop
+		\end{lstlisting}
+	\end{minipage}
+
+	\item Selanjutnya jalankan perintah \co{make} untuk melakukan \textit{build} ulang pada zotonic. Setelah selesai, jalankan lagi zotonic seperti pada langkah 1
+	
+\end{enumerate}
+
+Setelah proses diatas, zotonic akan membuat sebuah folder baru pada \co{user/site/} dengan nama folder sesuai dengan namasite yang dibuat. Pada penelitian ini, folder tersebut bernama bsmi karena namasite yang digunakan adalah bsmi. Perubahan yang terjadi dapat dilihat pada file page.tpl yang terletak pada folder \textit{template} dari folder bsmi dimana untuk melakukan perhitungan \textit{business logic} sudah memanfaatkan \textit{adaptor} yang telah diimplementasikan pada bab sebelumnya.
+\begin{minipage}{\linewidth}
+	\begin{lstlisting}[caption={\textit{Business logic} untuk fungsi total pada kategori program},label={lst:totalfront}]
+	...
+	<p class="programtotal" id="programtotal">
+		<b>{_ total _}</b> : 
+	</p>
+	{% javascript %} 
+		var total = {{m.abs.totalDonation[{query id=id}]}}; 
+		if (total == 0) {
+			document.getElementById("programtotal").className += " hidden"; } 
+		else { 
+			document.getElementById("programtotal").innerHTML += total;}
+	{% endjavascript %}
+	...
+	\end{lstlisting}
+\end{minipage}
+
+Pada kode \ref{lst:totalfront} dapat dilihat bahwa variabel total akan menerima nilai dari hasil pemanggilan \textit{adaptor} dengan fungsi \textit{totalDonation}. Dengan memanfaatkan \textit{adaptor}, akan mempermudah pengguna karena tidak perlu untuk melakukan implementasi \textit{business logic} pada kode program.
 %-----------------------------------------------------------------------------%
 \section{Contoh Penerapan pada Web BSMI}
 %-----------------------------------------------------------------------------%

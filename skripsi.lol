@@ -12,6 +12,12 @@
 \contentsline {lstlisting}{\numberline {4.10}Implementasi fungsi fetch\_data}{24}{lstlisting.4.10}
 \contentsline {lstlisting}{\numberline {4.11}Fungsi total sebelum refactoring}{25}{lstlisting.4.11}
 \contentsline {lstlisting}{\numberline {4.12}Fungsi total setelah refactoring}{25}{lstlisting.4.12}
+\contentsline {lstlisting}{\numberline {5.1}Perintah untuk menjalankan Zotonic pada mode debug}{28}{lstlisting.5.1}
+\contentsline {lstlisting}{\numberline {5.2}Perintah untuk menjalankan Zotonic tanpa mode debug}{29}{lstlisting.5.2}
+\contentsline {lstlisting}{\numberline {5.3}Configurasi file /etc/hosts}{29}{lstlisting.5.3}
+\contentsline {lstlisting}{\numberline {5.4}Perintah untuk membuat \textit {site} baru pada Zotonic}{29}{lstlisting.5.4}
+\contentsline {lstlisting}{\numberline {5.5}Perintah untuk memberhentikan zotonic}{29}{lstlisting.5.5}
+\contentsline {lstlisting}{\numberline {5.6}\textit {Business logic} untuk fungsi total pada kategori program}{30}{lstlisting.5.6}
 \contentsline {lstlisting}{\numberline {1}Skrip adaptor m\_abs.erl}{2}{lstlisting.0.1}
 \contentsline {lstlisting}{\numberline {2}Berkas {\ttfamily compute.xml}}{5}{lstlisting.0.2}
 \contentsline {lstlisting}{\numberline {3}Berkas DonationController.java}{6}{lstlisting.0.3}
