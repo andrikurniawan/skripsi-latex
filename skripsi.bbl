@@ -8,6 +8,11 @@ Awwwards (2017).
   \url{https://www.awwwards.com/what-are-frameworks-22-best-responsive-css-frameworks-for-web-design.html}.
 \newblock [Diakses pada 28 Mei 2017].
 
+\bibitem[Berners-Lee et~al., 2001]{berners.semantic}
+Berners-Lee, T., Hendler, J., dan Lassila, O. (2001).
+\newblock The semantic web.
+\newblock Scientific American.
+
 \bibitem[Gruber, 1993]{paper.gruber}
 Gruber, T.~R. (1993).
 \newblock Toward principles for the design of ontologies used for knowledge
@@ -29,6 +34,11 @@ OWL-Working-Group (2004).
 \newblock Owl web ontology language overview.
 \newblock \url{https://www.w3.org/TR/2004/REC-owl-features-20040210/}.
 \newblock [Diakses 24 Mei 2017].
+
+\bibitem[Schoop et~al., 2006]{pragmatic.web}
+Schoop, M., de~Moor, A., dan Dietz, J.~L. (2006).
+\newblock The pragmatic web: A manifesto.
+\newblock Communications of The ACM.
 
 \bibitem[Zotonic, nda]{zotonic.overview}
 Zotonic (n.d.a).

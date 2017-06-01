@@ -6,8 +6,8 @@
 \contentsline {chapter}{ABSTRAK}{vii}{section*.8}
 \contentsline {chapter}{Daftar Isi}{ix}{section*.8}
 \contentsline {chapter}{Daftar Gambar}{xi}{section*.8}
-\contentsline {chapter}{Daftar Tabel}{xii}{section*.8}
-\contentsline {chapter}{Daftar Kode}{xiii}{section*.8}
+\contentsline {chapter}{Daftar Tabel}{xiii}{section*.8}
+\contentsline {chapter}{Daftar Kode}{xiv}{section*.8}
 \contentsline {chapter}{\numberline {1}\uppercase {Pendahuluan}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Perumusan Masalah}{2}{section.1.2}
@@ -35,11 +35,11 @@
 \contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{27}{section.5.1}
 \contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{28}{section.5.2}
 \contentsline {section}{\numberline {5.3}Contoh Penerapan pada Web BSMI}{30}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{31}{section.6.2}
-\contentsline {chapter}{Daftar Referensi}{32}{section.6.2}
-\contentsline {chapter}{LAMPIRAN}{1}{section*.20}
-\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.21}
-\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.23}
-\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.25}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{49}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{49}{section.6.2}
+\contentsline {chapter}{Daftar Referensi}{51}{Item.30}
+\contentsline {chapter}{LAMPIRAN}{1}{section*.51}
+\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.52}
+\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.54}
+\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.56}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.12)  1 JUN 2017 01:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.4.12)  2 JUN 2017 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,7 +571,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `sampul.aux'.
 
  (./sampul.tex
-<pics/makara.png, id=179, 154.86429pt x 154.34807pt>
+<pics/makara.png, id=180, 154.86429pt x 154.34807pt>
 File: pics/makara.png Graphic file (type png)
  <use pics/makara.png>
 Package pdftex.def Info: pics/makara.png used on input line 14.
@@ -744,49 +744,45 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10] (./skripsi.lof)
+[10] (./skripsi.lof [11
+
+
+])
 \tf@lof=\write6
 \openout6 = `skripsi.lof'.
 
- [11
 
 
-] (./skripsi.lot)
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12] (./skripsi.lot)
 \tf@lot=\write7
 \openout7 = `skripsi.lot'.
 
- [12
+ [13
 
 
 ] (./skripsi.lol)
 \tf@lol=\write8
 \openout8 = `skripsi.lol'.
 
- [13
+ [14
 
 
 ]
 \openout2 = `bab1-pendahuluan.aux'.
 
-
-(./bab1-pendahuluan.tex
+ (./bab1-pendahuluan.tex
 BAB 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-
-Underfull \hbox (badness 1014) in paragraph at lines 14--15
+Underfull \hbox (badness 1014) in paragraph at lines 15--16
 \T1/ptm/m/n/12 dicip-takan web prag-ma-tis. Tu-juan utama dari web prag-ma-tis 
 adalah un-tuk
  []
@@ -795,23 +791,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
+l.16 
       [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Overfull \hbox (16.19841pt too wide) in paragraph at lines 20--21
+Overfull \hbox (16.19841pt too wide) in paragraph at lines 21--22
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
@@ -823,25 +819,25 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
 
 [2]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 51.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 52.
 
-Underfull \hbox (badness 1430) in paragraph at lines 53--54
+Underfull \hbox (badness 1430) in paragraph at lines 54--55
 []\T1/ptm/m/n/12 Bab 1 berisi ten-tang in-for-masi terkait peneli-tian yang di-
 lakukan oleh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
@@ -852,22 +848,22 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Overfull \hbox (27.94829pt too wide) in paragraph at lines 67--68
+Overfull \hbox (27.94829pt too wide) in paragraph at lines 68--69
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
@@ -887,7 +883,7 @@ BAB 2.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/domain.jpg, id=505, 245.41687pt x 121.95563pt>
+<pics/domain.jpg, id=621, 245.41687pt x 121.95563pt>
 File: pics/domain.jpg Graphic file (type jpg)
  <use pics/domain.jpg>
 Package pdftex.def Info: pics/domain.jpg used on input line 27.
@@ -897,7 +893,7 @@ Package pdftex.def Info: pics/domain.jpg used on input line 27.
 
 
 
-] <pics/relationClass.jpg, id=521, 412.54124pt x 160.34906pt>
+] <pics/relationClass.jpg, id=636, 412.54124pt x 160.34906pt>
 File: pics/relationClass.jpg Graphic file (type jpg)
 
 <use pics/relationClass.jpg>
@@ -911,7 +907,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6 <./pics/domain.jpg> <./pics/relationClass.jpg>]
-<pics/subClass.jpg, id=528, 621.82312pt x 301.8778pt>
+<pics/subClass.jpg, id=643, 621.82312pt x 301.8778pt>
 File: pics/subClass.jpg Graphic file (type jpg)
  <use pics/subClass.jpg>
 Package pdftex.def Info: pics/subClass.jpg used on input line 51.
@@ -941,7 +937,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] <pics/dataModel.png, id=554, 356.33125pt x 419.5675pt>
+[8] <pics/dataModel.png, id=669, 356.33125pt x 419.5675pt>
 File: pics/dataModel.png Graphic file (type png)
 
 <use pics/dataModel.png>
@@ -979,7 +975,7 @@ BAB 3.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-<pics/skripsiRoadmapNew.jpg, id=569, 1326.9575pt x 679.53876pt>
+<pics/skripsiRoadmapNew.jpg, id=684, 1326.9575pt x 679.53876pt>
 File: pics/skripsiRoadmapNew.jpg Graphic file (type jpg)
 
 <use pics/skripsiRoadmapNew.jpg>
@@ -990,7 +986,7 @@ Package pdftex.def Info: pics/skripsiRoadmapNew.jpg used on input line 15.
 
 
  <./pics/skripsiRoadmapNew.jpg>]
-<pics/partABSRoadmap.jpg, id=577, 257.46187pt x 415.5525pt>
+<pics/partABSRoadmap.jpg, id=691, 257.46187pt x 415.5525pt>
 File: pics/partABSRoadmap.jpg Graphic file (type jpg)
 
 <use pics/partABSRoadmap.jpg>
@@ -1004,7 +1000,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12 <./pics/partABSRoadmap.jpg>]
-<pics/partZotonicRoadmap.jpg, id=583, 521.69907pt x 459.96844pt>
+<pics/partZotonicRoadmap.jpg, id=697, 521.69907pt x 459.96844pt>
 File: pics/partZotonicRoadmap.jpg Graphic file (type jpg)
 
 <use pics/partZotonicRoadmap.jpg>
@@ -1037,7 +1033,7 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14] <pics/adaptor.jpg, id=602, 733.74126pt x 427.5975pt>
+[14] <pics/adaptor.jpg, id=717, 733.74126pt x 427.5975pt>
 File: pics/adaptor.jpg Graphic file (type jpg)
 
 <use pics/adaptor.jpg>
@@ -1354,14 +1350,356 @@ Package Fancyhdr Warning: \headheight is too small (0.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29])
+[29] <pics/1-home.png, id=951, 1314.9125pt x 716.6775pt>
+File: pics/1-home.png Graphic file (type png)
+ <use pics/1-home.png>
+Package pdftex.def Info: pics/1-home.png used on input line 132.
+(pdftex.def)             Requested size: 398.3386pt x 217.10454pt.
+
+<pics/2-adminLogon.png, id=953, 1371.1225pt x 770.88pt>
+File: pics/2-adminLogon.png Graphic file (type png)
+
+<use pics/2-adminLogon.png>
+Package pdftex.def Info: pics/2-adminLogon.png used on input line 142.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (0.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[30 <./pics/1-home.png>]
+<pics/3-adminDashboard.png, id=971, 1371.1225pt x 770.88pt>
+File: pics/3-adminDashboard.png Graphic file (type png)
+
+<use pics/3-adminDashboard.png>
+Package pdftex.def Info: pics/3-adminDashboard.png used on input line 152.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./pics/2-adminLogon.png>]
+<pics/3-createProgram.png, id=977, 1371.1225pt x 770.88pt>
+File: pics/3-createProgram.png Graphic file (type png)
+
+<use pics/3-createProgram.png>
+Package pdftex.def Info: pics/3-createProgram.png used on input line 163.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/4-editProgram.png, id=980, 1371.1225pt x 770.88pt>
+File: pics/4-editProgram.png Graphic file (type png)
+
+<use pics/4-editProgram.png>
+Package pdftex.def Info: pics/4-editProgram.png used on input line 173.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32 <./pics/3-adminDashboard.png> <./pics/3-createProgram.png>]
+<pics/4-editProgram2.png, id=985, 1371.1225pt x 770.88pt>
+File: pics/4-editProgram2.png Graphic file (type png)
+
+<use pics/4-editProgram2.png>
+Package pdftex.def Info: pics/4-editProgram2.png used on input line 182.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/5-saveProgram.png, id=988, 1371.1225pt x 770.88pt>
+File: pics/5-saveProgram.png Graphic file (type png)
+
+<use pics/5-saveProgram.png>
+Package pdftex.def Info: pics/5-saveProgram.png used on input line 192.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33 <./pics/4-editProgram.png> <./pics/4-editProgram2.png>]
+<pics/5-viewProgram.png, id=994, 1371.1225pt x 770.88pt>
+File: pics/5-viewProgram.png Graphic file (type png)
+
+<use pics/5-viewProgram.png>
+Package pdftex.def Info: pics/5-viewProgram.png used on input line 201.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/6-createDonation.png, id=996, 1371.1225pt x 770.88pt>
+File: pics/6-createDonation.png Graphic file (type png)
+
+<use pics/6-createDonation.png>
+Package pdftex.def Info: pics/6-createDonation.png used on input line 211.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34 <./pics/5-saveProgram.png> <./pics/5-viewProgram.png>]
+<pics/7-editDonation.png, id=1004, 1371.1225pt x 770.88pt>
+File: pics/7-editDonation.png Graphic file (type png)
+
+<use pics/7-editDonation.png>
+Package pdftex.def Info: pics/7-editDonation.png used on input line 221.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./pics/6-createDonation.png>]
+<pics/8-editDonation2.png, id=1009, 1371.1225pt x 770.88pt>
+File: pics/8-editDonation2.png Graphic file (type png)
+
+<use pics/8-editDonation2.png>
+Package pdftex.def Info: pics/8-editDonation2.png used on input line 230.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/9-editDonation3.png, id=1012, 1371.1225pt x 770.88pt>
+File: pics/9-editDonation3.png Graphic file (type png)
+
+<use pics/9-editDonation3.png>
+Package pdftex.def Info: pics/9-editDonation3.png used on input line 240.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36 <./pics/7-editDonation.png> <./pics/8-editDonation2.png>]
+<pics/10-editDonation4.png, id=1018, 1371.1225pt x 770.88pt>
+File: pics/10-editDonation4.png Graphic file (type png)
+
+<use pics/10-editDonation4.png>
+Package pdftex.def Info: pics/10-editDonation4.png used on input line 250.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/11-editDonation5.png, id=1020, 1371.1225pt x 770.88pt>
+File: pics/11-editDonation5.png Graphic file (type png)
+
+<use pics/11-editDonation5.png>
+Package pdftex.def Info: pics/11-editDonation5.png used on input line 260.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37 <./pics/9-editDonation3.png> <./pics/10-editDonation4.png>]
+<pics/12-saveDonation.png, id=1026, 1371.1225pt x 770.88pt>
+File: pics/12-saveDonation.png Graphic file (type png)
+
+<use pics/12-saveDonation.png>
+Package pdftex.def Info: pics/12-saveDonation.png used on input line 270.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/12-viewprogram.png, id=1028, 1371.1225pt x 770.88pt>
+File: pics/12-viewprogram.png Graphic file (type png)
+
+<use pics/12-viewprogram.png>
+Package pdftex.def Info: pics/12-viewprogram.png used on input line 280.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <./pics/11-editDonation5.png> <./pics/12-saveDonation.png>]
+<pics/13-createDonation2.png, id=1034, 1371.1225pt x 770.88pt>
+File: pics/13-createDonation2.png Graphic file (type png)
+
+<use pics/13-createDonation2.png>
+Package pdftex.def Info: pics/13-createDonation2.png used on input line 290.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <./pics/12-viewprogram.png>]
+<pics/14-edit2Donation.png, id=1041, 1371.1225pt x 770.88pt>
+File: pics/14-edit2Donation.png Graphic file (type png)
+
+<use pics/14-edit2Donation.png>
+Package pdftex.def Info: pics/14-edit2Donation.png used on input line 300.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/15-edit2Donation2.png, id=1043, 1371.1225pt x 770.88pt>
+File: pics/15-edit2Donation2.png Graphic file (type png)
+
+<use pics/15-edit2Donation2.png>
+Package pdftex.def Info: pics/15-edit2Donation2.png used on input line 310.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <./pics/13-createDonation2.png> <./pics/14-edit2Donation.png>]
+<pics/16-edit2Donation3.png, id=1051, 1371.1225pt x 770.88pt>
+File: pics/16-edit2Donation3.png Graphic file (type png)
+
+<use pics/16-edit2Donation3.png>
+Package pdftex.def Info: pics/16-edit2Donation3.png used on input line 320.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/17-edit2Donation4.png, id=1052, 1371.1225pt x 770.88pt>
+File: pics/17-edit2Donation4.png Graphic file (type png)
+
+<use pics/17-edit2Donation4.png>
+Package pdftex.def Info: pics/17-edit2Donation4.png used on input line 329.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <./pics/15-edit2Donation2.png> <./pics/16-edit2Donation3.png>]
+<pics/18-dbdonation.png, id=1058, 1371.1225pt x 770.88pt>
+File: pics/18-dbdonation.png Graphic file (type png)
+
+<use pics/18-dbdonation.png>
+Package pdftex.def Info: pics/18-dbdonation.png used on input line 339.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/19-viewProgram.png, id=1060, 1371.1225pt x 770.88pt>
+File: pics/19-viewProgram.png Graphic file (type png)
+
+<use pics/19-viewProgram.png>
+Package pdftex.def Info: pics/19-viewProgram.png used on input line 349.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <./pics/17-edit2Donation4.png> <./pics/18-dbdonation.png>]
+<pics/20-editProgramAfter.png, id=1066, 1371.1225pt x 770.88pt>
+File: pics/20-editProgramAfter.png Graphic file (type png)
+
+<use pics/20-editProgramAfter.png>
+Package pdftex.def Info: pics/20-editProgramAfter.png used on input line 359.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <./pics/19-viewProgram.png>]
+<pics/22-deleteDonation.png, id=1073, 1371.1225pt x 770.88pt>
+File: pics/22-deleteDonation.png Graphic file (type png)
+
+<use pics/22-deleteDonation.png>
+Package pdftex.def Info: pics/22-deleteDonation.png used on input line 369.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/23-deleteDonation.png, id=1074, 1371.1225pt x 770.88pt>
+File: pics/23-deleteDonation.png Graphic file (type png)
+
+<use pics/23-deleteDonation.png>
+Package pdftex.def Info: pics/23-deleteDonation.png used on input line 378.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <./pics/20-editProgramAfter.png> <./pics/22-deleteDonation.png>]
+<pics/25-dbdelete.png, id=1080, 1371.1225pt x 770.88pt>
+File: pics/25-dbdelete.png Graphic file (type png)
+
+<use pics/25-dbdelete.png>
+Package pdftex.def Info: pics/25-dbdelete.png used on input line 388.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/24-viewProgram.png, id=1082, 1371.1225pt x 770.88pt>
+File: pics/24-viewProgram.png Graphic file (type png)
+
+<use pics/24-viewProgram.png>
+Package pdftex.def Info: pics/24-viewProgram.png used on input line 398.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./pics/23-deleteDonation.png> <./pics/25-dbdelete.png>]
+<pics/28-updateDonation.png, id=1088, 1371.1225pt x 770.88pt>
+File: pics/28-updateDonation.png Graphic file (type png)
+
+<use pics/28-updateDonation.png>
+Package pdftex.def Info: pics/28-updateDonation.png used on input line 408.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <./pics/24-viewProgram.png>]
+<pics/29-dbupdatedonation.png, id=1095, 1371.1225pt x 770.88pt>
+File: pics/29-dbupdatedonation.png Graphic file (type png)
+
+<use pics/29-dbupdatedonation.png>
+Package pdftex.def Info: pics/29-dbupdatedonation.png used on input line 418.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+
+<pics/29-viewprogramupdatedonation.png, id=1097, 1371.1225pt x 770.88pt>
+File: pics/29-viewprogramupdatedonation.png Graphic file (type png)
+
+<use pics/29-viewprogramupdatedonation.png>
+Package pdftex.def Info: pics/29-viewprogramupdatedonation.png used on input li
+ne 428.
+(pdftex.def)             Requested size: 398.3386pt x 223.9494pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./pics/28-updateDonation.png> <./pics/29-dbupdatedonation.png>]
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <./pics/29-viewprogramupdatedonation.png>]
 \openout2 = `bab6-penutup.aux'.
 
  (./bab6-penutup.tex
@@ -1370,11 +1708,18 @@ BAB 6.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 2.
 
-) [31
+[49
 
 
 
-] (./skripsi.bbl
+])
+
+Package Fancyhdr Warning: \headheight is too small (0.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50] (./skripsi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 []\T1/ptm/m/n/12 Awwwards (2017).  What are frame-works? 22 best re-spon-sive
  []
@@ -1391,7 +1736,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--10
 rks-[]for-[]web-[]design .
  []
 
-) [32
+) [51
 
 
 ]
@@ -1655,7 +2000,7 @@ an_sidang.aux) (./pengantar.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `skripsi.out' has not changed.
-(rerunfilecheck)             Checksum: 64E336969DAE34CDCCD96FA1621D02EB;3018.
+(rerunfilecheck)             Checksum: 7B8E3616B99F0A87CCBC411C00A62205;3014.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1663,10 +2008,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 12806 strings out of 493029
- 185933 string characters out of 6136234
- 489065 words of memory out of 5000000
- 14995 multiletter control sequences out of 15000+600000
+ 13055 strings out of 493029
+ 191582 string characters out of 6136234
+ 495065 words of memory out of 5000000
+ 15157 multiletter control sequences out of 15000+600000
  55348 words of font info for 78 fonts, out of 8000000 for 9000
  1239 hyphenation exceptions out of 8191
  44i,12n,51p,1336b,1886s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1679,10 +2024,10 @@ urier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
 e/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on skripsi.pdf (66 pages, 682166 bytes).
+Output written on skripsi.pdf (86 pages, 8254268 bytes).
 PDF statistics:
- 1773 PDF objects out of 2073 (max. 8388607)
- 1669 compressed objects within 17 object streams
- 930 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2048 PDF objects out of 2073 (max. 8388607)
+ 1891 compressed objects within 19 object streams
+ 986 named destinations out of 1000 (max. 500000)
+ 561 words of extra memory for PDF output out of 10000 (max. 10000000)
 
