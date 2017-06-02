@@ -1,45 +1,47 @@
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \textit {Roadmap} pembentukan web berbasis semantik\relax }}{2}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Contoh Kelas pada Ontologi\relax }}{6}{figure.caption.9}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Contoh Relasi pada Ontologi\relax }}{6}{figure.caption.10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Contoh Struktur Hierarki\relax }}{7}{figure.caption.11}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Contoh Data Model\relax }}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Contoh Kelas pada Ontologi\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Contoh Relasi pada Ontologi\relax }}{6}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Contoh Struktur Hierarki\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Contoh Data Model\relax }}{10}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Proses pembuatan produk menggunakan metode SPL\relax }}{11}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Rancangan integrasi ontologi dan web service\relax }}{11}{figure.caption.13}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Rancangan Bagian ABS\relax }}{12}{figure.caption.14}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rancangan Bagian Zotonic dan Ontologi\relax }}{13}{figure.caption.15}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Rancangan Adaptor\relax }}{15}{figure.caption.18}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Rancangan integrasi ontologi dan web service\relax }}{13}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Rancangan Bagian ABS\relax }}{14}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rancangan Bagian Zotonic dan Ontologi\relax }}{15}{figure.caption.17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Rancangan Adaptor\relax }}{17}{figure.caption.20}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Tampilan awal \textit {site} pada Zotonic\relax }}{30}{figure.caption.20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Tampilan login admin pada Zotonic\relax }}{31}{figure.caption.21}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Tampilan \textit {dashboard} admin pada Zotonic\relax }}{32}{figure.caption.22}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{32}{figure.caption.23}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program\relax }}{33}{figure.caption.24}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program\relax }}{33}{figure.caption.25}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Penyimpanan \textit {page} program pada database eksternal\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes\relax }}{34}{figure.caption.27}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{35}{figure.caption.28}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Tampilan halaman untuk mengubah donasi pada Zotonic\relax }}{36}{figure.caption.29}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{36}{figure.caption.30}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{37}{figure.caption.31}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{37}{figure.caption.32}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{38}{figure.caption.33}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Penyimpanan donasi pada database eksternal\relax }}{38}{figure.caption.34}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah pembuatan donasi\relax }}{39}{figure.caption.35}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{40}{figure.caption.36}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{40}{figure.caption.37}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{41}{figure.caption.38}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{41}{figure.caption.39}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{42}{figure.caption.40}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Penyimpanan donasi pada database eksternal\relax }}{42}{figure.caption.41}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah penambahan donasi\relax }}{43}{figure.caption.42}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program setelah ada donasi\relax }}{44}{figure.caption.43}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{44}{figure.caption.44}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Tampilan konfirmasi penghapusan \textit {page}\relax }}{45}{figure.caption.45}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Penghapusan tupel pada database eksternal setelah penghapusan donasi\relax }}{45}{figure.caption.46}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah penghapusan donasi\relax }}{46}{figure.caption.47}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{47}{figure.caption.48}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Perubahan database eksternal setelah perubahan donasi\relax }}{47}{figure.caption.49}
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah perubahan\relax }}{48}{figure.caption.50}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Tampilan awal \textit {site} pada Zotonic\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Tampilan login admin pada Zotonic\relax }}{33}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Tampilan \textit {dashboard} admin pada Zotonic\relax }}{34}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{34}{figure.caption.25}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program\relax }}{35}{figure.caption.27}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Penyimpanan \textit {page} program pada database eksternal\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes\relax }}{36}{figure.caption.29}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Tampilan halaman untuk mengubah donasi pada Zotonic\relax }}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{38}{figure.caption.32}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{39}{figure.caption.33}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{39}{figure.caption.34}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori donasi\relax }}{40}{figure.caption.35}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Penyimpanan donasi pada database eksternal\relax }}{40}{figure.caption.36}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah pembuatan donasi\relax }}{41}{figure.caption.37}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Tampilan membuat \textit {page} pada Zotonic\relax }}{42}{figure.caption.38}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{42}{figure.caption.39}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{43}{figure.caption.40}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{43}{figure.caption.41}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{44}{figure.caption.42}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Penyimpanan donasi pada database eksternal\relax }}{44}{figure.caption.43}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah penambahan donasi\relax }}{45}{figure.caption.44}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Tampilan halaman mengubah detail \textit {page} kategori program setelah ada donasi\relax }}{45}{figure.caption.45}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{46}{figure.caption.46}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Tampilan konfirmasi penghapusan \textit {page}\relax }}{46}{figure.caption.47}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Penghapusan tupel pada database eksternal setelah penghapusan donasi\relax }}{47}{figure.caption.48}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah penghapusan donasi\relax }}{48}{figure.caption.49}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Tampilan halaman mengubah detail \textit {page} pada kategori Donasi\relax }}{48}{figure.caption.50}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Perubahan database eksternal setelah perubahan donasi\relax }}{49}{figure.caption.51}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Tampilan \textit {page} Pelantikan dan Seminar BSMI Brebes setelah perubahan\relax }}{49}{figure.caption.52}
 \addvspace {10\p@ }

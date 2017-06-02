@@ -59,8 +59,6 @@ Agar ontologi dapat dipahami oleh komputer, ontologi tersebut harus direpresenta
 \section{Web \textit{Framework} Berbasis Semantic: Zotonic}
 %-----------------------------------------------------------------------------%
 
-\todo{Jelasin dahulu apa itu web semantik}
-
 Zotonic merupakan web yang bersifat \textit{open source}, \textit{real-time web framework}, dan sekaligus sebagai \textit{Content Management System} (CMS) yang dibangun menggunakan bahasa pemrograman erlang \citep{zotonic.overview}. Selain merupakan sebuah CMS dan \textit{framework}, Zotonic juga merupakan sebuah web server yang dapat menjalankan web langsung tanpa bantuan web server seperti Apache dan Nginx. Karena dibangun dengan bahasa pemrograman erlang, Zotonic sangat mengutamakan kecepatan.
 
 Menurut Zotonic, kecepatan dari zotonic ini sendiri bisa mencapai 10x lebih cepat daripada CMS yang dibangun menggunakan bahasa pemrograman PHP. Hal ini berdasarkan perbandingan antara proses pembuatan halaman pada kebanyakan \textit{framework} PHP yang membutuhkan waktu 150-600 ms sedangkan pada Zotonic biasanya hanya membutuhkan waktu 10 ms atau kurang. Selain itu, Zotonic memiliki mekanisme untuk mencegah permintaan yang berbeda untuk melakukan hal yang sama pada waktu yang bersamaan. Ketika terdapat dua atau lebih permintaan datang untuk halaman yang sama, atau bagian dari halaman yang sama, maka zotonic akan melakukan pekerjaan sekali dan mengirimkan hasilnya ke semua permintaan yang masuk. Zotonic juga menyimpan data yang sering digunakan pada memori, sehingga dapat mencegah kueri yang banyak kepada database. Pada erlang, kode akan dimuat dan akan terus dimuat sampai ada perubahaan kode berikutnya sehingga hal ini dapat membuat zotonic lebih efisien dibandingkan PHP \citep{zotonic.speed}.
@@ -89,4 +87,21 @@ Pada \pic~\ref{fig:dataModel}, blok persegi menggambarkan \textit{resource} dan 
 %-----------------------------------------------------------------------------%
 \section{\textit{Software Product Line}}
 %-----------------------------------------------------------------------------%
-	\todo{Jelasin SPL itu apa.}
+
+Pada zaman dahulu, sebuah produk hanya akan dibuat untuk melayani satu pelanggan saja. Namun, seiring dengan perkembangan zaman dimana kemampuan membeli meningkat, maka semakin banyak orang yang mampu membeli suatu produk. Setelah beberapa saat kemudian, cara produksi terhadap suatu produk mulai berubah karena banyak orang yang berminat pada barang yang sama. Hal ini kemudian mendorong untuk dilakukan produksi massal pada produk yang akan diciptakan \citep{book.sple}. Memproduksi produk secara massal dengan standar yang diinginkan oleh pengguna tentu akan mengurangi biaya dan mempercepat waktu produk jika harus membuat sebuah produk secara khusus. Istilah ini kemudian populer dengan sebutan \textit{Production Line}.
+	
+Dengan populernya penggunaan \textit{Production Line} pada industri, metode ini juga mulai diterapkan dalam industri teknologi dan dikenal dengan istilah \textit{Software Product Line}. Hal ini karena dengan memanfaatkan \textit{Software Product Line}, maka dapat mengurangi biaya untuk memproduksi produk, meningkatkan kualitas dari produk yang dihasilkan, serta mengurangi waktu dari produk tersebut untuk siap dipasarkan. Mengurangi biaya produk karena dengan menggunakan paradigma \textit{sofware product line}, bagian dari produk sebelumnya dapat digunakan lagi untuk produk berikutnya \citep{book.sple}. Meningkatkan kualitas dari produk yang dihasilkan karena produk yang dihasilkan akan digunakan oleh banyak pengguna sehingga kesempatan untuk mendeteksi \textit{bug} agar dapat diperbaiki lebih besar \citep{book.sple}. Dan terakhir, mengurangi waktu produk untuk siap dipasarkan karena produk baru yang akan dibuat dapat menggunakan bagian atau bahkan semua bagian dari produk sebelumnya.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.1\textwidth]
+	{pics/spl.jpg}
+	\caption{Proses pembuatan produk menggunakan metode SPL}
+	\label{fig:spl}
+\end{figure}
+\vspace{-0.8cm}
+\begin{center}
+	{\small Sumber gambar: \url{http://www.biglever.com/images/solution/Productionline_post.jpg}}
+\end{center}
+
+Seperti yang terlihat pada \pic~\ref{fig:spl}, pada proses produksi menggunakan SPL, hasil dari produk sebelumnya (pada gambar merupakan produk A) akan kembali digunakan untuk memproduksi produk selanjutnya. Bagian yang digunakan dapat berupa seluruh komponen dari produk pertama, ataupun hanya beberapa bagian yang digunakan kembali. Selanjutnya ketika produk berikutnya selesai (misal produk B), maka tambahan yang dibuat pada produk tersebut dapat digunakan kembali pada produk selanjutnya juga.

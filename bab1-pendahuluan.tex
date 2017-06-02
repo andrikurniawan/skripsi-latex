@@ -8,18 +8,26 @@ Bab ini menjelaskan latar belakang permasalahan, perumusan masalah, tujuan penel
 \section{Latar Belakang}
 %-----------------------------------------------------------------------------%
 
-Pada zaman serba teknologi saat ini, kebutuhan akan penggunaan web sebagai sarana berbagi informasi sangat tinggi. Namun, tidak ada sumber daya manusia yang memiliki latar belakang teknis dan merasa sulit untuk membuat sebuah web menjadi sebuah permasalahan yang dihadapi oleh beberapa organisasi di Indonesia terutama organisasi yang non-profit. Selain itu, banyaknya informasi yang terdapat pada web saat ini tidak memiliki hubungan informasi yang terstruktur dan hanya didesain untuk manusia saja sehingga program komputer tidak dapat mengolah informasi tersebut \citep{berners.semantic}.
- 
-Sehingga pada tahun 2001 dicetuskan ide untuk membuat web semantik oleh Berners-Lee dkk, dimana web semantik akan membuat sebuah struktur untuk konten web sehingga informasi yang terdapat pada web lebih berarti karena dapat diolah oleh program komputer \citep{berners.semantic}. Namun, perkembangan web semantik sendiri tidak seperti yang diharapkan karena mengalami permasalahan. Menurut Rob McCool, Format yang kompleks dan pengguna harus mengorbankan kemudahan ekspresivitas dan membayar biaya yang besar untuk translasi dan perawatan, web semantik tidak akan pernah diadopsi public secara luas \citep{pragmatic.web}.
+Penggunaan web sebagai sarana untuk berbagi informasi pada saat ini sangat tinggi. Namun, tidak banyak orang yang mampu mengembangkan web serta tidak adanya anggaran untuk pembuatan web menjadi masalah tersendiri terutama bagi organisasi non-profit. Selain itu, banyaknya informasi yang tersebar di web saat ini hanya sebatas informasi saja yang tidak dapat diolah. Hal ini karena informasi-informasi tersebut tidak memiliki hubungan yang terstruktur dan hanya didesain untuk manusia saja sehingga program komputer tidak dapat mengolah informasi tersebut \citep{berners.semantic}.
 
-Untuk mengatasi permasalahan tersebut yang dihadapi oleh web semantik, diciptakan web pragmatis. Tujuan utama dari web pragmatis adalah untuk meningkatkan kolaborasi manusia lebih efektif dengan teknologi yang tepat, seperti sistem untuk negosiasi ontologi, untuk interaksi bisnis berbasis ontologi, dan untuk membangun ontologi pragmatis pada praktik masyarakat \citep{pragmatic.web}. Sehingga web pragmatis dapat melengkapi web semantik untuk berkolaborasi dan meningkatkan kualitas pada level masyarakat. Salah satu perkembangan web semantik pragmatis adalah Zotonic, yaitu sebuah framework sekaligus Content Management System (CMS) yang dibangun di atas bahasa pemrograman erlang dimana zotonic telah mengadopsi konsep web semantik. Kehadiran Zotonic sendiri diharapkan dapat meningkatkan pemanfaatan web semantik dalam proses pembuatan web sehingga infomasi yang berada pada web yang dibuat dapat langsung diolah oleh komputer. Tetapi, pengembang perlu mendefinisikan semantik yang akan mereka buat terlebih dahulu sebelum mereka mengembangkannya dalam Zotonic untuk menciptakan sebuah konsistensi. Namun hal ini tentu saja menghambat proses pengembangan karena pengembang membutuhkan waktu yang lebih lama untuk proses translasi dari semantik ke Zotonic.
+Selain permasalahan informasi yang tidak dapat diolah oleh komputer, permasalahan lainnya adalah web yang ada saat ini kebanyakan memiliki fitur yang sama. Namun, dalam pembuatannya setiap web hanya didesain khusus untuk pembuatan satu web saja. Tentu saja hal ini dapat dibantu dengan menerapkan paradigma \textit{software product line} dimana \textit{software product line} dapat menghemat biaya produksi, mempercepat waktu produksi ke pasar serta lebih menjadi kualitas dari produk yang dihasilkan \citep{book.sple}.
 
-Untuk membantu para pengembang dalam mentranslasikan semantik ke dalam Zotonic, pada tahun 2016 terdapat sebuah penelitian terkait pembentukan otomatis aplikasi web dengan masukan berupa ontologi, yaitu penelitian terkait pemetaan ontologi yang dihasilkan semantik ke dalam struktur Zotonic (Pangukir el al., 2016). Namun, pada penelitian tersebut pembentukan bussiness logic dari web yang dibentuk masih secara manual. Hal ini karena pada ontologi tidak terdapat bussiness logic. Bussiness logic tersebut dapat diperoleh melalui translasi feature model dari rancangan web tersebut.
+Pada tahun 2001, \cite{berners.semantic} menemukan sebuah teknologi yang dinamakan web semantik, dimana web semantik akan membuat sebuah struktur untuk informasi yang terdapat pada web sehingga informasi-informasi tersebut dapat diolah oleh program komputer \citep{berners.semantic}. Menurut Rob McCool, Format yang kompleks dan pengguna harus mengorbankan kemudahan ekspresivitas serta membayar biaya yang besar untuk translasi dan perawatan menjadi alasan kenapa web semantic tidak akan pernah diadopsi publik secara luas \citep{pragmatic.web}.
 
-Oleh karena itu, untuk menerapkan paradigma Software Product Line (SPL) dimana variasi dan kesamaan akan disusun secara modular dan reusability, diperlukan sebuah program yang akan melakukan pemetaan secara otomatis terhadap bussiness logic dari feature model yang telah dirancang ke dalam Zotonic. Sehingga diharapkan kedepannya, proses pembentukan web berbasis semantik dapat lebih mudah dan cepat agar meningkatkan jumlah web yang berbasis semantik. \\
+Untuk mempermudah proses pembuatan web semantik, maka diciptakan web pragmatis dimana tujuannya adalah meningkatkan kolaborasi manusia untuk lebih efektif dengan teknologi yang tepat seperti sistem untuk negosiasi ontologi, interaksi bisnis yang terdapat pada ontologi, dan untuk membangun ontologi pragmatis pada praktik masyarakat \citep{pragmatic.web}. Sehingga web pragmatis dapat melengkapi web semantik untuk berkolaborasi dan meningkatkan kualitas pada level masyarakat.Salah satu perkembangan web semantik pragmatis adalah Zotonic, yaitu sebuah framework sekaligus Content Management System (CMS) yang dibangun di atas bahasa pemrograman erlang dimana zotonic telah mengadopsi konsep web semantik. Kehadiran Zotonic sendiri diharapkan dapat meningkatkan pemanfaatan web semantik dalam proses pembuatan web. sehingga infomasi yang berada pada web yang dibuat dapat langsung diolah oleh komputer. Tetapi, pengembang perlu mendefinisikan semantik yang akan mereka buat terlebih dahulu sebelum mereka mengembangkannya dalam Zotonic untuk menciptakan sebuah konsistensi. Namun hal ini tentu saja menghambat proses pengembangan karena pengembang membutuhkan waktu yang lebih lama untuk proses translasi dari semantik ke Zotonic.
 
-\todo{Perdalam lagi latar belakang.}
+Untuk membantu para pengembang dalam mentranslasikan semantik ke dalam Zotonic, pada tahun 2016 terdapat sebuah penelitian terkait pembentukan otomatis aplikasi web dengan masukan berupa ontologi, yaitu penelitian terkait pemetaan ontologi yang dihasilkan semantik ke dalam struktur Zotonic \citep{bravyto}. Namun, pada penelitian tersebut pembentukan \textit{business logic} dari web yang dibentuk masih secara manual. Hal ini dikarenakan pada ontologi tidak terdapat \textit{business logic} sehingga tidak dapat secara otomatis. \textit{Business logic} tersebut dapat diperoleh dari ABS \textit{microservices} seperti pada \pic~\ref{fig:roadmapbab1}.
 
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/roadmapbab1.jpg}
+	\caption{\textit{Roadmap} pembentukan web berbasis semantik}
+	\label{fig:roadmapbab1}
+\end{figure}
+\vspace{-0.3cm}
+
+Dengan memanfaatkan ABS \textit{microservices} yang dihasilkan dari SPLE, maka tidak hanya membuat sebuah web berbasis semantik saja tetapi zotonic yang dihasilkan nantinya dapat membuat beberapa web berbasis semantik yang memiliki struktur yang sama yang berasal dari ontologi dan \textit{business logic} yang dapat disesuaikan dengan kebutuhannya. Oleh karena itu, penting untuk dilakukan penelitian mengenai bagaimana cara menghubungkan ontologi tersebut dengan \textit{web services} pada zotonic agar lebih memudahkan dan lebih efisien dalam pembuatan web.
 %-----------------------------------------------------------------------------%
 \section{Perumusan Masalah}
 %-----------------------------------------------------------------------------%
@@ -51,23 +59,22 @@ Sistematika penulisan laporan adalah sebagai berikut:
 \begin{itemize}
 	\item Bab 1 \babSatu
 	
-	Bab 1 berisi tentang informasi terkait penelitian yang dilakukan oleh penulis, dimana bab ini terdiri atas 5 subbab, yaitu latar belakang yang akan membahas kenapa dilakukan penelitian ini, perumusan masalah yang akan membahas masalah yang akan diteliti oleh penulis, tujuan penelitian yang akan menjelaskan kegunaan dari penelitian ini, ruang lingkup penelitian yang akan membahas mengenai batasan dari peneletian yang dilakukan serta sistematika penulisan.\\
+	Bab 1 berisi tentang informasi terkait penelitian yang dilakukan oleh penulis, dimana bab ini terdiri atas 5 subbab, yaitu latar belakang, perumusan masalah yang akan diteliti oleh penulis, tujuan penelitian, ruang lingkup penelitian serta sistematika penulisan.\\
 	\item Bab 2 \babDua
 	
-	Bab 2 berisi mengenai teori-teori yang digunakan\\
+	Bab 2 berisi mengenai penjelasan terkait ontologi, web \textit{framewok} berbasis semantic: Zotonic, dan \textit{software product line}\\
 	\item Bab 3 \babTiga 
 	
-	Bab 3 berisi penjelasan mengenai rancangan dari sistem yang akan diimplementasikan, dimana bab ini terdiri atas 2 subbab, yaitu rancangan integrasi ontologi dan web service yang akan membahas secara garis besar bagaimana program ini akan berjalan secara keseluruhan serta rancangan \textit{adaptor} yang akan membahas bagaimana \textit{adaptor} yang dibuat nantinya akan bekerja.\\
+	Bab 3 berisi penjelasan mengenai rancangan dari sistem yang akan diimplementasikan, dimana bab ini terdiri atas 3 subbab, yaitu rancangan integrasi ontologi dan web service, rancangan \textit{web service} serta rancangan \textit{adaptor}.\\
 	
 	\item Bab 4 \babEmpat
 	
 	Bab 4 berisi penjelasan mengenai impelementasi yang dilakukan oleh penulis untuk membuat \textit{adaptor}. \\
 	
-	\item Bab 5 \babLima
+	\item Bab 5 \babLima	
 	
-	\todo{Jelasin bab 5 ngapain.}
+	Bab 5 berisi perubahan yang terjadi setelah eksperimen dan hasil uji coba eksperimen yang telah dilakukan oleh penulis. \\
 	
-	Bab 5 berisi hasil eksperimen yang telah dilakukan oleh penulis. \\
 	\item Bab 6 \babEnam
 	
 	Bab 6 berisi kesimpulan yang didapat dari penelitian serta saran yang diajukan untuk penelitian berikutnya.

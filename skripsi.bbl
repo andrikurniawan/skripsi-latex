@@ -35,6 +35,18 @@ OWL-Working-Group (2004).
 \newblock \url{https://www.w3.org/TR/2004/REC-owl-features-20040210/}.
 \newblock [Diakses 24 Mei 2017].
 
+\bibitem[Pangukir, 2016]{bravyto}
+Pangukir, B.~T. (2016).
+\newblock Pembentukan otomatis aplikasi berbasis web dengan masukan berupa
+  ontologi: Studi kasus web bsmi.
+\newblock Depok: Universitas Indonesia.
+
+\bibitem[Pohl et~al., 2005]{book.sple}
+Pohl, K., Böckle, G., dan van~der Linden, F.~J. (2005).
+\newblock {\em Software Product Line Engineering: Foundations, Principles, and
+  Techniques}.
+\newblock Springer.
+
 \bibitem[Schoop et~al., 2006]{pragmatic.web}
 Schoop, M., de~Moor, A., dan Dietz, J.~L. (2006).
 \newblock The pragmatic web: A manifesto.

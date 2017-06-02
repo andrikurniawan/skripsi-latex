@@ -1,6 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: skripsi.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: skripsi.aux
 A level-1 auxiliary file: sampul.aux
 A level-1 auxiliary file: judul_dalam.aux
 A level-1 auxiliary file: orisinal.aux
@@ -20,55 +18,15 @@ A level-1 auxiliary file: markLampiran.aux
 A level-1 auxiliary file: lampiran.aux
 Database file #1: bib.bib
 Warning--entry type for "zotonic.speed" isn't style-file defined
---line 170 of file bib.bib
+--line 185 of file bib.bib
 Warning--entry type for "zotonic.model" isn't style-file defined
---line 178 of file bib.bib
+--line 193 of file bib.bib
 Warning--entry type for "zotonic.mvc" isn't style-file defined
---line 186 of file bib.bib
+--line 201 of file bib.bib
 Warning--entry type for "awwwards.css" isn't style-file defined
---line 194 of file bib.bib
+--line 209 of file bib.bib
 Warning--empty booktitle in berners.semantic
 Warning--empty booktitle in paper.gruber
+Warning--empty booktitle in bravyto
 Warning--empty booktitle in pragmatic.web
-You've used 11 entries,
-            1935 wiz_defined-function locations,
-            542 strings with 5362 characters,
-and the built_in function-call counts, 3383 in all, are:
-= -- 346
-> -- 111
-< -- 10
-+ -- 45
-- -- 34
-* -- 220
-:= -- 625
-add.period$ -- 40
-call.type$ -- 11
-change.case$ -- 72
-chr.to.int$ -- 8
-cite$ -- 14
-duplicate$ -- 145
-empty$ -- 226
-format.name$ -- 49
-if$ -- 651
-int.to.chr$ -- 4
-int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 64
-num.names$ -- 33
-pop$ -- 61
-preamble$ -- 1
-purify$ -- 72
-quote$ -- 0
-skip$ -- 113
-stack$ -- 0
-substring$ -- 172
-swap$ -- 10
-text.length$ -- 1
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 64
-warning$ -- 3
-while$ -- 25
-width$ -- 0
-write$ -- 148
-(There were 7 warnings)
+(There were 8 warnings)

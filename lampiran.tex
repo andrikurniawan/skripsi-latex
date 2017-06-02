@@ -3,8 +3,8 @@
 \chapter*{Lampiran 1 : Kode Sumber Model ABS}
 %-----------------------------------------------------------------------------%
 \section*{\code{m\_abs.erl}} \label{cha:lampir-abs}
-Skrip ini diletakkan pada direktori \co{/usr/sesuatu} dan hanya dapat dieksekusi oleh \f{root}. Skrip ini berguna untuk menambahkan pengguna baru sesuai dengan konfigurasi baru yang telah ditetapkan.
-\begin{lstlisting}[style=L,caption={Skrip adaptor m\_abs.erl},label={lst:mabs}]
+Berkas ini ditaruh pada \co{src/models/}. Berkas ini merupakan \textit{adaptor} yang akan menghubungkan antara ontologi dan \textit{web services}
+\begin{lstlisting}[style=L,caption={Berkas adaptor m\_abs.erl},label={lst:mabs}]
 %% @author Andri Kurniawan <andrikurniawan.id@gmail.com>
 %% @copyright 2017 Andri Kurniawan
 %% Date: 2017-05-11
@@ -154,7 +154,8 @@ end.
 \chapter*{Lampiran 2 : Kode Sumber rules}
 %-----------------------------------------------------------------------------%
 \section*{rules.txt}
-\begin{lstlisting}[caption={Berkas \co{compute.xml}},label={lst:excomp}]
+Berkas ini ditaruh pada direktori \textit{root} dari zotonic. Berkas ini berfungsi sebagai tabel \textit{mapping}.
+\begin{lstlisting}[caption={Berkas rules.txt},label={lst:excomp}]
 {
 	"createProgram": ["http://54.169.128.6:8080/abs/program/create", 2],
 	"createDonation": ["http://54.169.128.6:8080/abs/donation/create", 4],
@@ -162,7 +163,9 @@ end.
 	"updateDonation": ["http://54.169.128.6:8080/abs/donation/update", 4],
 	"deleteProgram": ["http://54.169.128.6:8080/abs/program/delete", 1],
 	"deleteDonation": ["http://54.169.128.6:8080/abs/donation/delete", 1],
-	"totalDonation" : ["http://54.169.128.6:8080/abs/program/total-donation", 1]
+	"totalDonation" : ["http://54.169.128.6:8080/abs/program/total-donation", 1],
+	"checkExistProgram" : ["http://54.169.128.6:8080/abs/program/checkExist", 1],
+	"checkExistDonation" : ["http://54.169.128.6:8080/abs/donation/checkExist", 1]
 }
 \end{lstlisting}
 
@@ -170,6 +173,7 @@ end.
 \addChapter{Lampiran 3 : Kode Sumber \textit{Web Service}}
 \chapter*{Lampiran 3 : Kode Sumber \textit{Web Service}}
 %-----------------------------------------------------------------------------%
+\textit{Web Services} ini digunakan untuk melakukan ujicoba terhadap \textit{adaptor} yang telah diimplementasikan. \textit{Web Services} ini hanya bersifat sementara karena belum adanya \textit{web service} dari ABS \textit{microservices} untuk ontologi yang digunakan.
 \section*{DonationController.java}
 \begin{lstlisting}[caption={Berkas DonationController.java},label={lst:DonationController},language=Java]
 package com.skripsi.Controller;
