@@ -7,7 +7,7 @@ Dari permasalahan yang sudah didefinisikan, maka akan dibuat sebuah program yang
 \section{Rancangan Integrasi Ontologi dan \textit{Web Service}}
 %-----------------------------------------------------------------------------%
 
-Agar dapat menghasilkan program yang bertujuan untuk melakukan integrasi ontologi dan \textit{web services} maka perlu dirancang secara keseluruhan bagaimana program ini akan bekerja. Sesuai dengan kebutuhan dari program, maka integrasi ini akan dilakukan pada sebuah \textit{framework} sekaligus \textit{CMS} Zotonic, yang telah dimodifikasi agar dapat menerima masukan berupa ontologi. Secara garis besar, berikut merupakan gambaran cara program akan bekerja.
+Supaya dapat menghasilkan program yang bertujuan untuk melakukan integrasi ontologi dan \textit{web services} maka perlu dirancang secara keseluruhan bagaimana program ini akan bekerja. Sesuai dengan kebutuhan dari program, maka integrasi ini akan dilakukan pada sebuah \textit{framework} sekaligus \textit{CMS} Zotonic, yang telah dimodifikasi agar dapat menerima masukan berupa ontologi. Secara garis besar, berikut merupakan gambaran cara program akan bekerja.
 
 \begin{figure}
 	\centering
@@ -31,7 +31,7 @@ Seperti yang dapat dilihat pada \pic~\ref{fig:skripsiroadmap}, \textit{Class} da
 
 Dalam penelitian ini, \textit{web services} yang dihasilkan oleh ABS \textit{Microservices} akan digunakan oleh \textit{Adaptor} yang akan terhubung dengan Zotonic. Selain digunakan untuk menghasilkan sebuah \textit{web service}, ABS \textit{Microservices} akan digunakan untuk menghasilkan sebuah ontologi menggunakan sebuah \textit{script} yang akan melakukan pemetaan dari \textit{class} dan \textit{feature model} menjadi \textit{class, datatype property, object property} dan \textit{rules} pada ontologi. Untuk pemetaan ini sendiri tidak termasuk dalam penelitian ini karena penulis hanya akan menggunakan sebuah ontologi yang telah dirancang sebelumnya. Nantinya melalui proses pemetaan ini, akan dihasilkan sebuah ontologi yang bersifat \textit{reusable}.
 
-Menggunakan ontologi yang telah dirancang sebelumnya, ontologi tersebut akan dipetakan ke dalam struktur dari zotonic yang akan digunakan. Proses pemetaan dari ontologi ke dalam zotonic ini sendiri telah dilakukan pada penelitian sebelumnya oleh Bravyto dimana setiap \textit{class} dari ontologi akan dipetakan menjadi nama dari kategori pada zotonic menggunakan \textit{script classAndObjectPropertyMapper.sh}. Selain melakukan pemetaan pada \textit{class, script} tersebut juga akan melakukan pemetaan \textit{datatype property} pada ontologi menjadi \textit{property} dari kategori pada zotonic serta pemetaan \textit{object property} pada ontologi menjadi \textit{predicate} pada zotonic. Pada penelitian tersebut, dilakukan juga pemetaan dari \textit{datatype property} menjadi \textit{business logic} menggunakan \textit{script} datatypePropertyMapper.sh. Proses ini digambarkan pada \pic~\ref{fig:ZotonicRoadmap} berikut ini
+Menggunakan ontologi yang telah dirancang sebelumnya, ontologi tersebut akan dipetakan ke dalam struktur dari Zotonic yang akan digunakan. Proses pemetaan dari ontologi ke dalam Zotonic ini sendiri telah dilakukan pada penelitian sebelumnya oleh Bravyto dimana setiap \textit{class} dari ontologi akan dipetakan menjadi nama dari kategori pada Zotonic menggunakan \textit{script classAndObjectPropertyMapper.sh}. Selain melakukan pemetaan pada \textit{class, script} tersebut juga akan melakukan pemetaan \textit{datatype property} pada ontologi menjadi \textit{property} dari kategori pada Zotonic serta pemetaan \textit{object property} pada ontologi menjadi \textit{predicate} pada Zotonic. Pada penelitian tersebut, dilakukan juga pemetaan dari \textit{datatype property} menjadi \textit{business logic} menggunakan \textit{script} datatypePropertyMapper.sh. Proses ini digambarkan pada \pic~\ref{fig:ZotonicRoadmap} berikut ini.
 
 \begin{figure}
 	\centering
@@ -42,12 +42,12 @@ Menggunakan ontologi yang telah dirancang sebelumnya, ontologi tersebut akan dip
 \end{figure}
 \vspace{-0.3cm}
 
-Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat manual yang langsung ditaruh pada \textit{script} datatypepropertyMapper.sh. Pada penelitian ini, penulis akan membuat sebuah adaptor yang akan memanggil \textit{web service} sehingga \textit{business logic} pada zotonic akan lebih fleksibel karena memanfaatkan \textit{web service} serta memberikan kemudahan bagi \textit{developer} dalam hal melakukan modifikasi.
+Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat manual dimana kode \textit{business logic} langsung ditaruh pada \textit{script} datatypepropertyMapper.sh. Pada penelitian ini, penulis akan membuat sebuah adaptor yang akan memanggil \textit{web service} sehingga \textit{business logic} pada Zotonic akan lebih fleksibel karena memanfaatkan \textit{web service} serta memberikan kemudahan bagi \textit{developer} dalam hal melakukan modifikasi.
 %-----------------------------------------------------------------------------%
 \section{Rancangan \textit{Web Service}}
 %-----------------------------------------------------------------------------%
 
-	Agar \textit{web services} yang digunakan nantinya dapat sesuai dengan yang akan diimplementasikan, perlu dirancang terlebih dahulu bagaimana \textit{web services} yang akan digunakan. Pertama perlu didefinisikan bagaimana struktur dari JSON yang diberikan diterima. Pada penelitian ini, penulis mendefinisikan struktur JSON sebagai berikut
+	Supaya \textit{web services} yang digunakan nantinya dapat sesuai dengan yang akan diimplementasikan, perlu dirancang terlebih dahulu bagaimana \textit{web services} yang akan digunakan. Pertama perlu didefinisikan bagaimana struktur dari JSON yang diberikan diterima. Pada penelitian ini, penulis mendefinisikan struktur JSON sebagai berikut
 	
 	\begin{minipage}{\linewidth}
 	\begin{lstlisting}[caption={Struktur JSON \textit{web services}}, label={lst:json}]
@@ -100,18 +100,18 @@ Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat
 \section{Rancangan \f{Adaptor}}
 %-----------------------------------------------------------------------------%
 
-Adaptor merupakan sebuah \textit{script} yang akan memanggil \textit{web service} sehingga dapat digunakan untuk melakukan pemrosesan \textit{business logic} pada zotonic. Bagaimana adaptor akan bekerja sehingga menghasilkan business logic dapat dilihat pada gambar berikut ini.
+\textit{Adaptor} merupakan sebuah \textit{script} yang akan memanggil \textit{web service} sehingga dapat digunakan untuk melakukan pemrosesan \textit{business logic} pada Zotonic. Bagaimana adaptor akan bekerja sehingga menghasilkan business logic dapat dilihat pada gambar berikut ini.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]
 		{pics/adaptor.jpg}
-	\caption{Rancangan Adaptor}
+	\caption{Rancangan \textit{Adaptor}}
 	\label{fig:adaptor}
 \end{figure}
 \vspace{-0.3cm}
 
-Seperti yang dapat dilihat pada \pic~\ref{fig:adaptor}, \textit{rules} yang terdapat pada ontologi akan dilakukan pemetaan menjadi tabel \textit{rules} yang akan disimpan pada file rules.txt seperti yang terdapat pada kode \ref{lst:tablerules}. Namun, proses pemetaan ini berada diluar dari topik penelitian penulis sehingga untuk keperluan penelitian ini maka penulis membuat sebuah tabel \textit{rules} secara manual untuk mengganti proses pemetaan tersebut.
+Seperti yang dapat dilihat pada \pic~\ref{fig:adaptor}, \textit{rules} yang terdapat pada ontologi akan dilakukan pemetaan menjadi tabel \textit{rules} yang akan disimpan pada berkas rules.txt seperti yang terdapat pada kode \ref{lst:tablerules}. Namun, proses pemetaan ini berada diluar dari topik penelitian penulis sehingga untuk keperluan penelitian ini maka penulis membuat sebuah tabel \textit{rules} secara manual untuk mengganti proses pemetaan tersebut.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Contoh tabel \textit{rules}},label={lst:tablerules}]

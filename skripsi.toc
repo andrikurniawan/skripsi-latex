@@ -13,33 +13,35 @@
 \contentsline {section}{\numberline {1.2}Perumusan Masalah}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Tujuan Penelitian}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Ruang Lingkup Penelitian}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Sistematika Penulisan}{4}{section.1.5}
+\contentsline {section}{\numberline {1.5}Sistematika Penulisan}{3}{section.1.5}
 \contentsline {chapter}{\numberline {2}\uppercase {Tinjauan Pustaka}}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Ontologi}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Web \textit {Framework} Berbasis Semantic: Zotonic}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}\textit {Software Product Line}}{10}{section.2.3}
-\contentsline {chapter}{\numberline {3}\uppercase {Rancangan}}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Rancangan Integrasi Ontologi dan \textit {Web Service}}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}Rancangan \textit {Web Service}}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}Rancangan \textit {Adaptor}}{17}{section.3.3}
-\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Interface \textit {Adaptor}}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Pemanggilan \textit {Adaptor} Melalui \textit {Template Engine}}{20}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model}{22}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Implementasi \textit {Adaptor}}{24}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Implementasi Fungsi \textit {lookup\_rules}}{24}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Implementasi Fungsi \textit {validate\_params}}{26}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Implementasi Fungsi \textit {fetch\_data}}{26}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Penggunaan \textit {Adaptor} pada \textit {Business Logic}}{27}{section.4.3}
-\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{29}{chapter.5}
-\contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{30}{section.5.2}
-\contentsline {section}{\numberline {5.3}Contoh Penerapan pada Web BSMI}{32}{section.5.3}
-\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{50}{chapter.6}
-\contentsline {section}{\numberline {6.1}Kesimpulan}{50}{section.6.1}
-\contentsline {section}{\numberline {6.2}Saran}{51}{section.6.2}
-\contentsline {chapter}{Daftar Referensi}{52}{Item.30}
-\contentsline {chapter}{LAMPIRAN}{1}{section*.53}
-\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.54}
-\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.56}
-\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.58}
+\contentsline {chapter}{\numberline {3}\uppercase {Rancangan}}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rancangan Integrasi Ontologi dan \textit {Web Service}}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Rancangan \textit {Web Service}}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Rancangan \textit {Adaptor}}{16}{section.3.3}
+\contentsline {chapter}{\numberline {4}\uppercase {Implementasi}}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}\textit {Interface Adaptor}}{18}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Pemanggilan \textit {Adaptor} Melalui \textit {Template Engine}}{19}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Pemanggilan \textit {Adaptor} Melalui Model}{21}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Implementasi \textit {Adaptor}}{23}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Implementasi Fungsi \textit {lookup\_rules}}{23}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Implementasi Fungsi \textit {validate\_params}}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Implementasi Fungsi \textit {fetch\_data}}{25}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Penggunaan \textit {Adaptor} pada \textit {Business Logic}}{26}{section.4.3}
+\contentsline {chapter}{\numberline {5}\uppercase {Hasil}}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Perubahan pada Struktur Zotonic}{28}{section.5.1}
+\contentsline {section}{\numberline {5.2}Perubahan Setelah \textit {Create Site Script} Dijalankan}{29}{section.5.2}
+\contentsline {section}{\numberline {5.3}Contoh Penerapan pada Web BSMI}{31}{section.5.3}
+\contentsline {section}{\numberline {5.4}Contoh Keterhubungan Data pada Web BSMI}{48}{section.5.4}
+\contentsline {section}{\numberline {5.5}Kesesuaian Keterhubungan Data dengan Ontologi}{51}{section.5.5}
+\contentsline {chapter}{\numberline {6}\uppercase {Penutup}}{52}{chapter.6}
+\contentsline {section}{\numberline {6.1}Kesimpulan}{52}{section.6.1}
+\contentsline {section}{\numberline {6.2}Saran}{53}{section.6.2}
+\contentsline {chapter}{Daftar Referensi}{54}{Item.31}
+\contentsline {chapter}{LAMPIRAN}{1}{section*.57}
+\contentsline {chapter}{Lampiran 1 : Kode Sumber Model ABS}{2}{section*.58}
+\contentsline {chapter}{Lampiran 2 : Kode Sumber rules}{4}{section*.60}
+\contentsline {chapter}{Lampiran 3 : Kode Sumber \textit {Web Service}}{5}{section*.62}
