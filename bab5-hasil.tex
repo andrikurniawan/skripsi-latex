@@ -6,51 +6,56 @@
 \section{Perubahan pada Struktur Zotonic}
 %-----------------------------------------------------------------------------%
 
-Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa berkas baru yang ditambahkan ke dalam struktur Zotonic. Berikut adalah struktur dari Zotonic yang telah dapat membuat struktur Zotonic dari ontologi sebelum penambahan berkas baru untuk menjalankan fungsi integrasi ontologi dan \textit{web service}\\
-	\begin{tabbing}
-		\qquad Zotonic/ \\
-		\qquad \qquad .rebar/ \\
-		\qquad \qquad bin/ \\
-		\qquad \qquad deps/ \\
-		\qquad \qquad doc/ \\
-		\qquad \qquad docker/ \\
-		\qquad \qquad ebin/ \\
-		\qquad \qquad include/ \\
-		\qquad \qquad modules/ \\
-		\qquad \qquad priv/ \\
-		\qquad \qquad src/ \\
-		\qquad \qquad user/ \\
-		\qquad \qquad .dockerignore \\
-		\qquad \qquad .editorconfig \\
-		\qquad \qquad .travis.yml \\
-		\qquad \qquad AUTHORS \\
-		\qquad \qquad CONTRIBUTING.md \\
-		\qquad \qquad CONTRIBUTORS \\
-		\qquad \qquad Dockerfile \\
-		\qquad \qquad Dockerfile.dev \\
-		\qquad \qquad Dockerfile.heavy \\
-		\qquad \qquad GNUmakefile \\
-		\qquad \qquad LICENSE\\
-		\qquad \qquad Makefile \\
-		\qquad \qquad Readme.md \\
-		\qquad \qquad TRANSLATORS \\
-		\qquad \qquad USE\_REBAR\_LOCKED \\
-		\qquad \qquad build.cmd \\
-		\qquad \qquad charity\_org\_rdf.owl \\
-		\qquad \qquad classAndObjectPropertyMapper.sh \\
-		\qquad \qquad docker-compose.yml \\
-		\qquad \qquad prepare-release.sh \\
-		\qquad \qquad rebar \\
-		\qquad \qquad rebar.config\\
-		\qquad \qquad rebar.config.lock\\
-		\qquad \qquad rebar.config.lock.script\\
-		\qquad \qquad rebar.config.script\\
-		\qquad \qquad recentsite.txt\\
-		\qquad \qquad start.cmd\\
-		\qquad \qquad start.sh\\
-		\qquad \qquad zotonic.pid\\
-		\qquad \qquad zotonic\_install
-	\end{tabbing}
+Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa berkas baru yang ditambahkan ke dalam struktur Zotonic. Berikut adalah perbandingan struktur dari Zotonic yang telah dapat membuat struktur Zotonic dari ontologi sebelum penambahan berkas baru untuk menjalankan fungsi integrasi ontologi dan \textit{web service} dan struktur dari \textit{default} Zotonic pada Tabel \ref{tab:structure}\\
+	
+\begin{longtable}{| l | l |}
+	\caption{Perbandingan struktur Zotonic yang asli dan hasil penelitian sebelumnya}
+	\label{tab:structure}
+	\hline
+	\textbf{Zotonic \textit{Default}} & \textbf{Hasil penelitian sebelumnya} \\
+	\hline
+	.rebar/ & .rebar/ \\
+	bin/ & bin/ \\
+	deps/ & deps/ \\
+	doc/ & doc/ \\
+	docker/ & docker/ \\
+	ebin/ & ebin/ \\
+	include/ & include/ \\
+	modules/ & modules/ \\
+	priv/ & priv/ \\
+	src/ & src/ \\
+	user/ & user/ \\
+	.dockerignore & .dockerignore \\
+	.editorconfig & .editorconfig \\
+	.travis.yml & .travis.yml \\
+	AUTHORS & AUTHORS \\
+	CONTRIBUTING.md & CONTRIBUTING.md \\
+	CONTRIBUTORS & CONTRIBUTORS \\
+	Dockerfile & Dockerfile \\
+	Dockerfile.dev & Dockerfile.dev \\
+	Dockerfile.heavy & Dockerfile.heavy \\
+	GNUmakefile & GNUmakefile \\
+	LICENSE & LICENSE \\
+	Makefile & Makefile \\
+	Readme.md & Readme.md \\
+	TRANSLATORS & TRANSLATORS \\
+	USE\_REBAR\_LOCKED & USE\_REBAR\_LOCKED \\
+	build.cmd & build.cmd \\
+	docker-compose.yml & docker-compose.yml \\
+	prepare-release.sh & prepare-release.sh \\
+	rebar & rebar \\
+	rebar.config & rebar.config \\
+	rebar.config.lock.script & rebar.config.lock.script \\
+	rebar.config.script & rebar.config.script \\
+	start.cmd & start.cmd \\
+	start.sh & start.sh\\
+	zotonic.pid & zotonic.pid \\
+	zotonic\_install & zotonic\_install \\
+	& \textbf{recentsite.txt} \\
+	& \textbf{charity\_org\_rdf.owl}\\
+	& \textbf{classAndObjectPropertyMapper.sh} \\
+	\hline
+\end{longtable}
 	
 	Setelah implementasi, perlu ditambahkan berkas rules.txt pada folder Zotonic dimana berkas ini merupakan tabel \textit{rules} yang akan digunakan untuk \textit{mapping web service} seperti yang dijelaskan pada bab sebelumnya. Selain itu, perlu ditambahkan juga modul m\_abs.erl pada folder \textit{models} yang terdapat pada folder \textit{src} dari folder Zotonic. Modul ini yang nantinya akan berfungsi sebagai \textit{adaptor} untuk menghubungkan antara ontologi dan \textit{web services} seperti penjelasan pada bab sebelumnya.
 		
@@ -61,7 +66,7 @@ Agar ontologi dan \textit{web services} dapat terintegrasi, terdapat beberapa be
 Setelah menjalankan proses \textit{build script}, maka \textit{site} dapat dibuat dengan menjalankan proses \textit{create site script}. Langkah untuk menjalankan \textit{create site script} sebagai berikut
 
 \begin{enumerate}
-	\item Jalankan Zotonic dengan perintah seperti kode \ref{lst:debug} untuk menjalankan Zotonic dalam mode debug atau \ref{lst:startzotonic} untuk menjalankan Zotonic tanpa debug.
+	\item Jalankan Zotonic dengan perintah seperti Kode \ref{lst:debug} untuk menjalankan Zotonic dalam mode debug atau \ref{lst:startzotonic} untuk menjalankan Zotonic tanpa debug.
 	
 	\begin{minipage}{\linewidth}
 		\begin{lstlisting}[caption={Perintah untuk menjalankan Zotonic pada mode \textit{debug}},label={lst:debug}]
@@ -77,21 +82,21 @@ Setelah menjalankan proses \textit{build script}, maka \textit{site} dapat dibua
 
 	\item Persiapkan database pgsql untuk \textit{site} yang akan dibuat dengan membuat \textit{user} baru bernama Zotonic dengan \textit{password} Zotonic pada pgsql. Lalu beri akses kepada \textit{user} tersebut untuk dapat membuat database baru.
 	
-	\item Setelah mempersiapkan database, selanjutnya edit berkas \co{/etc/hosts} dengan menambahkan namasite.dev yang diarahkan menuju local host seperti pada kode \ref{lst:etchosts}. namasite merupakan nama dari \textit{site} yang ingin dibuat. Dalam penelitian ini, penulis membuat site bsmi sehingga namasite akan diubah menjadi bsmi
+	\item Setelah mempersiapkan database, selanjutnya edit berkas \co{/etc/hosts} dengan menambahkan namasite.dev yang diarahkan menuju local host seperti pada Kode \ref{lst:etchosts}. namasite merupakan nama dari \textit{site} yang ingin dibuat. Dalam penelitian ini, penulis membuat site bsmi sehingga namasite akan diubah menjadi bsmi
 	\begin{minipage}{\linewidth}
 		\begin{lstlisting}[caption={Configurasi berkas /etc/hosts},label={lst:etchosts}]
 		127.0.0.1   namasite.dev
 		\end{lstlisting}
 	\end{minipage}
 
-	\item Selanjutnya dapat menjalankan perintah seperti kode \ref{lst:createsite}, untuk membuat \textit{site} baru pada Zotonic dengan \textit{template} blog
+	\item Selanjutnya dapat menjalankan perintah seperti Kode \ref{lst:createsite}, untuk membuat \textit{site} baru pada Zotonic dengan \textit{template} blog
 	\begin{minipage}{\linewidth}
 		\begin{lstlisting}[caption={Perintah untuk membuat \textit{site} baru pada Zotonic},label={lst:createsite}]
 		$ bin/zotonic addsite -s blog namasite
 		\end{lstlisting}
 	\end{minipage}
 
-	\item Setelah proses \textit{create site} selesai, berhentikan Zotonic dengan menekan \co{Ctrl + C} dua kali jika menggunakan mode debug, atau menggunakan perintah seperti kode \ref{lst:stopzotonic} jika menjalankan Zotonic tanpa mode debug
+	\item Setelah proses \textit{create site} selesai, berhentikan Zotonic dengan menekan \co{Ctrl + C} dua kali jika menggunakan mode debug, atau menggunakan perintah seperti Kode \ref{lst:stopzotonic} jika menjalankan Zotonic tanpa mode debug
 	\begin{minipage}{\linewidth}
 		\begin{lstlisting}[caption={Perintah untuk memberhentikan Zotonic},label={lst:stopzotonic}]
 		$ bin/zotonic stop
@@ -120,7 +125,7 @@ Setelah proses diatas, Zotonic akan membuat sebuah folder baru pada \co{user/sit
 	\end{lstlisting}
 \end{minipage}
 
-Pada kode \ref{lst:totalfront} dapat dilihat bahwa variabel total akan menerima nilai dari hasil pemanggilan \textit{adaptor} dengan fungsi \textit{totalDonation}. Dengan memanfaatkan \textit{adaptor}, akan mempermudah pengguna karena tidak perlu untuk melakukan implementasi \textit{business logic} pada kode program.
+Pada Kode \ref{lst:totalfront} dapat dilihat bahwa variabel total akan menerima nilai dari hasil pemanggilan \textit{adaptor} dengan fungsi \textit{totalDonation}. Dengan memanfaatkan \textit{adaptor}, akan mempermudah pengguna karena tidak perlu untuk melakukan implementasi \textit{business logic} pada Kode program.
 %-----------------------------------------------------------------------------%
 \section{Contoh Penerapan pada Web BSMI}
 %-----------------------------------------------------------------------------%
@@ -446,7 +451,8 @@ Setelah pada subbab sebelumnya telah dilakukan proses pembuatan \textit{page} pa
 
 Pada \pic~\ref{fig:semanticweb}, terdapat perbandingan antara \textit{web} biasa dengan \textit{web} semantik. Pada teknologi \textit{web} 1.0, sebuah \textit{page} khusus dibuat oleh \textit{producer} untuk satu \textit{customer}. Pada teknologi ini, \textit{customer} hanya berperan sebagai pembaca saja. Contohnya dari penerapan teknologi ini adalah blog. Selanjutnya ditemukan teknologi \textit{web} 2.0 dimana \textit{customer} dapat berperan sebagai \textit{producer} juga. Contoh dari penerapan teknologi ini adalah sosial media seperti Twitter, Facebook, dan lain-lain. Namun, pada teknologi ini, informasi-informasi yang ada hanya sebatas untuk ditampilkan saja. Sehingga muncul teknologi \textit{web} 3.0 atau disebut \textit{web} semantik dimana informasi-informasi yang terdapat pada \textit{web} dapat diolah dan ditampilkan pada suatu \textit{page}.
 
-Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan semantik dapat digunakan sebagai sebuah \textit{engine} untuk mengolah dan menampilkan hasilnya pada sebuah \textit{page}. Berikut merupakan hasil dari penerapan keterhubungan data pada \textit{web} BSMI.
+Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan semantik dapat digunakan sebagai sebuah \textit{engine} untuk mengolah dan menampilkan hasilnya pada sebuah \textit{page}. Berikut merupakan hasil dari penerapan keterhubungan data pada \textit{web} BSMI dengan menggunakan beberapa bagian dari ontologi \textit{Charity Organization}.
+
 
 \begin{figure}
 	\centering
@@ -457,7 +463,7 @@ Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan sem
 \end{figure}
 \vspace{-0.3cm}
 
-Pada \pic~\ref{fig:programlinked}, merupakan tampilan dari sebuah \textit{page} dengan kategori \textit{Program}. Tampilan ini menggabungkan informasi yang didapatkan dari \textit{page} \textit{Target} dan \textit{Donation} untuk ditampilkan pada tampilan \textit{Program}. Pada \textit{page} ini, ditampilkan total donasi yang diterima untuk program ini yang dihitung dari \textit{amount} seluruh donasi yang terhubung ke program ini seperti yang dijelaskan pada bab sebelumnya. Selanjutnya terdapat juga informasi daftar donasi yang diberikan kepada program ini serta informasi disalurkan kepada siapa dana dari program ini.
+Pada \pic~\ref{fig:programlinked}, merupakan tampilan dari sebuah \textit{page} dengan kategori \textit{Program}. Tampilan ini menggabungkan informasi yang didapatkan dari \textit{page} \textit{Beneficiary} dan \textit{Donation} untuk ditampilkan pada tampilan \textit{Program}. Pada \textit{page} ini, ditampilkan total donasi yang diterima untuk program ini yang dihitung dari \textit{amount} seluruh donasi yang terhubung ke program ini seperti yang dijelaskan pada bab sebelumnya. Selanjutnya terdapat juga informasi daftar donasi yang diberikan kepada program ini serta informasi disalurkan kepada siapa dana dari program ini.
 
 \begin{figure}
 	\centering
@@ -481,3 +487,19 @@ Pada \pic~\ref{fig:donationlinked} dan \pic~\ref{fig:donationlinked2}, merupakan
 
 \section{Kesesuaian Keterhubungan Data dengan Ontologi}
 
+Berdasarkan hasil pada subbab 5.3 dan 5.4, dapat dilihat bahwa dapat diimplementasikan sebuah \textit{web} yang berbasis semantik dimana informasi-informasi yang terdapat pada setiap \textit{page} dapat diolah dan ditampilkan pada suatu \textit{page}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/ontologi.jpg}
+	\caption{Potongan graf dari ontologi \textit{Charity Organization}}
+	\label{fig:ontologi}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:ontologi} merupakan beberapa bagian dari ontologi \textit{Charity Organization}. Pada subbab 5.3 merupakan proses pembuatan \textit{page} atau \textit{individual} dari \textit{class} yang terdapat pada ontologi tersebut. \textit{Page-page} tersebut memiliki informasi hubungan yang menghubungkan antara \textit{class} yang selanjutnya digunakan untuk menampilkan keterhubungan data pada subbab 5.4.
+
+Informasi-informasi tersebut didapatkan langsung melalui ontologinya tanpa harus melakukan pemanggilan kepada \textit{database}. Hal ini berbeda dengan \textit{web} pada umumnya yang harus membuat \textit{Model, View} dan \textit{Controller} (MVC) untuk dapat mengambil informasi dari database dan menampilkannya ke dalam \textit{web}. Dengan menggunakan Zotonic, pengambilan informasi dari ontologi dan menampilkan ke dalam \textit{page} cukup dilakukan pada \textit{View} saja. Untuk mempermudah pengguna, Zotonic telah membuat \textit{model} yang dapat diakses dari \textit{template engine} sehingga pengguna dapat mengambil informasi terkait hubungan antara \textit{page} juga.
+
+Hal ini tentu akan mempermudah pengguna untuk dapat mengembangkan \textit{web} semantik menggunakan Zotonic. Karena untuk mengubah pada sisi tampilan, hal tersebut dapat dilakukan oleh pengguna yang tidak memiliki kemampuan ataupun latar belakang ilmu komputer.

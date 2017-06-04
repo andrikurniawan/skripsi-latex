@@ -2,13 +2,13 @@
 \chapter{\babEmpat}
 %-----------------------------------------------------------------------------%
 
-Pada bab ini dijelaskan setiap hal yang dilakukan oleh penulis untuk melakukan implementasi terhadap rancangan yang telah dibuat pada bab sebelumnya. Penulis melakukan implementasi \textit{adaptor} yang akan dipanggil melalui \textit{template engine} dan juga melalui model lainnya. Selain itu, penulis juga memanfaatkan \textit{adaptor} yang sudah diimplementasikan pada \textit{business logic}.
+Pada bab ini dijelaskan setiap hal yang dilakukan oleh penulis untuk melakukan implementasi terhadap rancangan yang telah dibuat pada bab sebelumnya. Penulis melakukan implementasi \textit{adaptor} yang akan dipanggil melalui \textit{template engine} dan juga melalui \textit{model} lainnya. Selain itu, penulis juga memanfaatkan \textit{adaptor} yang sudah diimplementasikan pada \textit{business logic}.
 
 %-----------------------------------------------------------------------------%
 \section{\textit{Interface Adaptor}}
 %-----------------------------------------------------------------------------%
 
-Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah model baru pada Zotonic dengan nama m\_abs pada folder \co{root/src/models}. Untuk membuat sebuah \textit{model} pada Zotonic, Zotonic mengharuskan setiap \textit{model} untuk mengekspor beberapa fungsi yang dimiliki oleh Zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
+Untuk dapat menjalankan fungsi \textit{adaptor} yang diinginkan, penulis membuat sebuah \textit{model} baru pada Zotonic dengan nama m\_abs pada folder \co{root/src/models}. Untuk membuat sebuah \textit{model} pada Zotonic, Zotonic mengharuskan setiap \textit{model} untuk mengekspor beberapa fungsi yang dimiliki oleh Zotonic yaitu m\_find\_value, m\_to\_list, dan m\_value agar fungsi tersebut dapat digunakan melalui \textit{template engine}.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Fungsi yang harus diekspor untuk \textit{model}},label={lst:librarymodel}]
@@ -77,12 +77,12 @@ Setelah mendapatkan informasi tentang Query dan Q, fungsi m\_find\_value selanju
 
 Setelah mendapatkan hasil dari pemanggilan fungsi validate\_params, pada fungsi m\_find\_value akan mengembalikan \textit{error} jika hasil dari pemanggilan fungsi validate\_params bernilai false. Sebaliknya, jika hasil dari pemanggilan fungsi validate\_params bernilai true maka fungsi m\_find\_value akan memanggil fungsi fetch\_data dengan parameter berupa variabel Url dan juga Parameter \textit{Query} yang sudah dijadikan dalam bentuk \textit{json} menggunakan \co{jiffy:encode/1}. Hasil dari pemanggilan fungsi fetch\_data akan mengembalikan sebuah \textit{json} yang berisikan data yang ingin ditampilkan. Sesuai dengan rancangan \textit{web service} yang sudah dijelaskan pada bab sebelumnya, data yang ingin ditampilkan terdapat pada parameter "data" pada \textit{json} sehingga kita perlu mengambil nilai dari parameter "data" tersebut dengan cara \co{proplists:get\_value(<<"data">>, DecodeJson)} dimana \co{DecodeJson} merupakan \textit{json} hasil dari fetch\_data.
 
-\subsection{Pemanggilan \textit{Adaptor} Melalui Model}
+\subsection{Pemanggilan \textit{Adaptor} Melalui \textit{Model}}
 
-Selain dipanggil melalui \textit{template engine}, ada kebutuhan untuk memanggil \textit{adaptor} dari model lain seperti pemanggilannya pada model m\_rsc agar dapat mengirim data dari Zotonic kepada \textit{web service} melalui \textit{adaptor}. Untuk itu, perlu diimplementasi sebuah fungsi baru dengan nama call\_api\_controller pada \textit{adaptor} yang dapat diakses secara langsung oleh model lain seperti berikut
+Selain dipanggil melalui \textit{template engine}, ada kebutuhan untuk memanggil \textit{adaptor} dari \textit{model} lain seperti pemanggilannya pada \textit{model} m\_rsc agar dapat mengirim data dari Zotonic kepada \textit{web service} melalui \textit{adaptor}. Untuk itu, perlu diimplementasi sebuah fungsi baru dengan nama call\_api\_controller pada \textit{adaptor} yang dapat diakses secara langsung oleh \textit{model} lain seperti berikut
 
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Implementasi fungsi untuk pemanggilan \textit{adaptor} dari model},label={lst:adaptormodel}]
+\begin{lstlisting}[caption={Implementasi fungsi untuk pemanggilan \textit{adaptor} dari \textit{model}},label={lst:adaptormodel}]
 call_api_controller(Key, Data) ->
 	[Url, Param] = lookup_rules(Key),
 	case validate_params(Param, Data) of
@@ -240,7 +240,7 @@ post_page_body(Url, Body) ->
 Pada penelitian sebelumnya, proses pembuatan \textit{business logic} dilakukan secara langsung pada \textit{script} datatypePropertyMapper.sh menggunakan \textit{javascript}. Tetapi \textit{business logic} antara satu situs dengan situs lainnya dapat berbeda sehingga dibutuhkan sebuah mekanisme agar \textit{business logic} dapat lebih dinamis berdasarkan ontologi yang digunakan. Untuk mengatasi hal tersebut, maka modul m\_abs yang telah diimplementasi akan digunakan untuk membuat \textit{business logic} agar bersifat dinamis. \textit{Script} datatypePropertyMapper.sh akan menghasilkan \textit{template} untuk admin dan juga \textit{template} untuk halaman pengguna sehingga untuk menambahkan \textit{business logic} yang bersifat dinamis dapat dimanfaatkan implementasi dari pemanggilan \textit{adaptor} dari \textit{template} yang sudah dijelaskan pada bagian sebelumnya. Berikut ini merupakan \textit{business logic} untuk menghitung total sebelum dilakukan \textit{refactoring}.
 	
 \begin{minipage}{\linewidth}
-\begin{lstlisting}[caption={Fungsi total sebelum refactoring},label={lst:totalBefore}]
+\begin{lstlisting}[caption={Fungsi total sebelum \textit{refactoring}},label={lst:totalBefore}]
 {% javascript %}
 	var predId = [];
 	var total = 0;

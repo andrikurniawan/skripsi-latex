@@ -59,7 +59,7 @@ Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat
 	\end{lstlisting}
 	\end{minipage} \\
 
-	Pada kode \ref{lst:json}, struktur JSON terdiri dari status,\textit{message}, dan data. Status disini merupakan kode status yang didefinisikan agar memudahkan pada proses pembacaan hasil JSON nantinya. Berikut ini merupakan tabel mapping dari kode status
+	Pada Kode \ref{lst:json}, struktur JSON terdiri dari status,\textit{message}, dan data. Status disini merupakan kode status yang didefinisikan agar memudahkan pada proses pembacaan hasil JSON nantinya. Berikut ini merupakan tabel mapping dari kode status
 	
 	\begin{table}
 		\centering
@@ -76,7 +76,7 @@ Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat
 		\end{tabular}
 	\end{table}
 	
-	Pada tabel \ref{tab:statuscode}, terdapat tabel status kode. Jika data hasil dari pemanggilan API tersebut perlu diketahui seperti untuk pemanggilan total donasi yang hasilnya perlu diketahui, maka status kode diatur menjadi 200. Jika pada API yang dilakukan seperti proses menambah data baru pada database, melakukan update pada database, serta melakukan penghapusan data pada database, tidak perlu dikembalikan datanya sehingga status kode diatur menjadi 201 dan \textit{message} diatur menjadi informasi keberhasilan dari perintah yang dijalankan. Namun, jika proses \textit{insert, update,} atau \textit{delete} data pada database gagal dilakukan, atau data yang dicari pada database tidak ada maka status kode diset menjadi 400 dan \textit{message} diset menjadi penyebab dari error tersebut.
+	Pada Tabel \ref{tab:statuscode}, terdapat tabel status kode. Jika data hasil dari pemanggilan API tersebut perlu diketahui seperti untuk pemanggilan total donasi yang hasilnya perlu diketahui, maka status kode diatur menjadi 200. Jika pada API yang dilakukan seperti proses menambah data baru pada database, melakukan update pada database, serta melakukan penghapusan data pada database, tidak perlu dikembalikan datanya sehingga status kode diatur menjadi 201 dan \textit{message} diatur menjadi informasi keberhasilan dari perintah yang dijalankan. Namun, jika proses \textit{insert, update,} atau \textit{delete} data pada database gagal dilakukan, atau data yang dicari pada database tidak ada maka status kode diset menjadi 400 dan \textit{message} diset menjadi penyebab dari error tersebut.
 	
 	Selain mendefinisikan status kode yang diberikan, perlu didefinisikan juga data apa yang akan dikirim seperti tabel berikut ini.
 	
@@ -95,7 +95,7 @@ Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat
 		\end{tabular}
 	\end{table}
 
-	Pada tabel \ref{tab:tabelData}, berdasarkan status kode yang telah didefinisikan pada tabel \ref{tab:statuscode} maka jika status kode 200, data akan berisi data yang ingin dikirim. Sebagai contoh, jika total donasi berhasil dilakukan, maka status kode 200 dan data akan berisi nominal dari total donasi. Untuk status kode 201, data akan berisi mengenai data yang diproses. Misalnya ingin menambahkan data pada database, dan jika berhasil maka status kode 201 dan data akan berisi seluruh data yang dimasukkan ke dalam database tersebut. Dan jika status kode 400, karena ini merupakan status kode untuk error maka data cukup diisi dengan null.
+	Pada Tabel \ref{tab:tabelData}, berdasarkan status kode yang telah didefinisikan pada tabel \ref{tab:statuscode} maka jika status kode 200, data akan berisi data yang ingin dikirim. Sebagai contoh, jika total donasi berhasil dilakukan, maka status kode 200 dan data akan berisi nominal dari total donasi. Untuk status kode 201, data akan berisi mengenai data yang diproses. Misalnya ingin menambahkan data pada database, dan jika berhasil maka status kode 201 dan data akan berisi seluruh data yang dimasukkan ke dalam database tersebut. Dan jika status kode 400, karena ini merupakan status kode untuk error maka data cukup diisi dengan null.
 %-----------------------------------------------------------------------------%
 \section{Rancangan \f{Adaptor}}
 %-----------------------------------------------------------------------------%
@@ -111,18 +111,20 @@ Namun pada penelitian tersebut, pembuatan \textit{business logic} masih bersifat
 \end{figure}
 \vspace{-0.3cm}
 
-Seperti yang dapat dilihat pada \pic~\ref{fig:adaptor}, \textit{rules} yang terdapat pada ontologi akan dilakukan pemetaan menjadi tabel \textit{rules} yang akan disimpan pada berkas rules.txt seperti yang terdapat pada kode \ref{lst:tablerules}. Namun, proses pemetaan ini berada diluar dari topik penelitian penulis sehingga untuk keperluan penelitian ini maka penulis membuat sebuah tabel \textit{rules} secara manual untuk mengganti proses pemetaan tersebut.
+Seperti yang dapat dilihat pada \pic~\ref{fig:adaptor}, \textit{rules} yang terdapat pada ontologi akan dilakukan pemetaan menjadi tabel \textit{rules} yang akan disimpan pada berkas rules.txt seperti yang terdapat pada Kode \ref{lst:tablerules}. Namun, proses pemetaan ini berada diluar dari topik penelitian penulis sehingga untuk keperluan penelitian ini maka penulis membuat sebuah tabel \textit{rules} secara manual untuk mengganti proses pemetaan tersebut.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[caption={Contoh tabel \textit{rules}},label={lst:tablerules}]
 {
-	"createProgram": ["http://54.169.128.6:8080/abs/program/create", 2],
-	"createDonation": ["http://54.169.128.6:8080/abs/donation/create", 4],
-	"updateProgram": ["http://54.169.128.6:8080/abs/program/update", 2],
-	"updateDonation": ["http://54.169.128.6:8080/abs/donation/update", 4],
-	"deleteProgram": ["http://54.169.128.6:8080/abs/program/delete", 1],
-	"deleteDonation": ["http://54.169.128.6:8080/abs/donation/delete", 1],
-	"totalDonation" : ["http://54.169.128.6:8080/abs/program/total-donation", 1]
+"createProgram": ["http://54.169.128.6:8080/abs/program/create", 2],
+"createDonation": ["http://54.169.128.6:8080/abs/donation/create", 4],
+"updateProgram": ["http://54.169.128.6:8080/abs/program/update", 2],
+"updateDonation": ["http://54.169.128.6:8080/abs/donation/update", 4],
+"deleteProgram": ["http://54.169.128.6:8080/abs/program/delete", 1],
+"deleteDonation": ["http://54.169.128.6:8080/abs/donation/delete", 1],
+"totalDonation" : ["http://54.169.128.6:8080/abs/program/total-donation", 1],
+"checkExistProgram" : ["http://54.169.128.6:8080/abs/program/checkExist", 1],
+"checkExistDonation" : ["http://54.169.128.6:8080/abs/donation/checkExist", 1]
 }
 \end{lstlisting}
 \end{minipage} \\

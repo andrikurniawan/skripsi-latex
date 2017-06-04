@@ -170,8 +170,60 @@ Berkas ini ditaruh pada direktori \textit{root} dari zotonic. Berkas ini berfung
 \end{lstlisting}
 
 %-----------------------------------------------------------------------------%
-\addChapter{Lampiran 3 : Kode Sumber \textit{Web Service}}
-\chapter*{Lampiran 3 : Kode Sumber \textit{Web Service}}
+\addChapter{Lampiran 3 : Struktur Zotonic}
+\chapter*{Lampiran 3 : Struktur Zotonic}
+%-----------------------------------------------------------------------------%
+Berikut adalah struktur dari Zotonic setelah implementasi penambahan berkas yang digunakan sebagai \textit{adaptor}.
+
+\begin{tabbing}
+	\qquad Zotonic/ \\
+	\qquad \qquad .rebar/ \\
+	\qquad \qquad bin/ \\
+	\qquad \qquad deps/ \\
+	\qquad \qquad doc/ \\
+	\qquad \qquad docker/ \\
+	\qquad \qquad ebin/ \\
+	\qquad \qquad include/ \\
+	\qquad \qquad modules/ \\
+	\qquad \qquad priv/ \\
+	\qquad \qquad src/ \\
+	\qquad \qquad user/ \\
+	\qquad \qquad .dockerignore \\
+	\qquad \qquad .editorconfig \\
+	\qquad \qquad .travis.yml \\
+	\qquad \qquad AUTHORS \\
+	\qquad \qquad CONTRIBUTING.md \\
+	\qquad \qquad CONTRIBUTORS \\
+	\qquad \qquad Dockerfile \\
+	\qquad \qquad Dockerfile.dev \\
+	\qquad \qquad Dockerfile.heavy \\
+	\qquad \qquad GNUmakefile \\
+	\qquad \qquad LICENSE\\
+	\qquad \qquad Makefile \\
+	\qquad \qquad Readme.md \\
+	\qquad \qquad TRANSLATORS \\
+	\qquad \qquad USE\_REBAR\_LOCKED \\
+	\qquad \qquad build.cmd \\
+	\qquad \qquad charity\_org\_rdf.owl \\
+	\qquad \qquad classAndObjectPropertyMapper.sh \\
+	\qquad \qquad docker-compose.yml \\
+	\qquad \qquad prepare-release.sh \\
+	\qquad \qquad rebar \\
+	\qquad \qquad rebar.config\\
+	\qquad \qquad rebar.config.lock\\
+	\qquad \qquad rebar.config.lock.script\\
+	\qquad \qquad rebar.config.script\\
+	\qquad \qquad recentsite.txt\\
+	\qquad \qquad start.cmd\\
+	\qquad \qquad start.sh\\
+	\qquad \qquad zotonic.pid\\
+	\qquad \qquad zotonic\_install \\
+	\qquad \qquad rules.txt
+\end{tabbing}
+
+%-----------------------------------------------------------------------------%
+\addChapter{Lampiran 4 : Kode Sumber \textit{Web Service}}
+\chapter*{Lampiran 4 : Kode Sumber \textit{Web Service}}
 %-----------------------------------------------------------------------------%
 \textit{Web Services} ini digunakan untuk melakukan ujicoba terhadap \textit{adaptor} yang telah diimplementasikan. \textit{Web Services} ini hanya bersifat sementara karena belum adanya \textit{web service} dari ABS \textit{microservices} untuk ontologi yang digunakan.
 \section*{DonationController.java}
