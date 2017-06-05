@@ -438,21 +438,71 @@ Perubahan ini juga dapat dilihat pada halaman dari Pelantikan dan Seminar BSMI B
 
 \section{Contoh Keterhubungan Data pada Web BSMI}
 
-Setelah pada subbab sebelumnya telah dilakukan proses pembuatan \textit{page} pada web BSMI, pada subbab ini akan membahas mengenai keterhubungan data dari \textit{page-page} yang telah dibuat tersebut. Berbeda dengan \textit{web} pada umumnya, \textit{web} yang menerapkan konsep semantik akan dapat langsung mengolah informasi berdasarkan keterhubungan data yang dimilikinya.
+Setelah pada subbab sebelumnya telah dilakukan proses pembuatan \textit{page} pada web BSMI, pada subbab ini akan membahas mengenai keterhubungan data dari \textit{page-page} yang telah dibuat tersebut. Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan semantik dapat digunakan sebagai sebuah \textit{engine} untuk mengolah dan menampilkan hasilnya pada sebuah \textit{page}. Berikut merupakan hasil dari penerapan keterhubungan data pada \textit{web} BSMI dengan menggunakan beberapa bagian dari ontologi \textit{Charity Organization}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.5\textwidth]
-	{pics/semantic-web.jpg}
-	\caption{Perbedaan \textit{web} semantik dengan \textit{web} biasa}
-	\label{fig:semanticweb}
+	\includegraphics[width=1\textwidth]
+	{pics/29-viewprogramupdatedonation.png}
+	\caption{Tampilan \textit{page} Pelantikan dan Seminar BSMI Brebes setelah perubahan}
+	\label{fig:bsmibrebes}
 \end{figure}
 \vspace{-0.3cm}
 
-Pada \pic~\ref{fig:semanticweb}, terdapat perbandingan antara \textit{web} biasa dengan \textit{web} semantik. Pada teknologi \textit{web} 1.0, sebuah \textit{page} khusus dibuat oleh \textit{producer} untuk satu \textit{customer}. Pada teknologi ini, \textit{customer} hanya berperan sebagai pembaca saja. Contohnya dari penerapan teknologi ini adalah blog. Selanjutnya ditemukan teknologi \textit{web} 2.0 dimana \textit{customer} dapat berperan sebagai \textit{producer} juga. Contoh dari penerapan teknologi ini adalah sosial media seperti Twitter, Facebook, dan lain-lain. Namun, pada teknologi ini, informasi-informasi yang ada hanya sebatas untuk ditampilkan saja. Sehingga muncul teknologi \textit{web} 3.0 atau disebut \textit{web} semantik dimana informasi-informasi yang terdapat pada \textit{web} dapat diolah dan ditampilkan pada suatu \textit{page}.
+\pic~\ref{fig:bsmibrebes} merupakan tampilan awal sebelum dibuatnya keterhubungan data pada Program. Ketika keterhubungan data dibuat, maka tampilan dari halaman Pelantikan dan Seminar BSMI Brebes akan berubah menjadi \pic~\ref{fig:bsmibrebes2} berikut dimana akan muncul daftar donasi yang memiliki hubungan dengan program ini.
 
-Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan semantik dapat digunakan sebagai sebuah \textit{engine} untuk mengolah dan menampilkan hasilnya pada sebuah \textit{page}. Berikut merupakan hasil dari penerapan keterhubungan data pada \textit{web} BSMI dengan menggunakan beberapa bagian dari ontologi \textit{Charity Organization}.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/50-bsmibrebes.png}
+	\caption{Tampilan \textit{page} Pelantikan dan Seminar BSMI Brebes setelah Keterhubungan Data}
+	\label{fig:bsmibrebes2}
+\end{figure}
+\vspace{-0.3cm}
 
+Ketika ada data baru yang ditambahkan, \textit{page} yang memiliki keterhubungan data akan ikut terbaharui secara otomatis. Berikut adalah tampilan dari halaman Pelantikan dan Seminar BSMI Brebes setelah penambahan donasi baru untuk program tersebut.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/50-bsmibrebes2.png}
+	\caption{Tampilan \textit{page} Pelantikan dan Seminar BSMI Brebes setelah Penambahan Donasi Baru}
+	\label{fig:bsmibrebes3}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:bsmibrebes3}, dapat terlihat informasi mengenai daftar donasi yang diberikan untuk program ini telah bertambah. Penambahan data ini terjadi secara otomatis ketika dilakukan perubahan pada \textit{page} program Pelantikan dan Seminar BSMI Brebes. Berikut adalah tampilan halaman Pelantikan dan Seminar BSMI Brebes setelah \textit{Program} dan \textit{Beneficiary} saling terhubung melalui hubungan \textit{contribute\_to}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/51-bsmibrebes.png}
+	\caption{Tampilan \textit{page Program} setelah ada hubungan dengan \textit{Beneficiary}}
+	\label{fig:bsmibrebes4}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:bsmibrebes4}, dapat dilihat tambahan informasi yaitu program ini akan disalurkan kepada siapa. Informasi tersebut didapatkan dari ontologi yang digunakan. Selain \textit{page} Program, \textit{page Donation} juga dapat menampilkan informasi dari \textit{page} yang memiliki hubungan dengannya. Berikut merupakan halaman donasi yang telah menampilkna informasi terkait keterhubungan data.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/52-donasiantobrebes.png}
+	\caption{Tampilan \textit{page Donation} yang telah menampilkan keterhubungan data}
+	\label{fig:donasi1brebes}
+\end{figure}
+\vspace{-0.3cm}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]
+	{pics/53-donasipusatbrebes.png}
+	\caption{Tampilan \textit{page Donation} yang telah menampilkan keterhubungan data}
+	\label{fig:donasi2brebes}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:donasi1brebes} dan \pic~\ref{fig:donasi2brebes} yang merupakan tampilan dari \textit{page Donation}, dapat dilihat bahwa pada \textit{page Donation} ditampilkan informasi donasi tersebut untuk program apa yang diambil dari hubungan antara \textit{Program} dan \textit{Donation} serta informasi donasi tersebut diberikan oleh siapa yang diambil dari hubungan antara \textit{Donation} dan \textit{Donor}. Berikut merupakan contoh dengan Program BSMR Nurul Fikri Gelar "Emergency Ranger" di Anyer. 
 
 \begin{figure}
 	\centering
@@ -463,7 +513,7 @@ Zotonic sebagai sebuah \textit{web framework} yang telah mengimplementasikan sem
 \end{figure}
 \vspace{-0.3cm}
 
-Pada \pic~\ref{fig:programlinked}, merupakan tampilan dari sebuah \textit{page} dengan kategori \textit{Program}. Tampilan ini menggabungkan informasi yang didapatkan dari \textit{page} \textit{Beneficiary} dan \textit{Donation} untuk ditampilkan pada tampilan \textit{Program}. Pada \textit{page} ini, ditampilkan total donasi yang diterima untuk program ini yang dihitung dari \textit{amount} seluruh donasi yang terhubung ke program ini seperti yang dijelaskan pada bab sebelumnya. Selanjutnya terdapat juga informasi daftar donasi yang diberikan kepada program ini serta informasi disalurkan kepada siapa dana dari program ini.
+Pada \pic~\ref{fig:programlinked} merupakan tampilan \textit{page} dari \textit{Program} BSMR Nurul Fikri Gelar "Emergency Ranger" di Anyer. \textit{Page} tersebut telah terdapat keterhubungan data secara otomatis karena ketika membuat keterhubungan data maka akan berlaku untuk semua \textit{page} yang dipengaruhi. Begitupun dengan \pic~\ref{fig:donationlinked} dan \pic~\ref{fig:donationlinked2} yang merupakan donasi-donasi yang terhubung dengan \textit{Program} BSMR Nurul Fikri Gelar "Emergency Ranger" di Anyer
 
 \begin{figure}
 	\centering
@@ -483,9 +533,18 @@ Pada \pic~\ref{fig:programlinked}, merupakan tampilan dari sebuah \textit{page} 
 \end{figure}
 \vspace{-0.3cm}
 
-Pada \pic~\ref{fig:donationlinked} dan \pic~\ref{fig:donationlinked2}, merupakan tampilan dari sebuah \textit{page} dengan kategori \textit{Donation}. Tampilan tersebut menggabungkan informasi yang didapatkan dari \textit{page Program} dan \textit{Donor}. Pada \textit{page} tersebut, ditampilkan informasi mengenai donasi tersebut disalurkan untuk program yang mana dan donasi tersebut diberikan oleh siapa.
-
 \section{Kesesuaian Keterhubungan Data dengan Ontologi}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]
+	{pics/semantic-web.jpg}
+	\caption{Perbedaan \textit{web} semantik dengan \textit{web} biasa}
+	\label{fig:semanticweb}
+\end{figure}
+\vspace{-0.3cm}
+
+Pada \pic~\ref{fig:semanticweb}, terdapat perbandingan antara \textit{web} biasa dengan \textit{web} semantik. Pada teknologi \textit{web} 1.0, sebuah \textit{page} khusus dibuat oleh \textit{producer} untuk satu \textit{customer}. Pada teknologi ini, \textit{customer} hanya berperan sebagai pembaca saja. Contohnya dari penerapan teknologi ini adalah blog. Selanjutnya ditemukan teknologi \textit{web} 2.0 dimana \textit{customer} dapat berperan sebagai \textit{producer} juga. Contoh dari penerapan teknologi ini adalah sosial media seperti Twitter, Facebook, dan lain-lain. Namun, pada teknologi ini, informasi-informasi yang ada hanya sebatas untuk ditampilkan saja. Sehingga muncul teknologi \textit{web} 3.0 atau disebut \textit{web} semantik dimana informasi-informasi yang terdapat pada \textit{web} dapat diolah dan ditampilkan pada suatu \textit{page}.
 
 Berdasarkan hasil pada subbab 5.3 dan 5.4, dapat dilihat bahwa dapat diimplementasikan sebuah \textit{web} yang berbasis semantik dimana informasi-informasi yang terdapat pada setiap \textit{page} dapat diolah dan ditampilkan pada suatu \textit{page}.
 
@@ -498,7 +557,7 @@ Berdasarkan hasil pada subbab 5.3 dan 5.4, dapat dilihat bahwa dapat diimplement
 \end{figure}
 \vspace{-0.3cm}
 
-Pada \pic~\ref{fig:ontologi} merupakan beberapa bagian dari ontologi \textit{Charity Organization}. Pada subbab 5.3 merupakan proses pembuatan \textit{page} atau \textit{individual} dari \textit{class} yang terdapat pada ontologi tersebut. \textit{Page-page} tersebut memiliki informasi hubungan yang menghubungkan antara \textit{class} yang selanjutnya digunakan untuk menampilkan keterhubungan data pada subbab 5.4.
+Pada \pic~\ref{fig:ontologi} merupakan beberapa bagian dari ontologi \textit{Charity Organization}. Untuk graf lengkapnya terdapat pada lampiran. Pada subbab 5.3 merupakan proses pembuatan \textit{page} atau \textit{individual} dari \textit{class} yang terdapat pada ontologi tersebut. \textit{Page-page} tersebut memiliki informasi hubungan yang menghubungkan antara \textit{class} yang selanjutnya digunakan untuk menampilkan keterhubungan data pada subbab 5.4.
 
 Informasi-informasi tersebut didapatkan langsung melalui ontologinya tanpa harus melakukan pemanggilan kepada \textit{database}. Hal ini berbeda dengan \textit{web} pada umumnya yang harus membuat \textit{Model, View} dan \textit{Controller} (MVC) untuk dapat mengambil informasi dari database dan menampilkannya ke dalam \textit{web}. Dengan menggunakan Zotonic, pengambilan informasi dari ontologi dan menampilkan ke dalam \textit{page} cukup dilakukan pada \textit{View} saja. Untuk mempermudah pengguna, Zotonic telah membuat \textit{model} yang dapat diakses dari \textit{template engine} sehingga pengguna dapat mengambil informasi terkait hubungan antara \textit{page} juga.
 
